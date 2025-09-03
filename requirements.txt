@@ -1,0 +1,58 @@
+# Core ML Libraries
+torch==2.1.1
+torchaudio==2.1.1
+transformers==4.36.2
+accelerate==0.24.1
+
+# Audio Processing
+librosa==0.10.1
+soundfile==0.12.1
+audioread==3.0.1
+pydub==0.25.1
+noisereduce==3.0.0
+scipy==1.11.4
+numpy==1.24.4
+
+# Speech Recognition & ASR
+openai-whisper==20231117
+whisperx==3.1.1
+faster-whisper==0.10.0
+
+# Speaker Diarization
+pyannote.audio==3.1.1
+pyannote.core==5.0.0
+pyannote.database==5.0.1
+pyannote.pipeline==3.0.1
+
+# Audio Enhancement
+speechbrain==0.5.16
+asteroid==0.7.0
+
+# Data Handling
+pandas==2.1.3
+datasets==2.15.0
+huggingface-hub==0.19.4
+
+# Visualization & UI
+gradio==4.8.0
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Utilities
+tqdm==4.66.1
+click==8.1.7
+python-dotenv==1.0.0
+pyyaml==6.0.1
+jsonlines==4.0.0
+
+# Development Tools
+jupyter==1.0.0
+ipython==8.18.1
+notebook==7.0.6
+
+# System Integration
+psutil==5.9.6
+GPUtil==1.4.0
+
+# Additional PyTorch index for CUDA 12.1 compatibility
+--extra-index-url https://download.pytorch.org/whl/cu121
