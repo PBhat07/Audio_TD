@@ -1,6 +1,6 @@
 # Use NVIDIA CUDA base image for GPU acceleration (optional but recommended for performance)
 # Ubuntu 22.04 LTS provides long-term stability
-FROM nvidia/cuda:11.8-devel-ubuntu22.04
+FROM nvidia/cuda:12.1-devel-ubuntu22.04
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive

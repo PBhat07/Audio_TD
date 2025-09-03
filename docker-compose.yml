@@ -8,7 +8,6 @@ services:
     container_name: audio_transcription
     runtime: nvidia
     environment:
-      - NVIDIA_VISIBLE_DEVICES=0
       - CUDA_VISIBLE_DEVICES=0
       - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
       - TOKENIZERS_PARALLELISM=false
@@ -20,17 +19,9 @@ services:
       - ./input:/app/input
       - ./output:/app/output
       - ./models:/app/models
-      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     ports:
       - "7860:7860"  # Gradio interface
       - "8888:8888"  # Jupyter notebook
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
     shm_size: '2gb'  # Increased shared memory for better performance
     stdin_open: true
     tty: true
