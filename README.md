@@ -32,13 +32,18 @@ It is containerized with **Docker** for reproducibility and uses **GPU accelerat
 ```bash
 git clone https://github.com/yourusername/audio-td.git
 cd audio-td
-2. Setup environment
+```bash
+
+### 2. Setup environment
 Run the automated setup script:
 
 bash
 Copy code
+```bash
 chmod +x setup.sh
 ./setup.sh
+```bash
+
 This will:
 
 Verify NVIDIA GPU availability (nvidia-smi)
@@ -53,42 +58,45 @@ Generate .env for secrets
 
 Build the Docker image with CUDA support
 
-3. Configure environment variables
+### 3. Configure environment variables
 Hugging Face Token
 Open .env (created automatically) and add your token:
 
 env
-Copy code
+```bash
 HUGGING_FACE_TOKEN=your_hf_token_here
+```bash
 👉 You can create a free token at Hugging Face Settings.
 
 Whisper Model
 Choose a Whisper model size (tradeoff between speed & accuracy):
 
-bash
-Copy code
+```bash
 export WHISPER_MODEL=large-v2
-4. Prepare your audio
+```bash
+
+### 4. Prepare your audio
 Put your input file (.wav, .mp3, etc.) in the input/ directory.
 Example:
 
-bash
-Copy code
+```bash
 input/noisy_audio.mp3
-5. Run transcription with diarization
+```bash
+
+### 5. Run transcription with diarization
 Build and run the pipeline:
 
-bash
-Copy code
+```bash
 docker compose build
 docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_speakers 4 --max_speakers 5
+```bash
 Arguments:
 
 --min_speakers → minimum expected speakers
 
 --max_speakers → maximum expected speakers
 
-📂 Outputs
+## Outputs
 After processing, check the output/ folder:
 
 enhanced_for_asr.wav → audio cleaned & resampled
@@ -98,8 +106,7 @@ original_for_diarization.wav → original audio for diarization
 diarized_transcription.json → final structured result
 
 Example JSON line:
-json
-Copy code
+```bash
 {
   "speaker": "SPEAKER_01",
   "word": "Hello",
@@ -107,6 +114,7 @@ Copy code
   "end": "00:01.200",
   "confidence": 0.94
 }
+```bash
 Each entry contains:
 
 Speaker label
@@ -117,10 +125,9 @@ Start & end timestamps (mm:ss.sss format)
 
 Confidence score
 
-🛠️ Development
+##  Development
 Project Structure
-bash
-Copy code
+```bash
 ├── setup.sh              # Automated setup script
 ├── docker-compose.yml    # Docker configuration
 ├── Dockerfile            # Base image and environment
@@ -136,13 +143,12 @@ Copy code
 ├── models/               # Downloaded ML models
 ├── logs/                 # Runtime logs
 └── .env                  # Environment variables (Hugging Face token)
-main.py vs main_01.py
+
 main.py → full pipeline with enhanced error handling, JSONL output (line-by-line JSON), and flexible speaker constraints.
+```bash
 
-main_01.py → simpler reference pipeline with fewer options, outputs a single JSON array.
-👉 Use main.py by default unless testing alternative behavior.
 
-Dependencies
+## Dependencies
 Defined in requirements.txt:
 
 Core ML: torch, torchaudio, whisperx, pyannote.audio
@@ -153,7 +159,7 @@ Data & Utils: datasets, pandas, huggingface-hub, tqdm
 
 Visualization/UI: matplotlib, gradio
 
-⚠️ Notes & Tips
+## Notes & Tips
 GPU is mandatory for performance — CPU-only mode is not supported for long audios.
 
 Adjust --min_speakers / --max_speakers for more accurate diarization.
@@ -164,10 +170,10 @@ Large Whisper models (large-v2) need ≥16GB VRAM.
 
 For debugging, check logs inside logs/.
 
-📜 License
+## License
 MIT License (update if needed)
 
-🙌 Acknowledgements
+## Acknowledgements
 OpenAI Whisper
 
 WhisperX
@@ -176,11 +182,8 @@ pyannote.audio
 
 Speechbrain
 
-yaml
-Copy code
 
 ---
 
-⚡ Now your **`src/` folder and pipeline scripts are clearly documented** in the Project Structure section.  
 
-Do you also want me to add **flow diagrams** (like how audio goes through `audio_enhancer → asr_pipeline → diarization_p
+
