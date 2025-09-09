@@ -32,7 +32,7 @@ It is containerized with **Docker** for reproducibility and uses **GPU accelerat
 ```bash
 git clone https://github.com/yourusername/audio-td.git
 cd audio-td
-```bash
+```
 
 ### 2. Setup environment
 Run the automated setup script:
@@ -42,7 +42,7 @@ Copy code
 ```bash
 chmod +x setup.sh
 ./setup.sh
-```bash
+```
 
 This will:
 
@@ -65,7 +65,7 @@ Open .env (created automatically) and add your token:
 env
 ```bash
 HUGGING_FACE_TOKEN=your_hf_token_here
-```bash
+```
 👉 You can create a free token at Hugging Face Settings.
 
 Whisper Model
@@ -73,7 +73,7 @@ Choose a Whisper model size (tradeoff between speed & accuracy):
 
 ```bash
 export WHISPER_MODEL=large-v2
-```bash
+```
 
 ### 4. Prepare your audio
 Put your input file (.wav, .mp3, etc.) in the input/ directory.
@@ -81,7 +81,7 @@ Example:
 
 ```bash
 input/noisy_audio.mp3
-```bash
+```
 
 ### 5. Run transcription with diarization
 Build and run the pipeline:
@@ -89,8 +89,8 @@ Build and run the pipeline:
 ```bash
 docker compose build
 docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_speakers 4 --max_speakers 5
-```bash
-Arguments:
+```
+#### Arguments:
 
 --min_speakers → minimum expected speakers
 
@@ -114,8 +114,8 @@ Example JSON line:
   "end": "00:01.200",
   "confidence": 0.94
 }
-```bash
-Each entry contains:
+```
+#### Each entry contains:
 
 Speaker label
 
@@ -145,7 +145,7 @@ Project Structure
 └── .env                  # Environment variables (Hugging Face token)
 
 main.py → full pipeline with enhanced error handling, JSONL output (line-by-line JSON), and flexible speaker constraints.
-```bash
+```
 
 
 ## Dependencies
@@ -184,6 +184,7 @@ Speechbrain
 
 
 ---
+
 
 
 
