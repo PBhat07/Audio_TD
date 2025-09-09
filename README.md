@@ -37,38 +37,30 @@ cd audio-td
 ### 2. Setup environment
 Run the automated setup script:
 
-bash
-Copy code
+
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 
-This will:
-
+### This will:
 Verify NVIDIA GPU availability (nvidia-smi)
-
 Check Docker installation and user permissions
-
 Install NVIDIA Container Toolkit for GPU passthrough
-
 Create project folders (input/, output/, models/, logs/)
-
 Generate .env for secrets
-
 Build the Docker image with CUDA support
 
 ### 3. Configure environment variables
 Hugging Face Token
 Open .env (created automatically) and add your token:
 
-env
 ```bash
 HUGGING_FACE_TOKEN=your_hf_token_here
 ```
-👉 You can create a free token at Hugging Face Settings.
+#### 👉 You can create a free token at Hugging Face Settings.
 
-Whisper Model
+#### Whisper Model
 Choose a Whisper model size (tradeoff between speed & accuracy):
 
 ```bash
@@ -77,7 +69,7 @@ export WHISPER_MODEL=large-v2
 
 ### 4. Prepare your audio
 Put your input file (.wav, .mp3, etc.) in the input/ directory.
-Example:
+#### Example:
 
 ```bash
 input/noisy_audio.mp3
@@ -98,14 +90,11 @@ docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_sp
 
 ## Outputs
 After processing, check the output/ folder:
-
 enhanced_for_asr.wav → audio cleaned & resampled
-
 original_for_diarization.wav → original audio for diarization
-
 diarized_transcription.json → final structured result
 
-Example JSON line:
+### Example JSON line:
 ```bash
 {
   "speaker": "SPEAKER_01",
@@ -118,11 +107,8 @@ Example JSON line:
 #### Each entry contains:
 
 Speaker label
-
 Word spoken
-
 Start & end timestamps (mm:ss.sss format)
-
 Confidence score
 
 ##  Development
@@ -157,17 +143,12 @@ Audio Processing: pydub, librosa, demucs, speechbrain
 
 Data & Utils: datasets, pandas, huggingface-hub, tqdm
 
-Visualization/UI: matplotlib, gradio
 
 ## Notes & Tips
 GPU is mandatory for performance — CPU-only mode is not supported for long audios.
-
 Adjust --min_speakers / --max_speakers for more accurate diarization.
-
 Large Whisper models (large-v2) need ≥16GB VRAM.
-
 .gitignore ensures input/, output/, and .env are not tracked.
-
 For debugging, check logs inside logs/.
 
 ## License
@@ -184,6 +165,7 @@ Speechbrain
 
 
 ---
+
 
 
 
