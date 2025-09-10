@@ -88,6 +88,39 @@ docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_sp
 
 --max_speakers → maximum expected speakers
 
+
+
+### 📈 Technical Journey & Problem-Solving
+This project's final architecture is the result of an iterative process to address common challenges in transcribing noisy, multi-speaker audio.
+
+Initial Attempt with SpeechBrain: The initial approach used a SpeechBrain model for waveform enhancement. While this enhanced the audio quality, it frequently cut out parts of the speech, interpreting it as background noise, which negatively impacted the ASR results.
+
+Adopting Demucs for Source Separation: To overcome this, the pipeline was changed to use Demucs, a source separation model, to isolate the speech from complex background noise. This provided a much cleaner and smoother audio for the ASR model, leading to improved transcription quality, especially at the beginning of the audio.
+
+The Diarization Dilemma: A key finding was that while enhanced audio was beneficial for ASR, it negatively impacted the speaker diarization model (pyannote.audio). The processing made different speakers sound more similar, causing diarization errors.
+
+Final Parallel Pipeline: The solution was to create a parallel pipeline:
+
+A copy of the original audio is passed through Demucs for enhancement before being sent to the WhisperX ASR model.
+
+The original, un-reprocessed audio is passed directly to the pyannote.audio diarization pipeline.
+This parallel approach allows both models to perform at their best, and the results are then merged using whisperx.assign_word_speakers for a highly accurate final output.
+
+### ⚙️ Advanced Diarization Parameters
+The pipeline supports fine-tuning pyannote.audio parameters directly from the command line, which is useful for optimizing results on different types of audio.
+
+Run with Advanced Parameters:
+```bash
+docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --clustering_thr
+```
+
+| Parameter Name | Description |
+| :--- | :--- |
+| `--segmentation_onset` | The voice activity detection (VAD) onset threshold. Lowering this can help detect speech in very quiet segments. |
+| `--clustering_threshold` | The speaker clustering threshold. A lower value makes the model more likely to split a single speaker into multiple labels. |
+| `--min_duration_on` | The minimum duration a voice segment must be "on" to be considered a valid speech segment. |
+
+
 ## Outputs
 After processing, check the output/ folder:
 enhanced_for_asr.wav → audio cleaned & resampled
@@ -165,6 +198,7 @@ Speechbrain
 
 
 ---
+
 
 
 
