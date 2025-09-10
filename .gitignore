@@ -1,0 +1,42 @@
+# -------- Python artifacts --------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# -------- Virtual environments --------
+/opt/venv/
+venv/
+env/
+.env
+
+# -------- Docker / build artifacts --------
+*.log
+*.bak
+*.swp
+*.tmp
+*.pid
+*.seed
+docker-compose.override.yml
+*.tar
+*.zip
+
+# -------- Jupyter / Notebook --------
+.ipynb_checkpoints/
+*.ipynb
+
+# -------- Audio / model outputs --------
+input/
+output/
+models/
+logs/
+
+# -------- Hugging Face token / secrets --------
+.env
+
+# -------- System files --------
+.DS_Store
+Thumbs.db
+.env

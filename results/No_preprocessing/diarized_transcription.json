@@ -1,0 +1,3131 @@
+[
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Hey",
+        "start_time": 14.599,
+        "end_time": 14.719,
+        "confidence_score": 0.196
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Mommy,",
+        "start_time": 14.759,
+        "end_time": 14.879,
+        "confidence_score": 0.082
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "I'm",
+        "start_time": 14.899,
+        "end_time": 14.959,
+        "confidence_score": 0.008
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "here!",
+        "start_time": 14.979,
+        "end_time": 15.059,
+        "confidence_score": 0.038
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Where",
+        "start_time": 42.363,
+        "end_time": 42.483,
+        "confidence_score": 0.094
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "is",
+        "start_time": 42.503,
+        "end_time": 42.543,
+        "confidence_score": 0.013
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "he?",
+        "start_time": 42.563,
+        "end_time": 42.603,
+        "confidence_score": 0.034
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "I",
+        "start_time": 42.623,
+        "end_time": 42.643,
+        "confidence_score": 0.011
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "don't",
+        "start_time": 42.663,
+        "end_time": 42.823,
+        "confidence_score": 0.171
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "know.",
+        "start_time": 42.863,
+        "end_time": 43.024,
+        "confidence_score": 0.132
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Somewhere",
+        "start_time": 43.044,
+        "end_time": 43.224,
+        "confidence_score": 0.027
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "in",
+        "start_time": 43.244,
+        "end_time": 43.284,
+        "confidence_score": 0.007
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "here.",
+        "start_time": 43.324,
+        "end_time": 43.424,
+        "confidence_score": 0.132
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Lost",
+        "start_time": 43.444,
+        "end_time": 43.524,
+        "confidence_score": 0.03
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "in",
+        "start_time": 43.564,
+        "end_time": 43.664,
+        "confidence_score": 0.295
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "one",
+        "start_time": 43.724,
+        "end_time": 43.824,
+        "confidence_score": 0.23
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "of",
+        "start_time": 43.904,
+        "end_time": 44.004,
+        "confidence_score": 0.386
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "his",
+        "start_time": 44.044,
+        "end_time": 44.205,
+        "confidence_score": 0.341
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "games.",
+        "start_time": 44.225,
+        "end_time": 44.365,
+        "confidence_score": 0.155
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Excuse",
+        "start_time": 44.405,
+        "end_time": 44.525,
+        "confidence_score": 0.024
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "me,",
+        "start_time": 44.545,
+        "end_time": 44.665,
+        "confidence_score": 0.442
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "champ.",
+        "start_time": 44.705,
+        "end_time": 44.825,
+        "confidence_score": 0.086
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Do",
+        "start_time": 44.845,
+        "end_time": 44.885,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "you",
+        "start_time": 44.905,
+        "end_time": 45.045,
+        "confidence_score": 0.208
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "know",
+        "start_time": 45.065,
+        "end_time": 45.225,
+        "confidence_score": 0.134
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "where",
+        "start_time": 45.265,
+        "end_time": 45.406,
+        "confidence_score": 0.121
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Flynn",
+        "start_time": 45.426,
+        "end_time": 45.566,
+        "confidence_score": 0.147
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "is?",
+        "start_time": 45.606,
+        "end_time": 45.706,
+        "confidence_score": 0.255
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Yeah,",
+        "start_time": 45.726,
+        "end_time": 45.886,
+        "confidence_score": 0.166
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "he's",
+        "start_time": 45.946,
+        "end_time": 46.126,
+        "confidence_score": 0.323
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "over",
+        "start_time": 46.206,
+        "end_time": 46.346,
+        "confidence_score": 0.161
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "there",
+        "start_time": 46.366,
+        "end_time": 46.527,
+        "confidence_score": 0.239
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "on",
+        "start_time": 46.547,
+        "end_time": 46.607,
+        "confidence_score": 0.173
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "his",
+        "start_time": 46.647,
+        "end_time": 46.747,
+        "confidence_score": 0.175
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "machines.",
+        "start_time": 46.767,
+        "end_time": 47.107,
+        "confidence_score": 0.145
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Hey,",
+        "start_time": 47.167,
+        "end_time": 47.247,
+        "confidence_score": 0.152
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "look,",
+        "start_time": 47.287,
+        "end_time": 47.427,
+        "confidence_score": 0.214
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "somebody's",
+        "start_time": 47.467,
+        "end_time": 47.788,
+        "confidence_score": 0.172
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "back.",
+        "start_time": 47.828,
+        "end_time": 48.068,
+        "confidence_score": 0.419
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Look",
+        "start_time": 48.108,
+        "end_time": 48.248,
+        "confidence_score": 0.146
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "at",
+        "start_time": 48.268,
+        "end_time": 48.308,
+        "confidence_score": 0.036
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "the",
+        "start_time": 48.328,
+        "end_time": 48.408,
+        "confidence_score": 0.134
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "house.",
+        "start_time": 48.468,
+        "end_time": 48.568,
+        "confidence_score": 0.064
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "He's",
+        "start_time": 67.244,
+        "end_time": 67.324,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "really",
+        "start_time": 67.344,
+        "end_time": 67.464,
+        "confidence_score": 0.019
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "on",
+        "start_time": 67.484,
+        "end_time": 67.524,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "a",
+        "start_time": 67.544,
+        "end_time": 67.564,
+        "confidence_score": 0.048
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "roll,",
+        "start_time": 67.584,
+        "end_time": 67.664,
+        "confidence_score": 0.02
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Ty.",
+        "start_time": 67.684,
+        "end_time": 67.724,
+        "confidence_score": 0.012
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Before",
+        "start_time": 67.744,
+        "end_time": 67.864,
+        "confidence_score": 0.02
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "he'd",
+        "start_time": 67.884,
+        "end_time": 67.964,
+        "confidence_score": 0.01
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "go",
+        "start_time": 67.984,
+        "end_time": 68.024,
+        "confidence_score": 0.015
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "to",
+        "start_time": 68.044,
+        "end_time": 68.085,
+        "confidence_score": 0.02
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "go",
+        "start_time": 68.105,
+        "end_time": 68.145,
+        "confidence_score": 0.017
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "to",
+        "start_time": 68.165,
+        "end_time": 68.205,
+        "confidence_score": 0.018
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Ty's,",
+        "start_time": 68.225,
+        "end_time": 68.305,
+        "confidence_score": 0.01
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "and",
+        "start_time": 68.325,
+        "end_time": 68.385,
+        "confidence_score": 0.019
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "then",
+        "start_time": 68.405,
+        "end_time": 68.485,
+        "confidence_score": 0.016
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "the",
+        "start_time": 68.505,
+        "end_time": 68.565,
+        "confidence_score": 0.02
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "mother",
+        "start_time": 68.585,
+        "end_time": 68.705,
+        "confidence_score": 0.024
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "would",
+        "start_time": 68.725,
+        "end_time": 68.825,
+        "confidence_score": 0.012
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "go",
+        "start_time": 68.845,
+        "end_time": 68.885,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "in",
+        "start_time": 68.905,
+        "end_time": 68.945,
+        "confidence_score": 0.012
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "and",
+        "start_time": 68.965,
+        "end_time": 69.025,
+        "confidence_score": 0.021
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "kiss",
+        "start_time": 69.045,
+        "end_time": 69.125,
+        "confidence_score": 0.016
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "the",
+        "start_time": 69.145,
+        "end_time": 69.205,
+        "confidence_score": 0.022
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "world's",
+        "start_time": 69.225,
+        "end_time": 69.365,
+        "confidence_score": 0.015
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "record.",
+        "start_time": 69.385,
+        "end_time": 69.505,
+        "confidence_score": 0.028
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "You",
+        "start_time": 69.525,
+        "end_time": 69.585,
+        "confidence_score": 0.012
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "better",
+        "start_time": 69.605,
+        "end_time": 69.726,
+        "confidence_score": 0.022
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "watch",
+        "start_time": 69.746,
+        "end_time": 69.846,
+        "confidence_score": 0.022
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "out,",
+        "start_time": 69.866,
+        "end_time": 69.926,
+        "confidence_score": 0.021
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "or",
+        "start_time": 69.946,
+        "end_time": 69.986,
+        "confidence_score": 0.033
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "you'll",
+        "start_time": 70.006,
+        "end_time": 70.126,
+        "confidence_score": 0.006
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "be",
+        "start_time": 70.146,
+        "end_time": 70.186,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "in",
+        "start_time": 70.206,
+        "end_time": 70.246,
+        "confidence_score": 0.016
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "a",
+        "start_time": 70.266,
+        "end_time": 70.286,
+        "confidence_score": 0.045
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "bad",
+        "start_time": 70.306,
+        "end_time": 70.366,
+        "confidence_score": 0.02
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "mood.",
+        "start_time": 70.386,
+        "end_time": 70.466,
+        "confidence_score": 0.014
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "How'd",
+        "start_time": 93.558,
+        "end_time": 93.678,
+        "confidence_score": 0.079
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "you",
+        "start_time": 93.698,
+        "end_time": 93.778,
+        "confidence_score": 0.122
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "do",
+        "start_time": 93.798,
+        "end_time": 93.838,
+        "confidence_score": 0.011
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "it?",
+        "start_time": 93.878,
+        "end_time": 93.958,
+        "confidence_score": 0.348
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "999,000.",
+        "start_time": null,
+        "end_time": null,
+        "confidence_score": "N/A"
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Woo-hoo!",
+        "start_time": 93.998,
+        "end_time": 94.238,
+        "confidence_score": 0.162
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Hey,",
+        "start_time": 117.648,
+        "end_time": 117.828,
+        "confidence_score": 0.485
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "good",
+        "start_time": 117.868,
+        "end_time": 117.948,
+        "confidence_score": 0.019
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 117.968,
+        "end_time": 118.128,
+        "confidence_score": 0.635
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "see",
+        "start_time": 118.168,
+        "end_time": 118.408,
+        "confidence_score": 0.721
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "you",
+        "start_time": 118.468,
+        "end_time": 118.828,
+        "confidence_score": 0.485
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "guys.",
+        "start_time": 119.449,
+        "end_time": 119.669,
+        "confidence_score": 0.438
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Something",
+        "start_time": 119.729,
+        "end_time": 120.069,
+        "confidence_score": 0.345
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "fastens",
+        "start_time": 120.089,
+        "end_time": 120.369,
+        "confidence_score": 0.355
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "up",
+        "start_time": 120.449,
+        "end_time": 120.509,
+        "confidence_score": 0.236
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 120.529,
+        "end_time": 120.629,
+        "confidence_score": 0.253
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "joint",
+        "start_time": 120.689,
+        "end_time": 120.889,
+        "confidence_score": 0.309
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "like",
+        "start_time": 120.949,
+        "end_time": 121.109,
+        "confidence_score": 0.409
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 121.229,
+        "end_time": 121.349,
+        "confidence_score": 0.692
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "clean-cut",
+        "start_time": 121.369,
+        "end_time": 121.689,
+        "confidence_score": 0.34
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "young",
+        "start_time": 122.17,
+        "end_time": 122.39,
+        "confidence_score": 0.328
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "couple.",
+        "start_time": 122.43,
+        "end_time": 122.61,
+        "confidence_score": 0.186
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "We",
+        "start_time": 124.17,
+        "end_time": 124.39,
+        "confidence_score": 0.714
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "gotta",
+        "start_time": 124.45,
+        "end_time": 124.73,
+        "confidence_score": 0.48
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "talk.",
+        "start_time": 124.75,
+        "end_time": 124.85,
+        "confidence_score": 0.142
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "We",
+        "start_time": 124.871,
+        "end_time": 124.971,
+        "confidence_score": 0.513
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "can't",
+        "start_time": 125.011,
+        "end_time": 125.151,
+        "confidence_score": 0.181
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "even",
+        "start_time": 125.231,
+        "end_time": 125.331,
+        "confidence_score": 0.198
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "keep",
+        "start_time": 125.371,
+        "end_time": 125.551,
+        "confidence_score": 0.427
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "yourself",
+        "start_time": 125.611,
+        "end_time": 127.631,
+        "confidence_score": 0.506
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "thinking",
+        "start_time": 127.671,
+        "end_time": 128.072,
+        "confidence_score": 0.419
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "here.",
+        "start_time": 128.132,
+        "end_time": 128.332,
+        "confidence_score": 0.463
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Come",
+        "start_time": 128.392,
+        "end_time": 128.552,
+        "confidence_score": 0.385
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "on.",
+        "start_time": 128.672,
+        "end_time": 128.852,
+        "confidence_score": 0.686
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "So",
+        "start_time": 128.872,
+        "end_time": 128.912,
+        "confidence_score": 0.005
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "how's",
+        "start_time": 128.932,
+        "end_time": 129.052,
+        "confidence_score": 0.125
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "it",
+        "start_time": 129.192,
+        "end_time": 129.252,
+        "confidence_score": 0.22
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "with",
+        "start_time": 129.292,
+        "end_time": 129.392,
+        "confidence_score": 0.104
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "the",
+        "start_time": 129.432,
+        "end_time": 129.492,
+        "confidence_score": 0.087
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "survey",
+        "start_time": 129.512,
+        "end_time": 129.652,
+        "confidence_score": 0.117
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "science,",
+        "start_time": 129.672,
+        "end_time": 129.972,
+        "confidence_score": 0.335
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "huh?",
+        "start_time": 130.032,
+        "end_time": 130.212,
+        "confidence_score": 0.395
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Go",
+        "start_time": 130.312,
+        "end_time": 130.512,
+        "confidence_score": 0.674
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "ahead,",
+        "start_time": 130.552,
+        "end_time": 130.933,
+        "confidence_score": 0.373
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "baby.",
+        "start_time": 130.973,
+        "end_time": 131.113,
+        "confidence_score": 0.309
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Just",
+        "start_time": 131.153,
+        "end_time": 131.413,
+        "confidence_score": 0.356
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "go",
+        "start_time": 131.453,
+        "end_time": 131.593,
+        "confidence_score": 0.614
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "ahead",
+        "start_time": 132.413,
+        "end_time": 133.213,
+        "confidence_score": 0.494
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 133.353,
+        "end_time": 133.814,
+        "confidence_score": 0.702
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "make",
+        "start_time": 133.834,
+        "end_time": 134.094,
+        "confidence_score": 0.553
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "yourselves",
+        "start_time": 134.234,
+        "end_time": 134.794,
+        "confidence_score": 0.441
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "at",
+        "start_time": 134.914,
+        "end_time": 135.054,
+        "confidence_score": 0.582
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "home.",
+        "start_time": 135.214,
+        "end_time": 135.374,
+        "confidence_score": 0.354
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Be",
+        "start_time": 135.514,
+        "end_time": 135.674,
+        "confidence_score": 0.696
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "right",
+        "start_time": 135.754,
+        "end_time": 136.014,
+        "confidence_score": 0.467
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "out.",
+        "start_time": 136.535,
+        "end_time": 136.695,
+        "confidence_score": 0.379
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "The",
+        "start_time": 144.69,
+        "end_time": 144.77,
+        "confidence_score": 0.996
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "best",
+        "start_time": 144.81,
+        "end_time": 144.99,
+        "confidence_score": 0.786
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "programmer",
+        "start_time": 145.09,
+        "end_time": 145.55,
+        "confidence_score": 0.888
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "ENCOM",
+        "start_time": 145.59,
+        "end_time": 145.951,
+        "confidence_score": 0.733
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "ever",
+        "start_time": 145.991,
+        "end_time": 146.151,
+        "confidence_score": 0.816
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "saw,",
+        "start_time": 146.211,
+        "end_time": 146.411,
+        "confidence_score": 0.905
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 146.431,
+        "end_time": 146.491,
+        "confidence_score": 0.248
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "he",
+        "start_time": 146.531,
+        "end_time": 146.611,
+        "confidence_score": 0.311
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "winds",
+        "start_time": 146.671,
+        "end_time": 146.951,
+        "confidence_score": 0.787
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "up",
+        "start_time": 147.051,
+        "end_time": 147.151,
+        "confidence_score": 0.662
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "playing",
+        "start_time": 147.191,
+        "end_time": 147.531,
+        "confidence_score": 0.783
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "space",
+        "start_time": 147.711,
+        "end_time": 148.132,
+        "confidence_score": 0.964
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "cowboy",
+        "start_time": 148.312,
+        "end_time": 149.012,
+        "confidence_score": 0.911
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "in",
+        "start_time": 149.052,
+        "end_time": 149.152,
+        "confidence_score": 0.324
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "some",
+        "start_time": 149.212,
+        "end_time": 149.512,
+        "confidence_score": 0.618
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "back",
+        "start_time": 149.552,
+        "end_time": 149.752,
+        "confidence_score": 0.932
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "room.",
+        "start_time": 149.852,
+        "end_time": 150.113,
+        "confidence_score": 0.733
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "OK,",
+        "start_time": 150.953,
+        "end_time": 151.013,
+        "confidence_score": 0.294
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "let",
+        "start_time": 151.033,
+        "end_time": 151.253,
+        "confidence_score": 0.37
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "me",
+        "start_time": 151.273,
+        "end_time": 151.393,
+        "confidence_score": 0.582
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "handle",
+        "start_time": 151.413,
+        "end_time": 151.713,
+        "confidence_score": 0.549
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "this.",
+        "start_time": 151.733,
+        "end_time": 151.893,
+        "confidence_score": 0.376
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Go",
+        "start_time": 152.774,
+        "end_time": 152.874,
+        "confidence_score": 0.458
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "right",
+        "start_time": 152.934,
+        "end_time": 153.134,
+        "confidence_score": 0.291
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "ahead.",
+        "start_time": 153.154,
+        "end_time": 153.494,
+        "confidence_score": 0.669
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Have",
+        "start_time": 156.375,
+        "end_time": 156.495,
+        "confidence_score": 0.771
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "you",
+        "start_time": 156.535,
+        "end_time": 156.615,
+        "confidence_score": 0.763
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "been",
+        "start_time": 156.635,
+        "end_time": 156.776,
+        "confidence_score": 0.856
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "sneaking",
+        "start_time": 156.816,
+        "end_time": 157.116,
+        "confidence_score": 0.786
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "into",
+        "start_time": 157.156,
+        "end_time": 157.296,
+        "confidence_score": 0.877
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "the",
+        "start_time": 157.316,
+        "end_time": 157.396,
+        "confidence_score": 0.821
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "ENCOM",
+        "start_time": 157.436,
+        "end_time": 157.756,
+        "confidence_score": 0.716
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "system?",
+        "start_time": 157.796,
+        "end_time": 158.236,
+        "confidence_score": 0.825
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Not",
+        "start_time": 160.617,
+        "end_time": 160.717,
+        "confidence_score": 0.352
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "really",
+        "start_time": 160.737,
+        "end_time": 160.917,
+        "confidence_score": 0.161
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "much",
+        "start_time": 160.937,
+        "end_time": 161.138,
+        "confidence_score": 0.368
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "for",
+        "start_time": 161.158,
+        "end_time": 161.298,
+        "confidence_score": 0.9
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "small",
+        "start_time": 161.338,
+        "end_time": 161.658,
+        "confidence_score": 0.878
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "talk,",
+        "start_time": 161.698,
+        "end_time": 161.978,
+        "confidence_score": 0.841
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "were",
+        "start_time": 162.018,
+        "end_time": 162.138,
+        "confidence_score": 0.359
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "you?",
+        "start_time": 162.178,
+        "end_time": 162.278,
+        "confidence_score": 0.317
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Did",
+        "start_time": 162.298,
+        "end_time": 163.519,
+        "confidence_score": 0.791
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "you",
+        "start_time": 163.559,
+        "end_time": 165.52,
+        "confidence_score": 0.549
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "still",
+        "start_time": 165.54,
+        "end_time": 165.68,
+        "confidence_score": 0.467
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "leave",
+        "start_time": 165.7,
+        "end_time": 165.8,
+        "confidence_score": 0.006
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "her",
+        "start_time": 165.82,
+        "end_time": 165.94,
+        "confidence_score": 0.597
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "clothes",
+        "start_time": 165.98,
+        "end_time": 166.26,
+        "confidence_score": 0.616
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "all",
+        "start_time": 166.28,
+        "end_time": 166.36,
+        "confidence_score": 0.256
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "over",
+        "start_time": 166.4,
+        "end_time": 166.58,
+        "confidence_score": 0.712
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 166.62,
+        "end_time": 166.7,
+        "confidence_score": 0.914
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "floor?",
+        "start_time": 166.74,
+        "end_time": 167.24,
+        "confidence_score": 0.887
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "No.",
+        "start_time": 167.641,
+        "end_time": 167.861,
+        "confidence_score": 0.96
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Alan!",
+        "start_time": 168.461,
+        "end_time": 168.801,
+        "confidence_score": 0.617
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 169.581,
+        "end_time": 169.621,
+        "confidence_score": 0.837
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "mean,",
+        "start_time": 169.661,
+        "end_time": 169.822,
+        "confidence_score": 0.639
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "not",
+        "start_time": 169.862,
+        "end_time": 169.962,
+        "confidence_score": 0.843
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "that",
+        "start_time": 170.002,
+        "end_time": 170.162,
+        "confidence_score": 0.486
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "often.",
+        "start_time": 170.242,
+        "end_time": 170.482,
+        "confidence_score": 0.902
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Now",
+        "start_time": 171.385,
+        "end_time": 171.525,
+        "confidence_score": 0.723
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "you",
+        "start_time": 171.545,
+        "end_time": 171.645,
+        "confidence_score": 0.274
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "can",
+        "start_time": 171.665,
+        "end_time": 171.785,
+        "confidence_score": 0.179
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "see",
+        "start_time": 171.805,
+        "end_time": 171.945,
+        "confidence_score": 0.938
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "why",
+        "start_time": 171.985,
+        "end_time": 172.105,
+        "confidence_score": 0.352
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "all",
+        "start_time": 172.165,
+        "end_time": 172.225,
+        "confidence_score": 0.141
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "of",
+        "start_time": 172.245,
+        "end_time": 172.285,
+        "confidence_score": 0.005
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "his",
+        "start_time": 172.325,
+        "end_time": 172.465,
+        "confidence_score": 0.665
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "friends",
+        "start_time": 172.525,
+        "end_time": 172.926,
+        "confidence_score": 0.449
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "are",
+        "start_time": 173.086,
+        "end_time": 173.426,
+        "confidence_score": 0.615
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "14",
+        "start_time": null,
+        "end_time": null,
+        "confidence_score": "N/A"
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "years",
+        "start_time": 173.466,
+        "end_time": 173.666,
+        "confidence_score": 0.715
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "old.",
+        "start_time": 173.806,
+        "end_time": 173.966,
+        "confidence_score": 0.781
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "Appreciate",
+        "start_time": 174.186,
+        "end_time": 175.367,
+        "confidence_score": 0.556
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "it.",
+        "start_time": 175.447,
+        "end_time": 176.207,
+        "confidence_score": 0.686
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "Appreciate",
+        "start_time": 176.467,
+        "end_time": 183.83,
+        "confidence_score": 0.572
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "it.",
+        "start_time": 183.87,
+        "end_time": 183.91,
+        "confidence_score": 0.006
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 185.21,
+        "end_time": 185.27,
+        "confidence_score": 0.992
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "have",
+        "start_time": 185.31,
+        "end_time": 185.49,
+        "confidence_score": 0.831
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "been",
+        "start_time": 185.51,
+        "end_time": 185.63,
+        "confidence_score": 0.469
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "doing",
+        "start_time": 185.67,
+        "end_time": 185.85,
+        "confidence_score": 0.41
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 185.89,
+        "end_time": 185.93,
+        "confidence_score": 0.199
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "little",
+        "start_time": 185.95,
+        "end_time": 186.131,
+        "confidence_score": 0.233
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "hacking",
+        "start_time": 186.171,
+        "end_time": 186.651,
+        "confidence_score": 0.709
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "here,",
+        "start_time": 186.691,
+        "end_time": 186.851,
+        "confidence_score": 0.696
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "as",
+        "start_time": 186.871,
+        "end_time": 186.911,
+        "confidence_score": 0.406
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 186.971,
+        "end_time": 187.031,
+        "confidence_score": 0.46
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "matter",
+        "start_time": 187.051,
+        "end_time": 187.271,
+        "confidence_score": 0.645
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "of",
+        "start_time": 187.291,
+        "end_time": 187.331,
+        "confidence_score": 0.01
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "fact.",
+        "start_time": 187.351,
+        "end_time": 187.691,
+        "confidence_score": 0.769
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "You",
+        "start_time": 187.831,
+        "end_time": 187.971,
+        "confidence_score": 0.961
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "did",
+        "start_time": 188.071,
+        "end_time": 188.291,
+        "confidence_score": 0.923
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "break",
+        "start_time": 188.371,
+        "end_time": 188.651,
+        "confidence_score": 0.947
+    },
+    {
+        "speaker_label": "Unknown Speaker",
+        "word": "in.",
+        "start_time": 188.772,
+        "end_time": 188.832,
+        "confidence_score": 0.652
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Tried",
+        "start_time": 189.492,
+        "end_time": 189.812,
+        "confidence_score": 0.839
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to.",
+        "start_time": 189.852,
+        "end_time": 190.052,
+        "confidence_score": 0.858
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Can't",
+        "start_time": 190.072,
+        "end_time": 191.172,
+        "confidence_score": 0.589
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "seem",
+        "start_time": 191.192,
+        "end_time": 191.433,
+        "confidence_score": 0.847
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 191.473,
+        "end_time": 191.613,
+        "confidence_score": 0.626
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "quite",
+        "start_time": 191.693,
+        "end_time": 191.913,
+        "confidence_score": 0.881
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "get",
+        "start_time": 191.953,
+        "end_time": 192.133,
+        "confidence_score": 0.754
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 192.153,
+        "end_time": 192.213,
+        "confidence_score": 0.481
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "connection",
+        "start_time": 192.273,
+        "end_time": 192.693,
+        "confidence_score": 0.893
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "with",
+        "start_time": 192.733,
+        "end_time": 192.833,
+        "confidence_score": 0.928
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "that",
+        "start_time": 192.853,
+        "end_time": 193.013,
+        "confidence_score": 0.486
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "sucker,",
+        "start_time": 193.113,
+        "end_time": 193.433,
+        "confidence_score": 0.826
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "though.",
+        "start_time": 193.473,
+        "end_time": 193.713,
+        "confidence_score": 0.612
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Now,",
+        "start_time": 194.554,
+        "end_time": 194.714,
+        "confidence_score": 0.95
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "if",
+        "start_time": 194.774,
+        "end_time": 194.854,
+        "confidence_score": 0.834
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 194.914,
+        "end_time": 194.974,
+        "confidence_score": 0.846
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "had",
+        "start_time": 195.014,
+        "end_time": 195.154,
+        "confidence_score": 0.644
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 195.174,
+        "end_time": 195.194,
+        "confidence_score": 0.359
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "direct",
+        "start_time": 195.234,
+        "end_time": 195.514,
+        "confidence_score": 0.835
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "terminal...",
+        "start_time": 195.534,
+        "end_time": 195.774,
+        "confidence_score": 0.239
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Flynn,",
+        "start_time": 196.334,
+        "end_time": 196.534,
+        "confidence_score": 0.345
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "are",
+        "start_time": 196.574,
+        "end_time": 196.675,
+        "confidence_score": 0.803
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "you",
+        "start_time": 196.695,
+        "end_time": 196.815,
+        "confidence_score": 0.9
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "embezzling?",
+        "start_time": 196.895,
+        "end_time": 197.495,
+        "confidence_score": 0.969
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Embezzling",
+        "start_time": 200.237,
+        "end_time": 201.338,
+        "confidence_score": 0.655
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "is",
+        "start_time": 201.358,
+        "end_time": 201.398,
+        "confidence_score": 0.032
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "such",
+        "start_time": 201.558,
+        "end_time": 201.838,
+        "confidence_score": 0.95
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "an",
+        "start_time": 201.878,
+        "end_time": 201.918,
+        "confidence_score": 0.849
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "ugly",
+        "start_time": 201.998,
+        "end_time": 202.259,
+        "confidence_score": 0.96
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "word,",
+        "start_time": 202.319,
+        "end_time": 202.699,
+        "confidence_score": 0.898
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Mr.",
+        "start_time": 202.899,
+        "end_time": 202.999,
+        "confidence_score": 0.364
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Bradley.",
+        "start_time": 203.019,
+        "end_time": 203.339,
+        "confidence_score": 0.27
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "No,",
+        "start_time": 204.16,
+        "end_time": 204.36,
+        "confidence_score": 0.814
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "actually,",
+        "start_time": 204.5,
+        "end_time": 204.881,
+        "confidence_score": 0.651
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I'm",
+        "start_time": 204.921,
+        "end_time": 205.001,
+        "confidence_score": 0.19
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "trying",
+        "start_time": 205.081,
+        "end_time": 205.241,
+        "confidence_score": 0.362
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 205.281,
+        "end_time": 205.341,
+        "confidence_score": 0.796
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "get",
+        "start_time": 205.361,
+        "end_time": 205.501,
+        "confidence_score": 0.889
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "some",
+        "start_time": 205.521,
+        "end_time": 205.661,
+        "confidence_score": 0.751
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "solid",
+        "start_time": 205.721,
+        "end_time": 206.041,
+        "confidence_score": 0.898
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "evidence",
+        "start_time": 206.102,
+        "end_time": 206.442,
+        "confidence_score": 0.904
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "together.",
+        "start_time": 206.482,
+        "end_time": 206.862,
+        "confidence_score": 0.874
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 207.483,
+        "end_time": 207.523,
+        "confidence_score": 0.979
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "don't",
+        "start_time": 207.563,
+        "end_time": 207.723,
+        "confidence_score": 0.827
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "get",
+        "start_time": 207.763,
+        "end_time": 207.963,
+        "confidence_score": 0.815
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "it.",
+        "start_time": 207.983,
+        "end_time": 208.023,
+        "confidence_score": 0.01
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Okay.",
+        "start_time": 210.165,
+        "end_time": 210.585,
+        "confidence_score": 0.779
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Sherman,",
+        "start_time": 211.366,
+        "end_time": 211.766,
+        "confidence_score": 0.79
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "set",
+        "start_time": 211.806,
+        "end_time": 211.986,
+        "confidence_score": 0.832
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 212.006,
+        "end_time": 212.206,
+        "confidence_score": 0.695
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "wayback",
+        "start_time": 212.286,
+        "end_time": 212.687,
+        "confidence_score": 0.845
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "machine",
+        "start_time": 212.727,
+        "end_time": 213.107,
+        "confidence_score": 0.978
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "for",
+        "start_time": 213.187,
+        "end_time": 213.507,
+        "confidence_score": 0.807
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "three",
+        "start_time": 214.368,
+        "end_time": 214.588,
+        "confidence_score": 0.803
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "years",
+        "start_time": 214.608,
+        "end_time": 214.828,
+        "confidence_score": 0.714
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "ago.",
+        "start_time": 214.888,
+        "end_time": 215.108,
+        "confidence_score": 0.894
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Kevin",
+        "start_time": 216.149,
+        "end_time": 216.49,
+        "confidence_score": 0.754
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Flynn.",
+        "start_time": 216.55,
+        "end_time": 216.81,
+        "confidence_score": 0.629
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "one",
+        "start_time": 218.644,
+        "end_time": 218.744,
+        "confidence_score": 0.98
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "of",
+        "start_time": 218.804,
+        "end_time": 218.864,
+        "confidence_score": 0.824
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 218.884,
+        "end_time": 218.944,
+        "confidence_score": 0.0
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "comes",
+        "start_time": 219.225,
+        "end_time": 219.585,
+        "confidence_score": 0.632
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "brightest",
+        "start_time": 219.685,
+        "end_time": 220.145,
+        "confidence_score": 0.838
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "young",
+        "start_time": 220.306,
+        "end_time": 220.646,
+        "confidence_score": 0.757
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "software",
+        "start_time": 221.066,
+        "end_time": 221.507,
+        "confidence_score": 0.718
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "engineers.",
+        "start_time": 221.527,
+        "end_time": 222.027,
+        "confidence_score": 0.733
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "He's",
+        "start_time": 222.928,
+        "end_time": 223.088,
+        "confidence_score": 0.825
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "so",
+        "start_time": 223.108,
+        "end_time": 223.268,
+        "confidence_score": 0.948
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "bright,",
+        "start_time": 223.308,
+        "end_time": 223.548,
+        "confidence_score": 0.87
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "as",
+        "start_time": 223.608,
+        "end_time": 223.668,
+        "confidence_score": 0.745
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 223.709,
+        "end_time": 223.729,
+        "confidence_score": 0.997
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "matter",
+        "start_time": 223.749,
+        "end_time": 223.909,
+        "confidence_score": 0.912
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "of",
+        "start_time": 223.949,
+        "end_time": 224.009,
+        "confidence_score": 0.748
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "fact,",
+        "start_time": 224.049,
+        "end_time": 224.229,
+        "confidence_score": 0.805
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "that",
+        "start_time": 224.249,
+        "end_time": 224.329,
+        "confidence_score": 0.984
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "he",
+        "start_time": 224.349,
+        "end_time": 224.389,
+        "confidence_score": 0.92
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "starts",
+        "start_time": 224.409,
+        "end_time": 224.609,
+        "confidence_score": 0.42
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "going",
+        "start_time": 224.629,
+        "end_time": 224.83,
+        "confidence_score": 0.858
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "in",
+        "start_time": 224.85,
+        "end_time": 224.89,
+        "confidence_score": 0.804
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "at",
+        "start_time": 224.95,
+        "end_time": 225.03,
+        "confidence_score": 0.837
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "night,",
+        "start_time": 225.09,
+        "end_time": 225.39,
+        "confidence_score": 0.871
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "sets",
+        "start_time": 225.49,
+        "end_time": 225.65,
+        "confidence_score": 0.4
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "up",
+        "start_time": 225.71,
+        "end_time": 225.79,
+        "confidence_score": 0.394
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "his",
+        "start_time": 225.81,
+        "end_time": 225.95,
+        "confidence_score": 0.634
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "own",
+        "start_time": 226.011,
+        "end_time": 226.171,
+        "confidence_score": 0.854
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "private",
+        "start_time": 226.231,
+        "end_time": 226.571,
+        "confidence_score": 0.895
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "memory",
+        "start_time": 226.611,
+        "end_time": 226.911,
+        "confidence_score": 0.762
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "file,",
+        "start_time": 226.991,
+        "end_time": 227.352,
+        "confidence_score": 0.958
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 227.412,
+        "end_time": 227.512,
+        "confidence_score": 0.861
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "begins",
+        "start_time": 227.552,
+        "end_time": 227.952,
+        "confidence_score": 0.805
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "writing",
+        "start_time": 228.012,
+        "end_time": 228.393,
+        "confidence_score": 0.745
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 228.413,
+        "end_time": 228.433,
+        "confidence_score": 0.002
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "program",
+        "start_time": 228.633,
+        "end_time": 229.093,
+        "confidence_score": 0.806
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "for",
+        "start_time": 229.113,
+        "end_time": 229.233,
+        "confidence_score": 0.601
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 229.253,
+        "end_time": 229.273,
+        "confidence_score": 0.035
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "video",
+        "start_time": 229.313,
+        "end_time": 229.674,
+        "confidence_score": 0.786
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "game",
+        "start_time": 229.714,
+        "end_time": 229.934,
+        "confidence_score": 0.887
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "he's",
+        "start_time": 229.954,
+        "end_time": 230.034,
+        "confidence_score": 0.011
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "invented",
+        "start_time": 230.154,
+        "end_time": 230.595,
+        "confidence_score": 0.481
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "called",
+        "start_time": 230.715,
+        "end_time": 231.195,
+        "confidence_score": 0.847
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Space",
+        "start_time": 232.096,
+        "end_time": 232.636,
+        "confidence_score": 0.898
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Paranoids.",
+        "start_time": 232.977,
+        "end_time": 233.737,
+        "confidence_score": 0.87
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "You",
+        "start_time": 234.178,
+        "end_time": 234.398,
+        "confidence_score": 0.729
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "invented",
+        "start_time": 234.458,
+        "end_time": 234.858,
+        "confidence_score": 0.831
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Space",
+        "start_time": 234.938,
+        "end_time": 235.279,
+        "confidence_score": 0.996
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Paranoids?",
+        "start_time": 235.339,
+        "end_time": 235.919,
+        "confidence_score": 0.708
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Paranoids,",
+        "start_time": 236.52,
+        "end_time": 237.24,
+        "confidence_score": 0.841
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Matrix",
+        "start_time": 237.601,
+        "end_time": 238.021,
+        "confidence_score": 0.855
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Blaster,",
+        "start_time": 238.081,
+        "end_time": 238.662,
+        "confidence_score": 0.82
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Vice",
+        "start_time": 238.742,
+        "end_time": 238.962,
+        "confidence_score": 0.556
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Squad,",
+        "start_time": 238.982,
+        "end_time": 239.282,
+        "confidence_score": 0.872
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 239.302,
+        "end_time": 239.322,
+        "confidence_score": 0.021
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "whole",
+        "start_time": 239.342,
+        "end_time": 239.502,
+        "confidence_score": 0.817
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "slew",
+        "start_time": 239.542,
+        "end_time": 239.803,
+        "confidence_score": 0.68
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "of",
+        "start_time": 239.843,
+        "end_time": 239.903,
+        "confidence_score": 0.264
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "them.",
+        "start_time": 239.923,
+        "end_time": 240.023,
+        "confidence_score": 0.124
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 240.343,
+        "end_time": 240.403,
+        "confidence_score": 0.743
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "was",
+        "start_time": 240.423,
+        "end_time": 240.503,
+        "confidence_score": 0.994
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "this",
+        "start_time": 240.543,
+        "end_time": 240.663,
+        "confidence_score": 0.323
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "close",
+        "start_time": 240.703,
+        "end_time": 240.904,
+        "confidence_score": 0.847
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 240.944,
+        "end_time": 240.984,
+        "confidence_score": 0.816
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "starting",
+        "start_time": 241.004,
+        "end_time": 241.264,
+        "confidence_score": 0.709
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "my",
+        "start_time": 241.284,
+        "end_time": 241.384,
+        "confidence_score": 0.902
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "own",
+        "start_time": 241.404,
+        "end_time": 241.464,
+        "confidence_score": 0.001
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "little",
+        "start_time": 241.504,
+        "end_time": 241.684,
+        "confidence_score": 0.864
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "enterprise,",
+        "start_time": 241.724,
+        "end_time": 242.285,
+        "confidence_score": 0.903
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "man.",
+        "start_time": 242.325,
+        "end_time": 242.445,
+        "confidence_score": 0.684
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "But",
+        "start_time": 243.86,
+        "end_time": 244.1,
+        "confidence_score": 0.897
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "enter",
+        "start_time": 244.52,
+        "end_time": 244.68,
+        "confidence_score": 0.495
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "another",
+        "start_time": 244.72,
+        "end_time": 244.98,
+        "confidence_score": 0.915
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "software",
+        "start_time": 245.021,
+        "end_time": 245.361,
+        "confidence_score": 0.519
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "engineer.",
+        "start_time": 245.401,
+        "end_time": 245.861,
+        "confidence_score": 0.56
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Not",
+        "start_time": 246.401,
+        "end_time": 246.561,
+        "confidence_score": 0.995
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "so",
+        "start_time": 246.601,
+        "end_time": 246.761,
+        "confidence_score": 0.811
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "young,",
+        "start_time": 246.801,
+        "end_time": 247.081,
+        "confidence_score": 0.674
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "not",
+        "start_time": 247.141,
+        "end_time": 247.301,
+        "confidence_score": 0.852
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "so",
+        "start_time": 247.321,
+        "end_time": 247.462,
+        "confidence_score": 0.678
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "bright,",
+        "start_time": 247.522,
+        "end_time": 247.842,
+        "confidence_score": 0.849
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "but",
+        "start_time": 247.902,
+        "end_time": 248.022,
+        "confidence_score": 0.972
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "very,",
+        "start_time": 248.082,
+        "end_time": 248.382,
+        "confidence_score": 0.836
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "very",
+        "start_time": 248.442,
+        "end_time": 248.682,
+        "confidence_score": 0.882
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "sneaky.",
+        "start_time": 248.762,
+        "end_time": 249.202,
+        "confidence_score": 0.941
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Ed",
+        "start_time": 250.083,
+        "end_time": 250.163,
+        "confidence_score": 0.332
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Dillinger.",
+        "start_time": 250.223,
+        "end_time": 250.743,
+        "confidence_score": 0.725
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "So",
+        "start_time": 252.784,
+        "end_time": 252.824,
+        "confidence_score": 0.494
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "one",
+        "start_time": 252.844,
+        "end_time": 252.904,
+        "confidence_score": 0.325
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "night",
+        "start_time": 252.924,
+        "end_time": 253.144,
+        "confidence_score": 0.495
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "our",
+        "start_time": 253.164,
+        "end_time": 253.224,
+        "confidence_score": 0.307
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "boy",
+        "start_time": 253.264,
+        "end_time": 253.424,
+        "confidence_score": 0.898
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Flynn,",
+        "start_time": 253.484,
+        "end_time": 253.664,
+        "confidence_score": 0.659
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "he",
+        "start_time": 253.684,
+        "end_time": 253.744,
+        "confidence_score": 0.175
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "goes",
+        "start_time": 253.764,
+        "end_time": 253.944,
+        "confidence_score": 0.74
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 253.984,
+        "end_time": 254.064,
+        "confidence_score": 0.829
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "his",
+        "start_time": 254.104,
+        "end_time": 254.184,
+        "confidence_score": 0.907
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "terminal,",
+        "start_time": 254.224,
+        "end_time": 254.584,
+        "confidence_score": 0.849
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "tries",
+        "start_time": 254.604,
+        "end_time": 254.784,
+        "confidence_score": 0.578
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 254.804,
+        "end_time": 254.925,
+        "confidence_score": 0.496
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "read",
+        "start_time": 254.945,
+        "end_time": 255.065,
+        "confidence_score": 0.21
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "up",
+        "start_time": 255.085,
+        "end_time": 255.145,
+        "confidence_score": 0.193
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "his",
+        "start_time": 255.205,
+        "end_time": 255.325,
+        "confidence_score": 0.182
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "file.",
+        "start_time": 255.385,
+        "end_time": 255.745,
+        "confidence_score": 0.919
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "I",
+        "start_time": 255.925,
+        "end_time": 256.005,
+        "confidence_score": 0.748
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "get",
+        "start_time": 256.025,
+        "end_time": 256.145,
+        "confidence_score": 0.898
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "nothing",
+        "start_time": 256.205,
+        "end_time": 256.465,
+        "confidence_score": 0.939
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "on",
+        "start_time": 256.525,
+        "end_time": 256.605,
+        "confidence_score": 0.874
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "there.",
+        "start_time": 256.625,
+        "end_time": 256.725,
+        "confidence_score": 0.175
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "There's",
+        "start_time": 256.745,
+        "end_time": 256.885,
+        "confidence_score": 0.007
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 256.905,
+        "end_time": 256.925,
+        "confidence_score": 0.005
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "big",
+        "start_time": 256.945,
+        "end_time": 257.085,
+        "confidence_score": 0.652
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "blank.",
+        "start_time": 257.145,
+        "end_time": 257.486,
+        "confidence_score": 0.843
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "All",
+        "start_time": 259.526,
+        "end_time": 259.586,
+        "confidence_score": 0.045
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "right,",
+        "start_time": 259.606,
+        "end_time": 259.706,
+        "confidence_score": 0.137
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "now",
+        "start_time": 259.747,
+        "end_time": 259.827,
+        "confidence_score": 0.824
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "we",
+        "start_time": 259.847,
+        "end_time": 259.887,
+        "confidence_score": 0.003
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "take",
+        "start_time": 259.907,
+        "end_time": 260.047,
+        "confidence_score": 0.798
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "you",
+        "start_time": 260.087,
+        "end_time": 260.147,
+        "confidence_score": 0.485
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "three",
+        "start_time": 260.187,
+        "end_time": 260.367,
+        "confidence_score": 0.521
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "months",
+        "start_time": 260.387,
+        "end_time": 260.567,
+        "confidence_score": 0.306
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "later.",
+        "start_time": 260.607,
+        "end_time": 260.847,
+        "confidence_score": 0.869
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "Dillinger",
+        "start_time": 261.229,
+        "end_time": 261.869,
+        "confidence_score": 0.614
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "presents",
+        "start_time": 262.61,
+        "end_time": 262.95,
+        "confidence_score": 0.93
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 263.09,
+        "end_time": 263.17,
+        "confidence_score": 0.278
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "come",
+        "start_time": 263.21,
+        "end_time": 263.41,
+        "confidence_score": 0.58
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "with",
+        "start_time": 263.43,
+        "end_time": 263.55,
+        "confidence_score": 0.568
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "five",
+        "start_time": 263.61,
+        "end_time": 263.83,
+        "confidence_score": 0.515
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "video",
+        "start_time": 263.87,
+        "end_time": 264.21,
+        "confidence_score": 0.739
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "games",
+        "start_time": 264.25,
+        "end_time": 264.551,
+        "confidence_score": 0.768
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "He's",
+        "start_time": 265.911,
+        "end_time": 266.211,
+        "confidence_score": 0.714
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "invented",
+        "start_time": 266.271,
+        "end_time": 266.652,
+        "confidence_score": 0.923
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 266.672,
+        "end_time": 267.252,
+        "confidence_score": 0.936
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "slime",
+        "start_time": 267.272,
+        "end_time": 267.592,
+        "confidence_score": 0.908
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "didn't",
+        "start_time": 267.632,
+        "end_time": 267.772,
+        "confidence_score": 0.92
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "even",
+        "start_time": 267.812,
+        "end_time": 267.972,
+        "confidence_score": 0.687
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "change",
+        "start_time": 268.032,
+        "end_time": 268.312,
+        "confidence_score": 0.777
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "the",
+        "start_time": 268.352,
+        "end_time": 268.433,
+        "confidence_score": 0.826
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "names,",
+        "start_time": 268.493,
+        "end_time": 269.073,
+        "confidence_score": 0.837
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "man",
+        "start_time": 269.153,
+        "end_time": 269.393,
+        "confidence_score": 0.711
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "He",
+        "start_time": 269.413,
+        "end_time": 269.473,
+        "confidence_score": 0.915
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "gets",
+        "start_time": 269.513,
+        "end_time": 269.693,
+        "confidence_score": 0.829
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "a",
+        "start_time": 269.753,
+        "end_time": 269.793,
+        "confidence_score": 0.54
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "big",
+        "start_time": 269.853,
+        "end_time": 270.033,
+        "confidence_score": 0.989
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "fat",
+        "start_time": 270.173,
+        "end_time": 270.453,
+        "confidence_score": 0.903
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "promotion",
+        "start_time": 270.514,
+        "end_time": 271.134,
+        "confidence_score": 0.902
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "and",
+        "start_time": 271.554,
+        "end_time": 271.634,
+        "confidence_score": 0.816
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "thus",
+        "start_time": 271.654,
+        "end_time": 271.854,
+        "confidence_score": 0.816
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "begins",
+        "start_time": 271.894,
+        "end_time": 272.234,
+        "confidence_score": 0.903
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "his",
+        "start_time": 272.274,
+        "end_time": 272.414,
+        "confidence_score": 0.867
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "meteoric",
+        "start_time": 272.494,
+        "end_time": 272.995,
+        "confidence_score": 0.731
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "rise",
+        "start_time": 273.115,
+        "end_time": 273.555,
+        "confidence_score": 0.742
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "to",
+        "start_time": 273.615,
+        "end_time": 273.755,
+        "confidence_score": 0.994
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "what",
+        "start_time": 273.795,
+        "end_time": 273.915,
+        "confidence_score": 0.9
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "is",
+        "start_time": 273.975,
+        "end_time": 274.035,
+        "confidence_score": 0.768
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "he",
+        "start_time": 274.055,
+        "end_time": 274.135,
+        "confidence_score": 0.525
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "now",
+        "start_time": 274.195,
+        "end_time": 274.375,
+        "confidence_score": 0.968
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "executive",
+        "start_time": 274.435,
+        "end_time": 275.076,
+        "confidence_score": 0.906
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "VP",
+        "start_time": 275.096,
+        "end_time": 275.636,
+        "confidence_score": 0.854
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "senior",
+        "start_time": 276.136,
+        "end_time": 276.576,
+        "confidence_score": 0.838
+    },
+    {
+        "speaker_label": "SPEAKER_00",
+        "word": "exec",
+        "start_time": 276.636,
+        "end_time": 277.157,
+        "confidence_score": 0.731
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "senior",
+        "start_time": 278.397,
+        "end_time": 278.938,
+        "confidence_score": 0.828
+    },
+    {
+        "speaker_label": "SPEAKER_01",
+        "word": "exec",
+        "start_time": 279.038,
+        "end_time": 279.338,
+        "confidence_score": 0.645
+    }
+]

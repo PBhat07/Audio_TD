@@ -1,24 +1,25 @@
-version: '3.8'
 
 services:
   audio-td:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
+      args:
+        CUDA_VER: "12.4.0"
     container_name: audio_transcription
     runtime: nvidia
+    env_file:
+      - .env   #  loads HUGGING_FACE_TOKEN
     environment:
       - CUDA_VISIBLE_DEVICES=0
       - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
       - TOKENIZERS_PARALLELISM=false
       # RTX 4050 Memory Optimization
-      - WHISPER_MODEL=large-v2  # Use v2 instead of v3 for lower VRAM
-      - MAX_CHUNK_LENGTH=30     # Smaller chunks for 6GB VRAM
+      - WHISPER_MODEL=small.en  # Use v2 instead of v3 for lower VRAM
+      - MAX_CHUNK_LENGTH=30       # Smaller chunks for 6GB VRAM
       - BATCH_SIZE=1            # Conservative batch size
     volumes:
-      - ./input:/app/input
-      - ./output:/app/output
-      - ./models:/app/models
+      - .:/app
     ports:
       - "7860:7860"  # Gradio interface
       - "8888:8888"  # Jupyter notebook

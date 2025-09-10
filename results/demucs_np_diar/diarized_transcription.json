@@ -1,0 +1,2851 @@
+[
+  {
+    "speaker": "Unknown Speaker",
+    "word": "We're",
+    "start": "00:01.961",
+    "end": "00:02.141",
+    "confidence": 0.251
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "going",
+    "start": "00:03.222",
+    "end": "00:03.522",
+    "confidence": 0.361
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "to",
+    "start": "00:03.582",
+    "end": "00:04.003",
+    "confidence": 0.756
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "need",
+    "start": "00:04.403",
+    "end": "00:04.823",
+    "confidence": 0.443
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "it",
+    "start": "00:05.083",
+    "end": "00:05.403",
+    "confidence": 0.744
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "for",
+    "start": "00:05.523",
+    "end": "00:06.504",
+    "confidence": 0.854
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "the",
+    "start": "00:06.544",
+    "end": "00:06.704",
+    "confidence": 0.415
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "game.",
+    "start": "00:06.724",
+    "end": "00:07.024",
+    "confidence": 0.419
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Hey,",
+    "start": "00:32.841",
+    "end": "00:32.901",
+    "confidence": 0.013
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "get",
+    "start": "00:32.921",
+    "end": "00:32.981",
+    "confidence": 0.012
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "off",
+    "start": "00:33.001",
+    "end": "00:33.062",
+    "confidence": 0.012
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "me!",
+    "start": "00:33.082",
+    "end": "00:33.122",
+    "confidence": 0.013
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Where",
+    "start": "00:43.273",
+    "end": "00:43.833",
+    "confidence": 0.606
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "is",
+    "start": "00:44.093",
+    "end": "00:44.174",
+    "confidence": 0.355
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "he?",
+    "start": "00:44.254",
+    "end": "00:44.874",
+    "confidence": 0.843
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "I",
+    "start": "00:44.954",
+    "end": "00:45.034",
+    "confidence": 0.7
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "don't",
+    "start": "00:45.134",
+    "end": "00:45.874",
+    "confidence": 0.612
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "know.",
+    "start": "00:45.894",
+    "end": "00:46.114",
+    "confidence": 0.356
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Somewhere",
+    "start": "00:46.294",
+    "end": "00:47.575",
+    "confidence": 0.652
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "in",
+    "start": "00:47.875",
+    "end": "00:48.055",
+    "confidence": 0.433
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "there",
+    "start": "00:48.095",
+    "end": "00:48.615",
+    "confidence": 0.481
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "are",
+    "start": "00:48.835",
+    "end": "00:48.975",
+    "confidence": 0.562
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "lots",
+    "start": "00:49.015",
+    "end": "00:49.195",
+    "confidence": 0.412
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "more",
+    "start": "00:49.275",
+    "end": "00:49.576",
+    "confidence": 0.568
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "of",
+    "start": "00:49.716",
+    "end": "00:49.796",
+    "confidence": 0.35
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "his",
+    "start": "00:50.016",
+    "end": "00:50.216",
+    "confidence": 0.616
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "games.",
+    "start": "00:50.316",
+    "end": "00:50.696",
+    "confidence": 0.502
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Where",
+    "start": "00:50.756",
+    "end": "00:51.496",
+    "confidence": 0.642
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "is",
+    "start": "00:51.576",
+    "end": "00:51.656",
+    "confidence": 0.356
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "he?",
+    "start": "00:51.716",
+    "end": "00:51.856",
+    "confidence": 0.601
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Where",
+    "start": "00:51.876",
+    "end": "00:52.377",
+    "confidence": 0.526
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "is",
+    "start": "00:52.497",
+    "end": "00:52.897",
+    "confidence": 0.816
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "he?",
+    "start": "00:52.957",
+    "end": "00:53.097",
+    "confidence": 0.605
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Where",
+    "start": "00:53.157",
+    "end": "00:53.817",
+    "confidence": 0.669
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "is",
+    "start": "00:53.997",
+    "end": "00:54.157",
+    "confidence": 0.661
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "he?",
+    "start": "00:54.357",
+    "end": "00:54.517",
+    "confidence": 0.634
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Where",
+    "start": "00:55.058",
+    "end": "00:55.198",
+    "confidence": 0.229
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "is",
+    "start": "00:55.298",
+    "end": "00:55.518",
+    "confidence": 0.672
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "he?",
+    "start": "00:55.578",
+    "end": "00:55.638",
+    "confidence": 0.299
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "This",
+    "start": "01:12.885",
+    "end": "01:13.185",
+    "confidence": 0.622
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "is",
+    "start": "01:13.285",
+    "end": "01:13.425",
+    "confidence": 0.603
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "it.",
+    "start": "01:14.366",
+    "end": "01:15.106",
+    "confidence": 0.879
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "This",
+    "start": "01:15.206",
+    "end": "01:15.567",
+    "confidence": 0.576
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "is",
+    "start": "01:15.687",
+    "end": "01:15.787",
+    "confidence": 0.54
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "it.",
+    "start": "01:15.887",
+    "end": "01:16.027",
+    "confidence": 0.396
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Hey,",
+    "start": "01:45.000",
+    "end": "01:45.320",
+    "confidence": 0.732
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "good",
+    "start": "01:47.061",
+    "end": "01:54.205",
+    "confidence": 0.728
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "to",
+    "start": "01:54.265",
+    "end": "01:54.765",
+    "confidence": 0.756
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "see",
+    "start": "01:54.805",
+    "end": "01:54.925",
+    "confidence": 0.432
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "you",
+    "start": "01:55.005",
+    "end": "01:55.366",
+    "confidence": 0.667
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "guys.",
+    "start": "01:55.486",
+    "end": "01:55.726",
+    "confidence": 0.491
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "I",
+    "start": "01:55.846",
+    "end": "01:55.986",
+    "confidence": 0.724
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "think",
+    "start": "01:56.006",
+    "end": "01:56.326",
+    "confidence": 0.479
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "fast",
+    "start": "01:56.346",
+    "end": "01:56.586",
+    "confidence": 0.576
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "enough",
+    "start": "01:56.646",
+    "end": "01:58.127",
+    "confidence": 0.629
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "01:58.167",
+    "end": "01:58.447",
+    "confidence": 0.699
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "join",
+    "start": "01:58.487",
+    "end": "01:58.847",
+    "confidence": 0.654
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "like",
+    "start": "01:58.887",
+    "end": "01:59.187",
+    "confidence": 0.651
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "01:59.348",
+    "end": "01:59.408",
+    "confidence": 0.52
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "clean",
+    "start": "01:59.448",
+    "end": "01:59.688",
+    "confidence": 0.385
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "cut",
+    "start": "01:59.728",
+    "end": "01:59.908",
+    "confidence": 0.608
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "down",
+    "start": "01:59.948",
+    "end": "02:00.088",
+    "confidence": 0.307
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "02:00.108",
+    "end": "02:00.188",
+    "confidence": 0.218
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "top",
+    "start": "02:00.208",
+    "end": "02:00.388",
+    "confidence": 0.526
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "wall.",
+    "start": "02:00.408",
+    "end": "02:00.508",
+    "confidence": 0.183
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "We",
+    "start": "02:00.528",
+    "end": "02:00.648",
+    "confidence": 0.586
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "gotta",
+    "start": "02:00.688",
+    "end": "02:01.128",
+    "confidence": 0.537
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "talk.",
+    "start": "02:01.169",
+    "end": "02:01.369",
+    "confidence": 0.56
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "We",
+    "start": "02:01.409",
+    "end": "02:01.549",
+    "confidence": 0.638
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "can't",
+    "start": "02:01.569",
+    "end": "02:02.129",
+    "confidence": 0.626
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "even",
+    "start": "02:02.269",
+    "end": "02:02.649",
+    "confidence": 0.669
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "yourself",
+    "start": "02:02.689",
+    "end": "02:03.170",
+    "confidence": 0.44
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "think",
+    "start": "02:03.230",
+    "end": "02:03.430",
+    "confidence": 0.418
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "in",
+    "start": "02:03.570",
+    "end": "02:03.650",
+    "confidence": 0.358
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "here.",
+    "start": "02:03.710",
+    "end": "02:03.830",
+    "confidence": 0.293
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Come",
+    "start": "02:03.870",
+    "end": "02:04.130",
+    "confidence": 0.579
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "on.",
+    "start": "02:04.150",
+    "end": "02:04.210",
+    "confidence": 0.19
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I'll",
+    "start": "02:04.290",
+    "end": "02:04.410",
+    "confidence": 0.18
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "get",
+    "start": "02:04.430",
+    "end": "02:04.570",
+    "confidence": 0.571
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "down",
+    "start": "02:04.590",
+    "end": "02:04.730",
+    "confidence": 0.286
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "in",
+    "start": "02:04.770",
+    "end": "02:04.850",
+    "confidence": 0.334
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "02:04.930",
+    "end": "02:04.990",
+    "confidence": 0.571
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "minute.",
+    "start": "02:05.030",
+    "end": "02:05.431",
+    "confidence": 0.521
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "So,",
+    "start": "02:13.621",
+    "end": "02:13.861",
+    "confidence": 0.698
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "how's",
+    "start": "02:13.881",
+    "end": "02:14.041",
+    "confidence": 0.207
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "02:14.061",
+    "end": "02:14.181",
+    "confidence": 0.216
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "real",
+    "start": "02:14.221",
+    "end": "02:14.401",
+    "confidence": 0.444
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "service",
+    "start": "02:14.421",
+    "end": "02:14.641",
+    "confidence": 0.381
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "science,",
+    "start": "02:14.742",
+    "end": "02:15.062",
+    "confidence": 0.511
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "huh?",
+    "start": "02:15.202",
+    "end": "02:15.682",
+    "confidence": 0.785
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Go",
+    "start": "02:15.722",
+    "end": "02:15.842",
+    "confidence": 0.52
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "ahead,",
+    "start": "02:15.862",
+    "end": "02:16.062",
+    "confidence": 0.312
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "man.",
+    "start": "02:16.082",
+    "end": "02:16.282",
+    "confidence": 0.527
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Come",
+    "start": "02:16.462",
+    "end": "02:16.622",
+    "confidence": 0.437
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "up",
+    "start": "02:16.642",
+    "end": "02:16.682",
+    "confidence": 0.003
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "here",
+    "start": "02:16.702",
+    "end": "02:16.822",
+    "confidence": 0.184
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "and",
+    "start": "02:16.862",
+    "end": "02:16.923",
+    "confidence": 0.03
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "tell",
+    "start": "02:16.943",
+    "end": "02:17.143",
+    "confidence": 0.55
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "us",
+    "start": "02:17.243",
+    "end": "02:17.463",
+    "confidence": 0.556
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "another",
+    "start": "02:17.643",
+    "end": "02:22.045",
+    "confidence": 0.844
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "one.",
+    "start": "02:22.145",
+    "end": "02:22.305",
+    "confidence": 0.45
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Be",
+    "start": "02:22.345",
+    "end": "02:22.465",
+    "confidence": 0.612
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "right",
+    "start": "02:22.525",
+    "end": "02:23.265",
+    "confidence": 0.638
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "out.",
+    "start": "02:23.345",
+    "end": "02:24.086",
+    "confidence": 0.502
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "The",
+    "start": "02:24.686",
+    "end": "02:24.786",
+    "confidence": 0.835
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "best",
+    "start": "02:24.806",
+    "end": "02:25.006",
+    "confidence": 0.899
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "programmer",
+    "start": "02:25.086",
+    "end": "02:25.566",
+    "confidence": 0.787
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "N-Com",
+    "start": "02:25.626",
+    "end": "02:25.947",
+    "confidence": 0.827
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "ever",
+    "start": "02:26.007",
+    "end": "02:26.147",
+    "confidence": 0.885
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "saw,",
+    "start": "02:26.207",
+    "end": "02:26.387",
+    "confidence": 0.957
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "and",
+    "start": "02:26.447",
+    "end": "02:26.507",
+    "confidence": 0.482
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "he",
+    "start": "02:26.527",
+    "end": "02:26.607",
+    "confidence": 0.29
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "winds",
+    "start": "02:26.667",
+    "end": "02:26.967",
+    "confidence": 0.846
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "up",
+    "start": "02:27.067",
+    "end": "02:27.147",
+    "confidence": 0.375
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "playing",
+    "start": "02:27.187",
+    "end": "02:27.547",
+    "confidence": 0.764
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "space",
+    "start": "02:27.727",
+    "end": "02:28.148",
+    "confidence": 0.987
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "cowboy",
+    "start": "02:28.328",
+    "end": "02:29.008",
+    "confidence": 0.962
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "in",
+    "start": "02:29.068",
+    "end": "02:29.168",
+    "confidence": 0.32
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "some",
+    "start": "02:29.208",
+    "end": "02:29.508",
+    "confidence": 0.709
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "back",
+    "start": "02:29.548",
+    "end": "02:29.768",
+    "confidence": 0.976
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "room.",
+    "start": "02:29.828",
+    "end": "02:30.108",
+    "confidence": 0.735
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Okay,",
+    "start": "02:30.989",
+    "end": "02:31.189",
+    "confidence": 0.588
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "let",
+    "start": "02:31.209",
+    "end": "02:31.269",
+    "confidence": 0.013
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "me",
+    "start": "02:31.289",
+    "end": "02:31.389",
+    "confidence": 0.287
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "handle",
+    "start": "02:31.429",
+    "end": "02:31.629",
+    "confidence": 0.31
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "this.",
+    "start": "02:31.689",
+    "end": "02:31.889",
+    "confidence": 0.466
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Go",
+    "start": "02:32.770",
+    "end": "02:32.890",
+    "confidence": 0.691
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "right",
+    "start": "02:32.910",
+    "end": "02:33.130",
+    "confidence": 0.263
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "ahead.",
+    "start": "02:33.150",
+    "end": "02:33.490",
+    "confidence": 0.5
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Have",
+    "start": "02:36.391",
+    "end": "02:36.511",
+    "confidence": 0.802
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "you",
+    "start": "02:36.551",
+    "end": "02:36.631",
+    "confidence": 0.523
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "been",
+    "start": "02:36.651",
+    "end": "02:36.791",
+    "confidence": 0.886
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "sneaking",
+    "start": "02:36.831",
+    "end": "02:37.132",
+    "confidence": 0.734
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "into",
+    "start": "02:37.172",
+    "end": "02:37.292",
+    "confidence": 0.874
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "the",
+    "start": "02:37.332",
+    "end": "02:37.412",
+    "confidence": 0.822
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "N-Com",
+    "start": "02:37.472",
+    "end": "02:37.772",
+    "confidence": 0.92
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "system?",
+    "start": "02:37.812",
+    "end": "02:38.352",
+    "confidence": 0.733
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Never",
+    "start": "02:38.692",
+    "end": "02:40.733",
+    "confidence": 0.482
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "knew",
+    "start": "02:40.753",
+    "end": "02:40.913",
+    "confidence": 0.452
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "much",
+    "start": "02:40.953",
+    "end": "02:41.133",
+    "confidence": 0.496
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "for",
+    "start": "02:41.153",
+    "end": "02:41.313",
+    "confidence": 0.482
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "small",
+    "start": "02:41.353",
+    "end": "02:41.674",
+    "confidence": 0.914
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "cop,",
+    "start": "02:41.714",
+    "end": "02:41.994",
+    "confidence": 0.74
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "were",
+    "start": "02:42.034",
+    "end": "02:42.194",
+    "confidence": 0.412
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "you?",
+    "start": "02:42.214",
+    "end": "02:42.274",
+    "confidence": 0.014
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Did",
+    "start": "02:45.384",
+    "end": "02:45.444",
+    "confidence": 0.0
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "you",
+    "start": "02:45.464",
+    "end": "02:45.524",
+    "confidence": 0.001
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "still",
+    "start": "02:45.544",
+    "end": "02:45.664",
+    "confidence": 0.302
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "leave",
+    "start": "02:45.684",
+    "end": "02:45.784",
+    "confidence": 0.006
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "her",
+    "start": "02:45.804",
+    "end": "02:45.924",
+    "confidence": 0.626
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "clothes",
+    "start": "02:45.964",
+    "end": "02:46.264",
+    "confidence": 0.661
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "all",
+    "start": "02:46.284",
+    "end": "02:46.384",
+    "confidence": 0.439
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "over",
+    "start": "02:46.424",
+    "end": "02:46.584",
+    "confidence": 0.871
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "02:46.604",
+    "end": "02:46.684",
+    "confidence": 0.836
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "floor?",
+    "start": "02:46.725",
+    "end": "02:47.025",
+    "confidence": 0.817
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "No.",
+    "start": "02:47.605",
+    "end": "02:47.845",
+    "confidence": 0.969
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Alan!",
+    "start": "02:47.865",
+    "end": "02:48.865",
+    "confidence": 0.399
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "02:49.546",
+    "end": "02:49.606",
+    "confidence": 0.959
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "mean,",
+    "start": "02:49.646",
+    "end": "02:49.826",
+    "confidence": 0.278
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "not",
+    "start": "02:49.846",
+    "end": "02:49.966",
+    "confidence": 0.711
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "that",
+    "start": "02:50.006",
+    "end": "02:50.146",
+    "confidence": 0.862
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "word": "often.",
+    "start": "02:50.226",
+    "end": "02:50.506",
+    "confidence": 0.897
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "See,",
+    "start": "02:51.826",
+    "end": "02:52.387",
+    "confidence": 0.57
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "well,",
+    "start": "02:53.087",
+    "end": "02:56.908",
+    "confidence": 0.573
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "Alan",
+    "start": "02:57.028",
+    "end": "02:57.969",
+    "confidence": 0.702
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "is",
+    "start": "02:58.109",
+    "end": "02:58.169",
+    "confidence": 0.428
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "14",
+    "start": "00:00.000",
+    "end": "00:00.000",
+    "confidence": "N/A"
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "years",
+    "start": "02:58.569",
+    "end": "03:00.610",
+    "confidence": 0.597
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "old.",
+    "start": "03:02.711",
+    "end": "03:04.691",
+    "confidence": 0.772
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "03:05.212",
+    "end": "03:05.272",
+    "confidence": 0.964
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "have",
+    "start": "03:05.312",
+    "end": "03:05.492",
+    "confidence": 0.883
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "been",
+    "start": "03:05.512",
+    "end": "03:05.632",
+    "confidence": 0.46
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "doing",
+    "start": "03:05.672",
+    "end": "03:05.832",
+    "confidence": 0.568
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:05.892",
+    "end": "03:05.932",
+    "confidence": 0.54
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "little",
+    "start": "03:05.972",
+    "end": "03:06.152",
+    "confidence": 0.334
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "hacking",
+    "start": "03:06.192",
+    "end": "03:06.652",
+    "confidence": 0.735
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "here,",
+    "start": "03:06.692",
+    "end": "03:06.852",
+    "confidence": 0.621
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "as",
+    "start": "03:06.872",
+    "end": "03:06.912",
+    "confidence": 0.407
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:06.972",
+    "end": "03:07.032",
+    "confidence": 0.546
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "matter",
+    "start": "03:07.072",
+    "end": "03:07.272",
+    "confidence": 0.496
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "of",
+    "start": "03:07.292",
+    "end": "03:07.673",
+    "confidence": 0.665
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "fact.",
+    "start": "03:07.693",
+    "end": "03:07.773",
+    "confidence": 0.009
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "You",
+    "start": "03:07.833",
+    "end": "03:07.993",
+    "confidence": 0.932
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "did",
+    "start": "03:08.073",
+    "end": "03:08.293",
+    "confidence": 0.873
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "break",
+    "start": "03:08.373",
+    "end": "03:08.653",
+    "confidence": 0.941
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "in.",
+    "start": "03:08.773",
+    "end": "03:08.873",
+    "confidence": 0.864
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Tried",
+    "start": "03:09.493",
+    "end": "03:09.813",
+    "confidence": 0.665
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to.",
+    "start": "03:09.853",
+    "end": "03:10.033",
+    "confidence": 0.852
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Can't",
+    "start": "03:10.053",
+    "end": "03:11.154",
+    "confidence": 0.453
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "seem",
+    "start": "03:11.194",
+    "end": "03:11.434",
+    "confidence": 0.958
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "03:11.474",
+    "end": "03:11.554",
+    "confidence": 0.8
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "quite",
+    "start": "03:11.674",
+    "end": "03:11.914",
+    "confidence": 0.873
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "get",
+    "start": "03:11.954",
+    "end": "03:12.134",
+    "confidence": 0.855
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "03:12.154",
+    "end": "03:12.214",
+    "confidence": 0.488
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "connection",
+    "start": "03:12.274",
+    "end": "03:12.694",
+    "confidence": 0.912
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "with",
+    "start": "03:12.734",
+    "end": "03:12.834",
+    "confidence": 0.827
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "that",
+    "start": "03:12.855",
+    "end": "03:13.015",
+    "confidence": 0.401
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "sucker,",
+    "start": "03:13.115",
+    "end": "03:13.455",
+    "confidence": 0.87
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "though.",
+    "start": "03:13.495",
+    "end": "03:13.695",
+    "confidence": 0.621
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Now,",
+    "start": "03:14.537",
+    "end": "03:14.717",
+    "confidence": 0.884
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "if",
+    "start": "03:14.757",
+    "end": "03:14.837",
+    "confidence": 0.93
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "03:14.917",
+    "end": "03:14.977",
+    "confidence": 0.914
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "had",
+    "start": "03:14.997",
+    "end": "03:15.117",
+    "confidence": 0.67
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:15.157",
+    "end": "03:15.177",
+    "confidence": 0.992
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "direct",
+    "start": "03:15.237",
+    "end": "03:15.517",
+    "confidence": 0.924
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "terminal...",
+    "start": "03:15.577",
+    "end": "03:15.817",
+    "confidence": 0.306
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Flynn,",
+    "start": "03:16.298",
+    "end": "03:16.518",
+    "confidence": 0.603
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "are",
+    "start": "03:16.558",
+    "end": "03:16.638",
+    "confidence": 0.862
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "you",
+    "start": "03:16.678",
+    "end": "03:16.818",
+    "confidence": 0.913
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "embezzling?",
+    "start": "03:16.878",
+    "end": "03:17.598",
+    "confidence": 0.868
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Embezzling",
+    "start": "03:20.239",
+    "end": "03:20.959",
+    "confidence": 0.791
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "is",
+    "start": "03:21.139",
+    "end": "03:21.259",
+    "confidence": 0.738
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "such",
+    "start": "03:21.559",
+    "end": "03:21.839",
+    "confidence": 0.803
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "an",
+    "start": "03:21.879",
+    "end": "03:21.919",
+    "confidence": 0.991
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "ugly",
+    "start": "03:21.999",
+    "end": "03:22.279",
+    "confidence": 0.811
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "word,",
+    "start": "03:22.319",
+    "end": "03:22.579",
+    "confidence": 0.787
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Mr.",
+    "start": "03:22.619",
+    "end": "03:22.859",
+    "confidence": 0.672
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Brown.",
+    "start": "03:22.919",
+    "end": "03:23.420",
+    "confidence": 0.483
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Now,",
+    "start": "03:24.160",
+    "end": "03:24.360",
+    "confidence": 0.853
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "actually,",
+    "start": "03:24.480",
+    "end": "03:24.880",
+    "confidence": 0.637
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I'm",
+    "start": "03:24.940",
+    "end": "03:25.020",
+    "confidence": 0.13
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "trying",
+    "start": "03:25.080",
+    "end": "03:25.240",
+    "confidence": 0.307
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "03:25.280",
+    "end": "03:25.340",
+    "confidence": 0.848
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "get",
+    "start": "03:25.360",
+    "end": "03:25.500",
+    "confidence": 0.858
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "some",
+    "start": "03:25.520",
+    "end": "03:25.660",
+    "confidence": 0.832
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "solid",
+    "start": "03:25.720",
+    "end": "03:26.040",
+    "confidence": 0.88
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "evidence",
+    "start": "03:26.100",
+    "end": "03:26.440",
+    "confidence": 0.911
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "together.",
+    "start": "03:26.480",
+    "end": "03:26.841",
+    "confidence": 0.926
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "03:26.861",
+    "end": "03:26.881",
+    "confidence": 0.0
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "don't",
+    "start": "03:27.561",
+    "end": "03:27.721",
+    "confidence": 0.785
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "get",
+    "start": "03:27.761",
+    "end": "03:27.941",
+    "confidence": 0.765
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "it.",
+    "start": "03:27.961",
+    "end": "03:28.001",
+    "confidence": 0.216
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Okay.",
+    "start": "03:30.161",
+    "end": "03:30.582",
+    "confidence": 0.762
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Sherman,",
+    "start": "03:31.362",
+    "end": "03:31.762",
+    "confidence": 0.799
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "set",
+    "start": "03:31.802",
+    "end": "03:31.982",
+    "confidence": 0.866
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "03:32.022",
+    "end": "03:32.182",
+    "confidence": 0.627
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Wayback",
+    "start": "03:32.282",
+    "end": "03:32.682",
+    "confidence": 0.903
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Machine",
+    "start": "03:32.722",
+    "end": "03:33.122",
+    "confidence": 0.926
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "for",
+    "start": "03:33.202",
+    "end": "03:33.522",
+    "confidence": 0.652
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "three",
+    "start": "03:34.363",
+    "end": "03:34.583",
+    "confidence": 0.752
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "years",
+    "start": "03:34.603",
+    "end": "03:34.823",
+    "confidence": 0.71
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "ago.",
+    "start": "03:34.883",
+    "end": "03:35.103",
+    "confidence": 0.879
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Kevin",
+    "start": "03:36.143",
+    "end": "03:36.483",
+    "confidence": 0.719
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Flynn.",
+    "start": "03:36.563",
+    "end": "03:36.903",
+    "confidence": 0.608
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "One",
+    "start": "03:38.644",
+    "end": "03:38.744",
+    "confidence": 0.901
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "of",
+    "start": "03:38.804",
+    "end": "03:38.904",
+    "confidence": 0.957
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "INCOM's",
+    "start": "03:39.044",
+    "end": "03:39.584",
+    "confidence": 0.78
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "brightest",
+    "start": "03:39.684",
+    "end": "03:40.164",
+    "confidence": 0.881
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "young",
+    "start": "03:40.324",
+    "end": "03:40.644",
+    "confidence": 0.891
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "software",
+    "start": "03:41.065",
+    "end": "03:41.505",
+    "confidence": 0.732
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "engineers.",
+    "start": "03:41.545",
+    "end": "03:41.965",
+    "confidence": 0.501
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "He's",
+    "start": "03:42.935",
+    "end": "03:43.075",
+    "confidence": 0.862
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "so",
+    "start": "03:43.115",
+    "end": "03:43.255",
+    "confidence": 0.992
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "bright,",
+    "start": "03:43.295",
+    "end": "03:43.555",
+    "confidence": 0.838
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "as",
+    "start": "03:43.595",
+    "end": "03:43.675",
+    "confidence": 0.664
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:43.695",
+    "end": "03:43.715",
+    "confidence": 0.995
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "matter",
+    "start": "03:43.755",
+    "end": "03:43.915",
+    "confidence": 0.915
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "of",
+    "start": "03:43.955",
+    "end": "03:43.995",
+    "confidence": 0.996
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "fact,",
+    "start": "03:44.035",
+    "end": "03:44.216",
+    "confidence": 0.69
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "that",
+    "start": "03:44.236",
+    "end": "03:44.316",
+    "confidence": 0.912
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "he",
+    "start": "03:44.336",
+    "end": "03:44.396",
+    "confidence": 0.459
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "starts",
+    "start": "03:44.416",
+    "end": "03:44.596",
+    "confidence": 0.397
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "going",
+    "start": "03:44.616",
+    "end": "03:44.816",
+    "confidence": 0.76
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "in",
+    "start": "03:44.836",
+    "end": "03:44.876",
+    "confidence": 0.565
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "at",
+    "start": "03:44.936",
+    "end": "03:45.016",
+    "confidence": 0.82
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "night,",
+    "start": "03:45.076",
+    "end": "03:45.396",
+    "confidence": 0.867
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "sets",
+    "start": "03:45.476",
+    "end": "03:45.636",
+    "confidence": 0.511
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "up",
+    "start": "03:45.716",
+    "end": "03:45.776",
+    "confidence": 0.352
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "his",
+    "start": "03:45.816",
+    "end": "03:45.936",
+    "confidence": 0.658
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "own",
+    "start": "03:46.016",
+    "end": "03:46.176",
+    "confidence": 0.886
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "private",
+    "start": "03:46.216",
+    "end": "03:46.556",
+    "confidence": 0.978
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "memory",
+    "start": "03:46.616",
+    "end": "03:46.917",
+    "confidence": 0.917
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "file,",
+    "start": "03:46.977",
+    "end": "03:47.357",
+    "confidence": 0.836
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "and",
+    "start": "03:47.417",
+    "end": "03:47.497",
+    "confidence": 0.909
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "begins",
+    "start": "03:47.537",
+    "end": "03:47.937",
+    "confidence": 0.841
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "writing",
+    "start": "03:47.997",
+    "end": "03:48.397",
+    "confidence": 0.792
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:48.417",
+    "end": "03:48.457",
+    "confidence": 0.002
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "program",
+    "start": "03:48.637",
+    "end": "03:49.097",
+    "confidence": 0.865
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "for",
+    "start": "03:49.137",
+    "end": "03:49.197",
+    "confidence": 0.333
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:49.237",
+    "end": "03:49.277",
+    "confidence": 0.507
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "video",
+    "start": "03:49.297",
+    "end": "03:49.658",
+    "confidence": 0.883
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "game",
+    "start": "03:49.698",
+    "end": "03:49.918",
+    "confidence": 0.779
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "he's",
+    "start": "03:49.938",
+    "end": "03:50.018",
+    "confidence": 0.026
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "invented",
+    "start": "03:50.158",
+    "end": "03:50.578",
+    "confidence": 0.496
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "called",
+    "start": "03:50.718",
+    "end": "03:51.178",
+    "confidence": 0.878
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Space",
+    "start": "03:52.078",
+    "end": "03:52.619",
+    "confidence": 0.834
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Paranoids.",
+    "start": "03:52.959",
+    "end": "03:53.739",
+    "confidence": 0.8
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "You",
+    "start": "03:54.199",
+    "end": "03:54.359",
+    "confidence": 0.954
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "invented",
+    "start": "03:54.439",
+    "end": "03:54.860",
+    "confidence": 0.666
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Space",
+    "start": "03:54.920",
+    "end": "03:55.280",
+    "confidence": 0.879
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Paranoids?",
+    "start": "03:55.340",
+    "end": "03:55.920",
+    "confidence": 0.838
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Paranoids,",
+    "start": "03:56.500",
+    "end": "03:57.220",
+    "confidence": 0.899
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Matrix",
+    "start": "03:57.581",
+    "end": "03:58.021",
+    "confidence": 0.88
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Blaster,",
+    "start": "03:58.081",
+    "end": "03:58.661",
+    "confidence": 0.876
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Vice",
+    "start": "03:58.741",
+    "end": "03:58.941",
+    "confidence": 0.407
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Squad,",
+    "start": "03:58.981",
+    "end": "03:59.261",
+    "confidence": 0.914
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "03:59.281",
+    "end": "03:59.301",
+    "confidence": 0.005
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "whole",
+    "start": "03:59.321",
+    "end": "03:59.501",
+    "confidence": 0.852
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "slew",
+    "start": "03:59.541",
+    "end": "03:59.801",
+    "confidence": 0.726
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "of",
+    "start": "03:59.841",
+    "end": "03:59.881",
+    "confidence": 0.137
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "them.",
+    "start": "03:59.901",
+    "end": "04:00.101",
+    "confidence": 0.386
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "04:00.342",
+    "end": "04:00.382",
+    "confidence": 0.972
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "was",
+    "start": "04:00.402",
+    "end": "04:00.502",
+    "confidence": 0.787
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "this",
+    "start": "04:00.522",
+    "end": "04:00.642",
+    "confidence": 0.273
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "close",
+    "start": "04:00.682",
+    "end": "04:00.902",
+    "confidence": 0.888
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "04:00.922",
+    "end": "04:00.962",
+    "confidence": 0.736
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "starting",
+    "start": "04:00.982",
+    "end": "04:01.242",
+    "confidence": 0.786
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "my",
+    "start": "04:01.262",
+    "end": "04:01.362",
+    "confidence": 0.716
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "own",
+    "start": "04:01.382",
+    "end": "04:01.442",
+    "confidence": 0.003
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "little",
+    "start": "04:01.482",
+    "end": "04:01.682",
+    "confidence": 0.939
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "enterprise,",
+    "start": "04:01.722",
+    "end": "04:02.262",
+    "confidence": 0.826
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "man.",
+    "start": "04:02.282",
+    "end": "04:02.542",
+    "confidence": 0.777
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "But,",
+    "start": "04:03.843",
+    "end": "04:04.103",
+    "confidence": 0.881
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "enter",
+    "start": "04:04.523",
+    "end": "04:04.683",
+    "confidence": 0.657
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "another",
+    "start": "04:04.723",
+    "end": "04:04.983",
+    "confidence": 0.901
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "software",
+    "start": "04:05.023",
+    "end": "04:05.363",
+    "confidence": 0.576
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "engineer.",
+    "start": "04:05.403",
+    "end": "04:05.824",
+    "confidence": 0.453
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Not",
+    "start": "04:06.404",
+    "end": "04:06.564",
+    "confidence": 0.919
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "so",
+    "start": "04:06.604",
+    "end": "04:06.764",
+    "confidence": 0.795
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "young,",
+    "start": "04:06.804",
+    "end": "04:07.084",
+    "confidence": 0.757
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "not",
+    "start": "04:07.144",
+    "end": "04:07.284",
+    "confidence": 0.969
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "so",
+    "start": "04:07.324",
+    "end": "04:07.484",
+    "confidence": 0.76
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "bright,",
+    "start": "04:07.524",
+    "end": "04:07.844",
+    "confidence": 0.897
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "but",
+    "start": "04:07.904",
+    "end": "04:08.024",
+    "confidence": 0.986
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "very,",
+    "start": "04:08.084",
+    "end": "04:08.385",
+    "confidence": 0.854
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "very",
+    "start": "04:08.445",
+    "end": "04:08.705",
+    "confidence": 0.82
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "sneaky.",
+    "start": "04:08.765",
+    "end": "04:09.145",
+    "confidence": 0.968
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Abe",
+    "start": "04:10.074",
+    "end": "04:10.174",
+    "confidence": 0.279
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Dillinger.",
+    "start": "04:10.214",
+    "end": "04:10.775",
+    "confidence": 0.721
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "So,",
+    "start": "04:12.796",
+    "end": "04:12.896",
+    "confidence": 0.718
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "one",
+    "start": "04:12.956",
+    "end": "04:13.016",
+    "confidence": 0.233
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "night",
+    "start": "04:13.036",
+    "end": "04:13.136",
+    "confidence": 0.213
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "our",
+    "start": "04:13.156",
+    "end": "04:13.236",
+    "confidence": 0.17
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "boy",
+    "start": "04:13.256",
+    "end": "04:13.437",
+    "confidence": 0.827
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Flynn,",
+    "start": "04:13.477",
+    "end": "04:13.657",
+    "confidence": 0.658
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "he",
+    "start": "04:13.677",
+    "end": "04:13.737",
+    "confidence": 0.719
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "goes",
+    "start": "04:13.777",
+    "end": "04:13.957",
+    "confidence": 0.7
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "04:13.977",
+    "end": "04:14.057",
+    "confidence": 0.961
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "his",
+    "start": "04:14.097",
+    "end": "04:14.177",
+    "confidence": 0.889
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "terminal,",
+    "start": "04:14.217",
+    "end": "04:14.557",
+    "confidence": 0.782
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "tries",
+    "start": "04:14.617",
+    "end": "04:14.798",
+    "confidence": 0.404
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to",
+    "start": "04:14.818",
+    "end": "04:14.918",
+    "confidence": 0.472
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "read",
+    "start": "04:14.938",
+    "end": "04:15.058",
+    "confidence": 0.235
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "up",
+    "start": "04:15.098",
+    "end": "04:15.158",
+    "confidence": 0.19
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "his",
+    "start": "04:15.218",
+    "end": "04:15.318",
+    "confidence": 0.223
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "file.",
+    "start": "04:15.398",
+    "end": "04:15.758",
+    "confidence": 0.851
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "I",
+    "start": "04:15.918",
+    "end": "04:15.998",
+    "confidence": 0.751
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "get",
+    "start": "04:16.018",
+    "end": "04:16.159",
+    "confidence": 0.724
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "nothing",
+    "start": "04:16.199",
+    "end": "04:16.479",
+    "confidence": 0.87
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "on",
+    "start": "04:16.539",
+    "end": "04:16.579",
+    "confidence": 0.983
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "there.",
+    "start": "04:16.599",
+    "end": "04:16.699",
+    "confidence": 0.002
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "There's",
+    "start": "04:16.719",
+    "end": "04:16.859",
+    "confidence": 0.021
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "04:16.879",
+    "end": "04:16.899",
+    "confidence": 0.03
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "big",
+    "start": "04:16.939",
+    "end": "04:17.099",
+    "confidence": 0.768
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "blank.",
+    "start": "04:17.139",
+    "end": "04:17.500",
+    "confidence": 0.949
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Alright,",
+    "start": "04:19.521",
+    "end": "04:19.701",
+    "confidence": 0.236
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "now",
+    "start": "04:19.741",
+    "end": "04:19.821",
+    "confidence": 0.737
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "we",
+    "start": "04:19.841",
+    "end": "04:19.881",
+    "confidence": 0.013
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "take",
+    "start": "04:19.921",
+    "end": "04:20.041",
+    "confidence": 0.886
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "you",
+    "start": "04:20.082",
+    "end": "04:20.162",
+    "confidence": 0.651
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "three",
+    "start": "04:20.182",
+    "end": "04:20.362",
+    "confidence": 0.585
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "months",
+    "start": "04:20.402",
+    "end": "04:20.562",
+    "confidence": 0.326
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "later.",
+    "start": "04:20.602",
+    "end": "04:20.842",
+    "confidence": 0.728
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Dillinger",
+    "start": "04:21.222",
+    "end": "04:21.823",
+    "confidence": 0.712
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "presents",
+    "start": "04:22.623",
+    "end": "04:22.944",
+    "confidence": 0.983
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "and",
+    "start": "04:23.004",
+    "end": "04:23.184",
+    "confidence": 0.491
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "come",
+    "start": "04:23.224",
+    "end": "04:23.404",
+    "confidence": 0.666
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "with",
+    "start": "04:23.424",
+    "end": "04:23.564",
+    "confidence": 0.76
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "five",
+    "start": "04:23.604",
+    "end": "04:23.844",
+    "confidence": 0.446
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "video",
+    "start": "04:23.864",
+    "end": "04:24.225",
+    "confidence": 0.735
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "games.",
+    "start": "04:24.245",
+    "end": "04:24.565",
+    "confidence": 0.74
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "But",
+    "start": "04:25.766",
+    "end": "04:25.886",
+    "confidence": 0.904
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "he's",
+    "start": "04:25.926",
+    "end": "04:26.226",
+    "confidence": 0.766
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "invented.",
+    "start": "04:26.286",
+    "end": "04:26.666",
+    "confidence": 0.505
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "The",
+    "start": "04:27.147",
+    "end": "04:27.267",
+    "confidence": 0.825
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "slime",
+    "start": "04:27.287",
+    "end": "04:27.607",
+    "confidence": 0.822
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "didn't",
+    "start": "04:27.627",
+    "end": "04:27.787",
+    "confidence": 0.715
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "even",
+    "start": "04:27.827",
+    "end": "04:27.987",
+    "confidence": 0.96
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "change",
+    "start": "04:28.047",
+    "end": "04:28.308",
+    "confidence": 0.894
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "the",
+    "start": "04:28.368",
+    "end": "04:28.448",
+    "confidence": 0.823
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "names,",
+    "start": "04:28.488",
+    "end": "04:29.088",
+    "confidence": 0.795
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "man.",
+    "start": "04:29.148",
+    "end": "04:29.388",
+    "confidence": 0.736
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "He",
+    "start": "04:29.428",
+    "end": "04:29.488",
+    "confidence": 0.946
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "gets",
+    "start": "04:29.529",
+    "end": "04:29.709",
+    "confidence": 0.847
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "a",
+    "start": "04:29.769",
+    "end": "04:29.809",
+    "confidence": 0.644
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "big",
+    "start": "04:29.849",
+    "end": "04:30.049",
+    "confidence": 0.96
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "fat",
+    "start": "04:30.169",
+    "end": "04:30.469",
+    "confidence": 0.77
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "promotion.",
+    "start": "04:30.529",
+    "end": "04:31.150",
+    "confidence": 0.879
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "And",
+    "start": "04:31.570",
+    "end": "04:31.650",
+    "confidence": 0.782
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "thus",
+    "start": "04:31.670",
+    "end": "04:31.870",
+    "confidence": 0.79
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "begins",
+    "start": "04:31.910",
+    "end": "04:32.251",
+    "confidence": 0.859
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "his",
+    "start": "04:32.291",
+    "end": "04:32.431",
+    "confidence": 0.795
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "meteoric",
+    "start": "04:32.511",
+    "end": "04:33.031",
+    "confidence": 0.825
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "rise",
+    "start": "04:33.131",
+    "end": "04:33.592",
+    "confidence": 0.718
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "to,",
+    "start": "04:33.632",
+    "end": "04:33.772",
+    "confidence": 0.966
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "what",
+    "start": "04:33.812",
+    "end": "04:33.932",
+    "confidence": 0.919
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "is",
+    "start": "04:33.972",
+    "end": "04:34.032",
+    "confidence": 0.852
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "he",
+    "start": "04:34.072",
+    "end": "04:34.152",
+    "confidence": 0.731
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "now?",
+    "start": "04:34.192",
+    "end": "04:34.392",
+    "confidence": 0.814
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Executive",
+    "start": "04:34.452",
+    "end": "04:35.093",
+    "confidence": 0.882
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "VP?",
+    "start": "04:35.113",
+    "end": "04:35.593",
+    "confidence": 0.754
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Senior",
+    "start": "04:36.133",
+    "end": "04:36.574",
+    "confidence": 0.859
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "word": "Exec.",
+    "start": "04:36.614",
+    "end": "04:36.994",
+    "confidence": 0.555
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Senior",
+    "start": "04:38.415",
+    "end": "04:38.956",
+    "confidence": 0.858
+  },
+  {
+    "speaker": "SPEAKER_02",
+    "word": "Exec?",
+    "start": "04:39.036",
+    "end": "04:39.296",
+    "confidence": 0.783
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "You're",
+    "start": "04:41.825",
+    "end": "04:42.055",
+    "confidence": 0.139
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "word": "welcome.",
+    "start": "04:42.076",
+    "end": "04:42.244",
+    "confidence": 0.075
+  }
+]

@@ -1,6 +1,6 @@
-# Use NVIDIA CUDA base image for GPU acceleration (optional but recommended for performance)
-# Ubuntu 22.04 LTS provides long-term stability
-FROM nvidia/cuda:12.1-devel-ubuntu22.04
+# This allows the version to be passed from the host environment
+ARG CUDA_VER=12.4.0
+FROM nvidia/cuda:${CUDA_VER}-devel-ubuntu22.04
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
@@ -28,25 +28,37 @@ RUN apt-get update && apt-get install -y \
     libsox-dev \
     libsox-fmt-all \
     build-essential \
+    git-lfs \
+    libavcodec-dev \
+    libavformat-dev \
     && rm -rf /var/lib/apt/lists/*
+
+# Install cuDNN for CUDA 12
+RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb && \
+    dpkg -i cuda-keyring_1.1-1_all.deb && \
+    apt-get update && \
+    apt-get install -y libcudnn9-cuda-12 libcudnn9-dev-cuda-12 && \
+    rm -rf /var/lib/apt/lists/*
 
 # Create and activate virtual environment
 RUN python3.10 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Upgrade pip to latest stable version
+# Upgrade pip to fixed stable version for reproducibility
 RUN pip install --upgrade pip==23.3.1
 
 # Copy requirements first for better Docker layer caching
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip cache purge
+# Install Python dependencies (with PyTorch from NVIDIA index)
+RUN pip install --no-cache-dir -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
+
 
 # Copy application code
 COPY . .
 
-# Create directories for input/output
+# Create directories for input/output and models
 RUN mkdir -p /app/input /app/output /app/models
 
 # Set permissions
@@ -56,7 +68,6 @@ RUN chmod +x /app/*.py 2>/dev/null || true
 EXPOSE 7860
 
 # Set environment variables optimized for RTX 4050 (6GB VRAM)
-ENV PYTHONPATH=/app
 ENV CUDA_VISIBLE_DEVICES=0
 ENV TOKENIZERS_PARALLELISM=false
 ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
