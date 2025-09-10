@@ -93,18 +93,18 @@ docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_sp
 ### 📈 Technical Journey & Problem-Solving
 This project's final architecture is the result of an iterative process to address common challenges in transcribing noisy, multi-speaker audio.
 
-Initial Attempt with SpeechBrain: The initial approach used a SpeechBrain model for waveform enhancement. While this enhanced the audio quality, it frequently cut out parts of the speech, interpreting it as background noise, which negatively impacted the ASR results.
+The key challenge was finding a single audio processing method that works well for both Automatic Speech Recognition (ASR) and Speaker Diarization. Initial attempts at using a single enhanced audio stream proved problematic. For example, some enhancement models, like SpeechBrain, would clean the audio but also cut out crucial speech segments, hurting transcription quality. While other models like Demucs provided cleaner audio for ASR, the denoising effect made different speakers sound more similar, causing the diarization model (pyannote.audio) to make errors.
 
-Adopting Demucs for Source Separation: To overcome this, the pipeline was changed to use Demucs, a source separation model, to isolate the speech from complex background noise. This provided a much cleaner and smoother audio for the ASR model, leading to improved transcription quality, especially at the beginning of the audio.
+## The Final Parallel Pipeline
+The most effective solution was to create a parallel pipeline where each model receives the audio format that best suits its purpose.
 
-The Diarization Dilemma: A key finding was that while enhanced audio was beneficial for ASR, it negatively impacted the speaker diarization model (pyannote.audio). The processing made different speakers sound more similar, causing diarization errors.
+A copy of the original audio is sent to the speaker diarization pipeline. For this, we use deepfilternet for noise reduction, which proved effective at preserving the subtle pitch and voice characteristics needed for accurate speaker separation.
 
-Final Parallel Pipeline: The solution was to create a parallel pipeline:
+A second copy of the original audio is passed through Demucs, a source separation model, to isolate the speech from other sounds. This cleaner, smoother audio is then sent to the WhisperX ASR model for transcription.
 
-A copy of the original audio is passed through Demucs for enhancement before being sent to the WhisperX ASR model.
+The results from both pipelines are then merged. The transcription from WhisperX is combined with the speaker labels and timestamps from the diarization pipeline using whisperx.assign_word_speakers to produce a final, highly accurate output.
 
-The original, un-reprocessed audio is passed directly to the pyannote.audio diarization pipeline.
-This parallel approach allows both models to perform at their best, and the results are then merged using whisperx.assign_word_speakers for a highly accurate final output.
+This parallel approach allows both models to perform at their best, leading to a robust and accurate final result, especially for complex audio
 
 ### ⚙️ Advanced Diarization Parameters
 The pipeline supports fine-tuning pyannote.audio parameters directly from the command line, which is useful for optimizing results on different types of audio.
@@ -201,6 +201,7 @@ Speechbrain
 
 
 ---
+
 
 
 
