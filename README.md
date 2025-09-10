@@ -116,10 +116,13 @@ docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --cluste
 
 | Parameter Name | Description |
 | :--- | :--- |
-| `--segmentation_onset` | The voice activity detection (VAD) onset threshold. Lowering this can help detect speech in very quiet segments. |
-| `--clustering_threshold` | The speaker clustering threshold. A lower value makes the model more likely to split a single speaker into multiple labels. |
-| `--min_duration_on` | The minimum duration a voice segment must be "on" to be considered a valid speech segment. |
-
+| `--diar_preset` |	A quick way to use predefined parameter sets (e.g., high_sensitivity). |
+| `--segmentation_onset`	| The voice activity detection (VAD) onset threshold. Lowering this can help detect speech in very noisy or low-volume segments. |
+| `--segmentation_offset`	| The VAD offset threshold. A higher value can help ensure that speech segments are not cut off prematurely. |
+| `--clustering_threshold` |	The speaker clustering threshold. A lower value makes the model more likely to split a single speaker into multiple labels, and a higher value makes it more likely to merge different speakers. |
+| `--min_duration_on`	| The minimum duration a voice segment must be "on" to be considered a valid speech segment. |
+| `--vad_onset`	| VAD onset threshold. |
+| `--vad_offset` |	VAD offset threshold. |
 
 ## Outputs
 After processing, check the output/ folder:
@@ -198,6 +201,7 @@ Speechbrain
 
 
 ---
+
 
 
 
