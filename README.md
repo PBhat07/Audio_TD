@@ -111,7 +111,7 @@ The pipeline supports fine-tuning pyannote.audio parameters directly from the co
 
 Run with Advanced Parameters:
 ```bash
-docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --clustering_thr
+docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --diar_preset pitch_variation_robust --min_speakers 6 --max_speakers 7
 ```
 
 | Parameter Name | Description |
@@ -200,6 +200,7 @@ Speechbrain
 
 
 ---
+
 
 
 
