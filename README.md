@@ -64,7 +64,7 @@ HUGGING_FACE_TOKEN=your_hf_token_here
 Choose a Whisper model size (tradeoff between speed & accuracy):
 
 ```bash
-export WHISPER_MODEL=large-v2
+export WHISPER_MODEL=small.en
 ```
 
 ### 4. Prepare your audio
@@ -201,6 +201,7 @@ Speechbrain
 
 
 ---
+
 
 
 
