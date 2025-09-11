@@ -155,7 +155,6 @@ Project Structure
 ├── Dockerfile            # Base image and environment
 ├── requirements.txt      # Python dependencies
 ├── main.py               # Main pipeline (recommended entry point)
-├── main_01.py            # Alternative pipeline (simpler version)
 ├── src/                  # Core processing modules
 │   ├── asr_pipeline.py       # Automatic Speech Recognition pipeline
 │   ├── audio_enhancer.py     # Noise reduction & audio enhancement
@@ -201,6 +200,7 @@ Speechbrain
 
 
 ---
+
 
 
 
