@@ -1,0 +1,483 @@
+{"speaker": "Unknown Speaker", "word": "We're", "start": "00:02", "end": "00:02", "confidence": 0.324}
+{"speaker": "Unknown Speaker", "word": "going", "start": "00:02", "end": "00:02", "confidence": 0.462}
+{"speaker": "Unknown Speaker", "word": "to", "start": "00:02", "end": "00:02", "confidence": 0.653}
+{"speaker": "Unknown Speaker", "word": "need", "start": "00:02", "end": "00:03", "confidence": 0.348}
+{"speaker": "Unknown Speaker", "word": "it", "start": "00:03", "end": "00:03", "confidence": 0.477}
+{"speaker": "Unknown Speaker", "word": "for", "start": "00:03", "end": "00:03", "confidence": 0.507}
+{"speaker": "Unknown Speaker", "word": "the", "start": "00:03", "end": "00:03", "confidence": 0.565}
+{"speaker": "Unknown Speaker", "word": "game.", "start": "00:03", "end": "00:04", "confidence": 0.227}
+{"speaker": "Unknown Speaker", "word": "Boy,", "start": "00:04", "end": "00:04", "confidence": 0.455}
+{"speaker": "Unknown Speaker", "word": "I", "start": "00:04", "end": "00:04", "confidence": 0.456}
+{"speaker": "Unknown Speaker", "word": "haven't", "start": "00:04", "end": "00:04", "confidence": 0.233}
+{"speaker": "Unknown Speaker", "word": "been", "start": "00:04", "end": "00:04", "confidence": 0.493}
+{"speaker": "Unknown Speaker", "word": "here", "start": "00:05", "end": "00:05", "confidence": 0.647}
+{"speaker": "Unknown Speaker", "word": "in", "start": "00:05", "end": "00:05", "confidence": 0.577}
+{"speaker": "Unknown Speaker", "word": "a", "start": "00:05", "end": "00:06", "confidence": 0.727}
+{"speaker": "Unknown Speaker", "word": "long", "start": "00:06", "end": "00:06", "confidence": 0.391}
+{"speaker": "Unknown Speaker", "word": "time.", "start": "00:06", "end": "00:06", "confidence": 0.618}
+{"speaker": "Unknown Speaker", "word": "Let's", "start": "00:30", "end": "00:31", "confidence": 0.506}
+{"speaker": "Unknown Speaker", "word": "go!", "start": "00:31", "end": "00:31", "confidence": 0.282}
+{"speaker": "SPEAKER_03", "word": "Where", "start": "00:43", "end": "00:44", "confidence": 0.649}
+{"speaker": "Unknown Speaker", "word": "is", "start": "00:44", "end": "00:45", "confidence": 0.451}
+{"speaker": "Unknown Speaker", "word": "he?", "start": "00:45", "end": "00:45", "confidence": 0.422}
+{"speaker": "Unknown Speaker", "word": "I", "start": "00:45", "end": "00:45", "confidence": 0.712}
+{"speaker": "Unknown Speaker", "word": "don't", "start": "00:45", "end": "00:46", "confidence": 0.561}
+{"speaker": "SPEAKER_00", "word": "know.", "start": "00:46", "end": "00:46", "confidence": 0.58}
+{"speaker": "SPEAKER_03", "word": "Somewhere", "start": "00:46", "end": "00:47", "confidence": 0.595}
+{"speaker": "SPEAKER_00", "word": "in", "start": "00:47", "end": "00:47", "confidence": 0.629}
+{"speaker": "Unknown Speaker", "word": "here.", "start": "00:48", "end": "00:48", "confidence": 0.49}
+{"speaker": "Unknown Speaker", "word": "Lost", "start": "00:48", "end": "00:48", "confidence": 0.564}
+{"speaker": "SPEAKER_01", "word": "some", "start": "00:49", "end": "00:49", "confidence": 0.678}
+{"speaker": "SPEAKER_01", "word": "of", "start": "00:50", "end": "00:50", "confidence": 0.414}
+{"speaker": "SPEAKER_01", "word": "his", "start": "00:50", "end": "00:50", "confidence": 0.657}
+{"speaker": "SPEAKER_01", "word": "games.", "start": "00:50", "end": "00:52", "confidence": 0.643}
+{"speaker": "SPEAKER_03", "word": "Excuse", "start": "00:52", "end": "00:53", "confidence": 0.626}
+{"speaker": "SPEAKER_03", "word": "me,", "start": "00:53", "end": "00:53", "confidence": 0.731}
+{"speaker": "Unknown Speaker", "word": "champ.", "start": "00:53", "end": "00:54", "confidence": 0.547}
+{"speaker": "Unknown Speaker", "word": "Do", "start": "00:54", "end": "00:54", "confidence": 0.764}
+{"speaker": "Unknown Speaker", "word": "you", "start": "00:54", "end": "00:55", "confidence": 0.523}
+{"speaker": "Unknown Speaker", "word": "know", "start": "00:55", "end": "00:56", "confidence": 0.8}
+{"speaker": "Unknown Speaker", "word": "where", "start": "00:56", "end": "00:56", "confidence": 0.596}
+{"speaker": "Unknown Speaker", "word": "Flynn", "start": "00:56", "end": "00:57", "confidence": 0.445}
+{"speaker": "Unknown Speaker", "word": "is?", "start": "00:57", "end": "00:57", "confidence": 0.638}
+{"speaker": "Unknown Speaker", "word": "Yeah,", "start": "00:57", "end": "00:57", "confidence": 0.475}
+{"speaker": "Unknown Speaker", "word": "he's", "start": "00:57", "end": "00:58", "confidence": 0.438}
+{"speaker": "Unknown Speaker", "word": "over", "start": "00:58", "end": "00:58", "confidence": 0.756}
+{"speaker": "Unknown Speaker", "word": "there", "start": "00:59", "end": "00:59", "confidence": 0.395}
+{"speaker": "Unknown Speaker", "word": "on", "start": "00:59", "end": "00:59", "confidence": 0.8}
+{"speaker": "Unknown Speaker", "word": "his", "start": "00:59", "end": "00:60", "confidence": 0.425}
+{"speaker": "Unknown Speaker", "word": "machine.", "start": "00:60", "end": "01:00", "confidence": 0.511}
+{"speaker": "Unknown Speaker", "word": "We've", "start": "01:03", "end": "01:03", "confidence": 0.701}
+{"speaker": "Unknown Speaker", "word": "got", "start": "01:03", "end": "01:04", "confidence": 0.363}
+{"speaker": "Unknown Speaker", "word": "our", "start": "01:04", "end": "01:05", "confidence": 0.314}
+{"speaker": "Unknown Speaker", "word": "roles,", "start": "01:05", "end": "01:05", "confidence": 0.535}
+{"speaker": "Unknown Speaker", "word": "we've", "start": "01:05", "end": "01:06", "confidence": 0.809}
+{"speaker": "Unknown Speaker", "word": "got", "start": "01:06", "end": "01:07", "confidence": 0.743}
+{"speaker": "Unknown Speaker", "word": "our", "start": "01:07", "end": "01:08", "confidence": 0.28}
+{"speaker": "Unknown Speaker", "word": "record-winning", "start": "01:08", "end": "01:09", "confidence": 0.44}
+{"speaker": "Unknown Speaker", "word": "ties,", "start": "01:09", "end": "01:09", "confidence": 0.392}
+{"speaker": "Unknown Speaker", "word": "and", "start": "01:09", "end": "01:09", "confidence": 0.151}
+{"speaker": "Unknown Speaker", "word": "then", "start": "01:09", "end": "01:09", "confidence": 0.203}
+{"speaker": "Unknown Speaker", "word": "we've", "start": "01:09", "end": "01:10", "confidence": 0.622}
+{"speaker": "Unknown Speaker", "word": "got", "start": "01:10", "end": "01:10", "confidence": 0.595}
+{"speaker": "Unknown Speaker", "word": "our", "start": "01:11", "end": "01:11", "confidence": 0.748}
+{"speaker": "Unknown Speaker", "word": "people", "start": "01:11", "end": "01:12", "confidence": 0.382}
+{"speaker": "Unknown Speaker", "word": "in", "start": "01:12", "end": "01:12", "confidence": 0.278}
+{"speaker": "Unknown Speaker", "word": "the", "start": "01:12", "end": "01:12", "confidence": 0.268}
+{"speaker": "Unknown Speaker", "word": "Biscuit", "start": "01:12", "end": "01:13", "confidence": 0.555}
+{"speaker": "Unknown Speaker", "word": "of", "start": "01:16", "end": "01:16", "confidence": 0.617}
+{"speaker": "Unknown Speaker", "word": "Worlds", "start": "01:16", "end": "01:17", "confidence": 0.387}
+{"speaker": "Unknown Speaker", "word": "record!", "start": "01:17", "end": "01:18", "confidence": 0.676}
+{"speaker": "Unknown Speaker", "word": "Come", "start": "01:18", "end": "01:18", "confidence": 0.648}
+{"speaker": "Unknown Speaker", "word": "on!", "start": "01:18", "end": "01:18", "confidence": 0.39}
+{"speaker": "Unknown Speaker", "word": "He", "start": "01:19", "end": "01:20", "confidence": 0.865}
+{"speaker": "Unknown Speaker", "word": "didn't", "start": "01:20", "end": "01:20", "confidence": 0.674}
+{"speaker": "Unknown Speaker", "word": "watch", "start": "01:21", "end": "01:21", "confidence": 0.374}
+{"speaker": "Unknown Speaker", "word": "out!", "start": "01:24", "end": "01:25", "confidence": 0.538}
+{"speaker": "Unknown Speaker", "word": "Come", "start": "01:25", "end": "01:25", "confidence": 0.768}
+{"speaker": "Unknown Speaker", "word": "on,", "start": "01:25", "end": "01:25", "confidence": 0.358}
+{"speaker": "Unknown Speaker", "word": "man!", "start": "01:26", "end": "01:26", "confidence": 0.545}
+{"speaker": "Unknown Speaker", "word": "What's", "start": "01:26", "end": "01:27", "confidence": 0.57}
+{"speaker": "Unknown Speaker", "word": "up?", "start": "01:27", "end": "01:27", "confidence": 0.703}
+{"speaker": "Unknown Speaker", "word": "What's", "start": "01:28", "end": "01:31", "confidence": 0.556}
+{"speaker": "Unknown Speaker", "word": "up?", "start": "01:31", "end": "01:32", "confidence": 0.415}
+{"speaker": "SPEAKER_03", "word": "This", "start": "01:35", "end": "01:39", "confidence": 0.671}
+{"speaker": "Unknown Speaker", "word": "is", "start": "01:39", "end": "01:43", "confidence": 0.907}
+{"speaker": "Unknown Speaker", "word": "it.", "start": "01:43", "end": "01:43", "confidence": 0.807}
+{"speaker": "Unknown Speaker", "word": "He", "start": "01:43", "end": "01:44", "confidence": 0.789}
+{"speaker": "SPEAKER_03", "word": "was", "start": "01:44", "end": "01:46", "confidence": 0.591}
+{"speaker": "SPEAKER_03", "word": "two", "start": "01:46", "end": "01:46", "confidence": 0.574}
+{"speaker": "SPEAKER_03", "word": "years", "start": "01:46", "end": "01:47", "confidence": 0.744}
+{"speaker": "SPEAKER_03", "word": "old.", "start": "01:47", "end": "01:47", "confidence": 0.648}
+{"speaker": "SPEAKER_03", "word": "I", "start": "01:47", "end": "01:47", "confidence": 0.765}
+{"speaker": "SPEAKER_03", "word": "can't", "start": "01:48", "end": "01:48", "confidence": 0.546}
+{"speaker": "SPEAKER_03", "word": "believe", "start": "01:48", "end": "01:48", "confidence": 0.276}
+{"speaker": "SPEAKER_03", "word": "he's", "start": "01:48", "end": "01:48", "confidence": 0.38}
+{"speaker": "SPEAKER_03", "word": "on", "start": "01:49", "end": "01:49", "confidence": 0.393}
+{"speaker": "SPEAKER_03", "word": "his", "start": "01:49", "end": "01:49", "confidence": 0.606}
+{"speaker": "SPEAKER_03", "word": "way", "start": "01:49", "end": "01:49", "confidence": 0.468}
+{"speaker": "SPEAKER_03", "word": "to", "start": "01:49", "end": "01:49", "confidence": 0.722}
+{"speaker": "SPEAKER_03", "word": "hit", "start": "01:50", "end": "01:50", "confidence": 0.515}
+{"speaker": "SPEAKER_03", "word": "me", "start": "01:50", "end": "01:50", "confidence": 0.742}
+{"speaker": "SPEAKER_03", "word": "alive.", "start": "01:50", "end": "01:50", "confidence": 0.258}
+{"speaker": "SPEAKER_03", "word": "How'd", "start": "01:50", "end": "01:50", "confidence": 0.461}
+{"speaker": "Unknown Speaker", "word": "you", "start": "01:51", "end": "01:51", "confidence": 0.473}
+{"speaker": "Unknown Speaker", "word": "do", "start": "01:51", "end": "01:51", "confidence": 0.615}
+{"speaker": "Unknown Speaker", "word": "it?", "start": "01:51", "end": "01:52", "confidence": 0.814}
+{"speaker": "Unknown Speaker", "word": "Oh,", "start": "01:52", "end": "01:52", "confidence": 0.817}
+{"speaker": "SPEAKER_03", "word": "thank", "start": "01:52", "end": "01:52", "confidence": 0.429}
+{"speaker": "SPEAKER_03", "word": "you.", "start": "01:52", "end": "01:52", "confidence": 0.521}
+{"speaker": "SPEAKER_03", "word": "It", "start": "01:53", "end": "01:53", "confidence": 0.364}
+{"speaker": "SPEAKER_03", "word": "was", "start": "01:53", "end": "01:53", "confidence": 0.679}
+{"speaker": "SPEAKER_03", "word": "good", "start": "01:53", "end": "01:53", "confidence": 0.582}
+{"speaker": "Unknown Speaker", "word": "hearing.", "start": "01:54", "end": "01:54", "confidence": 0.306}
+{"speaker": "Unknown Speaker", "word": "999,000", "start": "00:00", "end": "00:00", "confidence": "N/A"}
+{"speaker": "Unknown Speaker", "word": "points.", "start": "01:54", "end": "01:55", "confidence": 0.54}
+{"speaker": "SPEAKER_03", "word": "Woo-hoo!", "start": "01:55", "end": "01:55", "confidence": 0.4}
+{"speaker": "SPEAKER_03", "word": "Stop!", "start": "01:55", "end": "01:56", "confidence": 0.43}
+{"speaker": "SPEAKER_02", "word": "Hey,", "start": "01:58", "end": "01:58", "confidence": 0.377}
+{"speaker": "SPEAKER_02", "word": "good", "start": "01:58", "end": "01:58", "confidence": 0.092}
+{"speaker": "SPEAKER_02", "word": "to", "start": "01:58", "end": "01:58", "confidence": 0.598}
+{"speaker": "SPEAKER_02", "word": "see", "start": "01:58", "end": "01:59", "confidence": 0.822}
+{"speaker": "SPEAKER_02", "word": "you", "start": "01:59", "end": "01:59", "confidence": 0.383}
+{"speaker": "SPEAKER_02", "word": "guys.", "start": "01:59", "end": "01:60", "confidence": 0.107}
+{"speaker": "SPEAKER_02", "word": "I", "start": "01:60", "end": "01:60", "confidence": 0.651}
+{"speaker": "SPEAKER_02", "word": "think", "start": "01:60", "end": "01:60", "confidence": 0.472}
+{"speaker": "SPEAKER_02", "word": "you're", "start": "01:60", "end": "02:00", "confidence": 0.321}
+{"speaker": "SPEAKER_02", "word": "like", "start": "02:00", "end": "02:01", "confidence": 0.822}
+{"speaker": "SPEAKER_02", "word": "a", "start": "02:01", "end": "02:01", "confidence": 0.459}
+{"speaker": "SPEAKER_02", "word": "queen", "start": "02:01", "end": "02:01", "confidence": 0.457}
+{"speaker": "SPEAKER_02", "word": "cut", "start": "02:01", "end": "02:01", "confidence": 0.532}
+{"speaker": "SPEAKER_02", "word": "young", "start": "02:01", "end": "02:01", "confidence": 0.158}
+{"speaker": "SPEAKER_02", "word": "couple.", "start": "02:01", "end": "02:02", "confidence": 0.468}
+{"speaker": "SPEAKER_03", "word": "We", "start": "02:02", "end": "02:02", "confidence": 0.513}
+{"speaker": "SPEAKER_03", "word": "gotta", "start": "02:02", "end": "02:03", "confidence": 0.359}
+{"speaker": "SPEAKER_03", "word": "talk.", "start": "02:03", "end": "02:03", "confidence": 0.697}
+{"speaker": "SPEAKER_03", "word": "We", "start": "02:03", "end": "02:03", "confidence": 0.39}
+{"speaker": "SPEAKER_03", "word": "can't", "start": "02:03", "end": "02:03", "confidence": 0.475}
+{"speaker": "Unknown Speaker", "word": "even", "start": "02:04", "end": "02:04", "confidence": 0.522}
+{"speaker": "SPEAKER_02", "word": "yourself", "start": "02:04", "end": "02:05", "confidence": 0.289}
+{"speaker": "SPEAKER_02", "word": "think", "start": "02:05", "end": "02:05", "confidence": 0.572}
+{"speaker": "SPEAKER_02", "word": "in", "start": "02:05", "end": "02:05", "confidence": 0.754}
+{"speaker": "SPEAKER_02", "word": "here.", "start": "02:05", "end": "02:05", "confidence": 0.515}
+{"speaker": "SPEAKER_02", "word": "Come", "start": "02:05", "end": "02:06", "confidence": 0.446}
+{"speaker": "SPEAKER_02", "word": "on.", "start": "02:06", "end": "02:06", "confidence": 0.652}
+{"speaker": "Unknown Speaker", "word": "I", "start": "02:08", "end": "02:08", "confidence": 0.809}
+{"speaker": "Unknown Speaker", "word": "have", "start": "02:08", "end": "02:08", "confidence": 0.432}
+{"speaker": "Unknown Speaker", "word": "a", "start": "02:08", "end": "02:08", "confidence": 0.629}
+{"speaker": "Unknown Speaker", "word": "question.", "start": "02:08", "end": "02:09", "confidence": 0.492}
+{"speaker": "Unknown Speaker", "word": "I'll", "start": "02:09", "end": "02:10", "confidence": 0.266}
+{"speaker": "Unknown Speaker", "word": "get", "start": "02:10", "end": "02:10", "confidence": 0.502}
+{"speaker": "Unknown Speaker", "word": "down", "start": "02:10", "end": "02:10", "confidence": 0.435}
+{"speaker": "Unknown Speaker", "word": "to", "start": "02:10", "end": "02:11", "confidence": 0.315}
+{"speaker": "Unknown Speaker", "word": "you.", "start": "02:11", "end": "02:11", "confidence": 0.264}
+{"speaker": "Unknown Speaker", "word": "So,", "start": "02:11", "end": "02:11", "confidence": 0.509}
+{"speaker": "Unknown Speaker", "word": "how's", "start": "02:11", "end": "02:11", "confidence": 0.416}
+{"speaker": "Unknown Speaker", "word": "the", "start": "02:11", "end": "02:11", "confidence": 0.427}
+{"speaker": "Unknown Speaker", "word": "world", "start": "02:11", "end": "02:12", "confidence": 0.348}
+{"speaker": "Unknown Speaker", "word": "of", "start": "02:12", "end": "02:14", "confidence": 0.684}
+{"speaker": "SPEAKER_02", "word": "serious", "start": "02:14", "end": "02:14", "confidence": 0.473}
+{"speaker": "SPEAKER_02", "word": "science,", "start": "02:14", "end": "02:15", "confidence": 0.204}
+{"speaker": "SPEAKER_02", "word": "huh?", "start": "02:15", "end": "02:15", "confidence": 0.437}
+{"speaker": "SPEAKER_02", "word": "Go", "start": "02:15", "end": "02:15", "confidence": 0.01}
+{"speaker": "SPEAKER_02", "word": "ahead.", "start": "02:15", "end": "02:15", "confidence": 0.166}
+{"speaker": "SPEAKER_02", "word": "Come", "start": "02:16", "end": "02:16", "confidence": 0.49}
+{"speaker": "SPEAKER_02", "word": "on,", "start": "02:16", "end": "02:16", "confidence": 0.276}
+{"speaker": "SPEAKER_02", "word": "make", "start": "02:16", "end": "02:16", "confidence": 0.485}
+{"speaker": "SPEAKER_02", "word": "yourselves", "start": "02:16", "end": "02:17", "confidence": 0.367}
+{"speaker": "SPEAKER_02", "word": "alone.", "start": "02:17", "end": "02:17", "confidence": 0.776}
+{"speaker": "SPEAKER_02", "word": "Be", "start": "02:18", "end": "02:18", "confidence": 0.536}
+{"speaker": "SPEAKER_02", "word": "right", "start": "02:18", "end": "02:18", "confidence": 0.507}
+{"speaker": "SPEAKER_02", "word": "up.", "start": "02:18", "end": "02:18", "confidence": 0.688}
+{"speaker": "Unknown Speaker", "word": "Oh,", "start": "02:18", "end": "02:19", "confidence": 0.604}
+{"speaker": "Unknown Speaker", "word": "geez.", "start": "02:22", "end": "02:22", "confidence": 0.459}
+{"speaker": "SPEAKER_00", "word": "The", "start": "02:25", "end": "02:25", "confidence": 0.993}
+{"speaker": "SPEAKER_00", "word": "best", "start": "02:25", "end": "02:25", "confidence": 0.894}
+{"speaker": "SPEAKER_00", "word": "programmer,", "start": "02:25", "end": "02:26", "confidence": 0.868}
+{"speaker": "SPEAKER_00", "word": "Incom,", "start": "02:26", "end": "02:26", "confidence": 0.782}
+{"speaker": "SPEAKER_00", "word": "ever", "start": "02:26", "end": "02:26", "confidence": 0.771}
+{"speaker": "SPEAKER_00", "word": "saw,", "start": "02:26", "end": "02:26", "confidence": 0.907}
+{"speaker": "SPEAKER_00", "word": "and", "start": "02:26", "end": "02:27", "confidence": 0.523}
+{"speaker": "SPEAKER_00", "word": "he", "start": "02:27", "end": "02:27", "confidence": 0.312}
+{"speaker": "SPEAKER_00", "word": "winds", "start": "02:27", "end": "02:27", "confidence": 0.832}
+{"speaker": "SPEAKER_00", "word": "up", "start": "02:27", "end": "02:27", "confidence": 0.372}
+{"speaker": "SPEAKER_00", "word": "playing", "start": "02:27", "end": "02:28", "confidence": 0.736}
+{"speaker": "SPEAKER_00", "word": "space", "start": "02:28", "end": "02:28", "confidence": 0.909}
+{"speaker": "SPEAKER_00", "word": "cowboy", "start": "02:28", "end": "02:29", "confidence": 0.951}
+{"speaker": "SPEAKER_00", "word": "in", "start": "02:29", "end": "02:29", "confidence": 0.329}
+{"speaker": "SPEAKER_00", "word": "some", "start": "02:29", "end": "02:30", "confidence": 0.681}
+{"speaker": "SPEAKER_00", "word": "back", "start": "02:30", "end": "02:30", "confidence": 0.84}
+{"speaker": "SPEAKER_00", "word": "room.", "start": "02:30", "end": "02:30", "confidence": 0.624}
+{"speaker": "SPEAKER_01", "word": "Okay,", "start": "02:31", "end": "02:31", "confidence": 0.37}
+{"speaker": "SPEAKER_01", "word": "let", "start": "02:31", "end": "02:31", "confidence": 0.162}
+{"speaker": "SPEAKER_01", "word": "me", "start": "02:31", "end": "02:31", "confidence": 0.288}
+{"speaker": "SPEAKER_01", "word": "handle", "start": "02:31", "end": "02:32", "confidence": 0.576}
+{"speaker": "SPEAKER_01", "word": "this.", "start": "02:32", "end": "02:32", "confidence": 0.208}
+{"speaker": "SPEAKER_01", "word": "Go", "start": "02:33", "end": "02:33", "confidence": 0.548}
+{"speaker": "SPEAKER_01", "word": "right", "start": "02:33", "end": "02:33", "confidence": 0.46}
+{"speaker": "SPEAKER_01", "word": "ahead.", "start": "02:33", "end": "02:33", "confidence": 0.623}
+{"speaker": "SPEAKER_01", "word": "Have", "start": "02:36", "end": "02:36", "confidence": 0.892}
+{"speaker": "SPEAKER_01", "word": "you", "start": "02:37", "end": "02:37", "confidence": 0.839}
+{"speaker": "SPEAKER_01", "word": "been", "start": "02:37", "end": "02:37", "confidence": 0.821}
+{"speaker": "SPEAKER_01", "word": "sneaking", "start": "02:37", "end": "02:37", "confidence": 0.827}
+{"speaker": "SPEAKER_01", "word": "into", "start": "02:37", "end": "02:37", "confidence": 0.837}
+{"speaker": "SPEAKER_01", "word": "the", "start": "02:37", "end": "02:37", "confidence": 0.851}
+{"speaker": "SPEAKER_01", "word": "Incom", "start": "02:37", "end": "02:38", "confidence": 0.706}
+{"speaker": "SPEAKER_01", "word": "system?", "start": "02:38", "end": "02:38", "confidence": 0.921}
+{"speaker": "Unknown Speaker", "word": "I", "start": "02:40", "end": "02:40", "confidence": 0.854}
+{"speaker": "Unknown Speaker", "word": "haven't", "start": "02:41", "end": "02:41", "confidence": 0.165}
+{"speaker": "Unknown Speaker", "word": "real", "start": "02:41", "end": "02:41", "confidence": 0.416}
+{"speaker": "Unknown Speaker", "word": "much", "start": "02:41", "end": "02:41", "confidence": 0.512}
+{"speaker": "Unknown Speaker", "word": "for", "start": "02:41", "end": "02:41", "confidence": 0.637}
+{"speaker": "SPEAKER_02", "word": "small", "start": "02:41", "end": "02:42", "confidence": 0.937}
+{"speaker": "SPEAKER_02", "word": "talk,", "start": "02:42", "end": "02:42", "confidence": 0.557}
+{"speaker": "SPEAKER_02", "word": "Priya.", "start": "02:42", "end": "02:42", "confidence": 0.27}
+{"speaker": "SPEAKER_02", "word": "Did", "start": "02:42", "end": "02:42", "confidence": 0.566}
+{"speaker": "Unknown Speaker", "word": "you", "start": "02:45", "end": "02:46", "confidence": 0.435}
+{"speaker": "SPEAKER_02", "word": "still", "start": "02:46", "end": "02:46", "confidence": 0.222}
+{"speaker": "SPEAKER_02", "word": "leave", "start": "02:46", "end": "02:46", "confidence": 0.005}
+{"speaker": "SPEAKER_02", "word": "her", "start": "02:46", "end": "02:46", "confidence": 0.57}
+{"speaker": "SPEAKER_02", "word": "clothes", "start": "02:46", "end": "02:46", "confidence": 0.572}
+{"speaker": "SPEAKER_02", "word": "all", "start": "02:46", "end": "02:46", "confidence": 0.693}
+{"speaker": "SPEAKER_02", "word": "over", "start": "02:46", "end": "02:47", "confidence": 0.751}
+{"speaker": "SPEAKER_02", "word": "the", "start": "02:47", "end": "02:47", "confidence": 0.863}
+{"speaker": "SPEAKER_02", "word": "floor?", "start": "02:47", "end": "02:47", "confidence": 0.814}
+{"speaker": "SPEAKER_02", "word": "No.", "start": "02:48", "end": "02:48", "confidence": 0.86}
+{"speaker": "SPEAKER_01", "word": "Alan!", "start": "02:48", "end": "02:49", "confidence": 0.669}
+{"speaker": "SPEAKER_02", "word": "I", "start": "02:50", "end": "02:50", "confidence": 0.787}
+{"speaker": "SPEAKER_02", "word": "mean,", "start": "02:50", "end": "02:50", "confidence": 0.843}
+{"speaker": "SPEAKER_02", "word": "not", "start": "02:50", "end": "02:50", "confidence": 0.759}
+{"speaker": "SPEAKER_02", "word": "that", "start": "02:50", "end": "02:50", "confidence": 0.827}
+{"speaker": "SPEAKER_02", "word": "often.", "start": "02:50", "end": "02:50", "confidence": 0.981}
+{"speaker": "SPEAKER_01", "word": "Now", "start": "02:51", "end": "02:52", "confidence": 0.342}
+{"speaker": "SPEAKER_01", "word": "you", "start": "02:52", "end": "02:52", "confidence": 0.117}
+{"speaker": "SPEAKER_01", "word": "can", "start": "02:52", "end": "02:52", "confidence": 0.389}
+{"speaker": "SPEAKER_01", "word": "see", "start": "02:52", "end": "02:52", "confidence": 0.571}
+{"speaker": "SPEAKER_01", "word": "why", "start": "02:52", "end": "02:52", "confidence": 0.321}
+{"speaker": "SPEAKER_01", "word": "Olicon's", "start": "02:52", "end": "02:52", "confidence": 0.27}
+{"speaker": "SPEAKER_01", "word": "friends", "start": "02:53", "end": "02:53", "confidence": 0.533}
+{"speaker": "SPEAKER_01", "word": "are", "start": "02:53", "end": "02:53", "confidence": 0.628}
+{"speaker": "Unknown Speaker", "word": "14", "start": "00:00", "end": "00:00", "confidence": "N/A"}
+{"speaker": "SPEAKER_01", "word": "years", "start": "02:53", "end": "02:54", "confidence": 0.712}
+{"speaker": "SPEAKER_01", "word": "old.", "start": "02:54", "end": "02:54", "confidence": 0.888}
+{"speaker": "SPEAKER_01", "word": "You", "start": "02:54", "end": "02:54", "confidence": 0.483}
+{"speaker": "Unknown Speaker", "word": "should.", "start": "02:54", "end": "02:54", "confidence": 0.198}
+{"speaker": "Unknown Speaker", "word": "You", "start": "02:54", "end": "02:55", "confidence": 0.571}
+{"speaker": "Unknown Speaker", "word": "should.", "start": "02:55", "end": "02:55", "confidence": 0.166}
+{"speaker": "Unknown Speaker", "word": "I", "start": "03:05", "end": "03:05", "confidence": 0.768}
+{"speaker": "Unknown Speaker", "word": "have", "start": "03:05", "end": "03:05", "confidence": 0.885}
+{"speaker": "Unknown Speaker", "word": "been", "start": "03:06", "end": "03:06", "confidence": 0.942}
+{"speaker": "SPEAKER_02", "word": "doing", "start": "03:06", "end": "03:06", "confidence": 0.713}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:06", "end": "03:06", "confidence": 0.961}
+{"speaker": "SPEAKER_02", "word": "little", "start": "03:06", "end": "03:06", "confidence": 0.853}
+{"speaker": "SPEAKER_02", "word": "hacking", "start": "03:06", "end": "03:07", "confidence": 0.725}
+{"speaker": "SPEAKER_02", "word": "here,", "start": "03:07", "end": "03:07", "confidence": 0.696}
+{"speaker": "SPEAKER_02", "word": "as", "start": "03:07", "end": "03:07", "confidence": 0.469}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:07", "end": "03:07", "confidence": 0.892}
+{"speaker": "SPEAKER_02", "word": "matter", "start": "03:07", "end": "03:07", "confidence": 0.559}
+{"speaker": "SPEAKER_02", "word": "of", "start": "03:07", "end": "03:08", "confidence": 0.42}
+{"speaker": "SPEAKER_02", "word": "fact.", "start": "03:08", "end": "03:08", "confidence": 0.171}
+{"speaker": "SPEAKER_02", "word": "You", "start": "03:08", "end": "03:08", "confidence": 0.926}
+{"speaker": "SPEAKER_02", "word": "did", "start": "03:08", "end": "03:08", "confidence": 0.914}
+{"speaker": "SPEAKER_02", "word": "break", "start": "03:08", "end": "03:09", "confidence": 0.962}
+{"speaker": "Unknown Speaker", "word": "in.", "start": "03:09", "end": "03:09", "confidence": 0.831}
+{"speaker": "Unknown Speaker", "word": "Tried", "start": "03:09", "end": "03:10", "confidence": 0.694}
+{"speaker": "Unknown Speaker", "word": "to.", "start": "03:10", "end": "03:10", "confidence": 0.873}
+{"speaker": "SPEAKER_02", "word": "Can't", "start": "03:10", "end": "03:11", "confidence": 0.314}
+{"speaker": "SPEAKER_02", "word": "seem", "start": "03:11", "end": "03:11", "confidence": 0.942}
+{"speaker": "SPEAKER_02", "word": "to", "start": "03:11", "end": "03:12", "confidence": 0.858}
+{"speaker": "SPEAKER_02", "word": "quite", "start": "03:12", "end": "03:12", "confidence": 0.971}
+{"speaker": "SPEAKER_02", "word": "get", "start": "03:12", "end": "03:12", "confidence": 0.611}
+{"speaker": "SPEAKER_02", "word": "the", "start": "03:12", "end": "03:12", "confidence": 0.058}
+{"speaker": "SPEAKER_02", "word": "connection", "start": "03:12", "end": "03:13", "confidence": 0.932}
+{"speaker": "SPEAKER_02", "word": "with", "start": "03:13", "end": "03:13", "confidence": 0.99}
+{"speaker": "SPEAKER_02", "word": "that", "start": "03:13", "end": "03:13", "confidence": 0.606}
+{"speaker": "SPEAKER_02", "word": "sucker", "start": "03:13", "end": "03:13", "confidence": 0.799}
+{"speaker": "SPEAKER_02", "word": "though.", "start": "03:13", "end": "03:14", "confidence": 0.352}
+{"speaker": "SPEAKER_02", "word": "Now", "start": "03:15", "end": "03:15", "confidence": 0.941}
+{"speaker": "SPEAKER_02", "word": "if", "start": "03:15", "end": "03:15", "confidence": 0.857}
+{"speaker": "SPEAKER_02", "word": "I", "start": "03:15", "end": "03:15", "confidence": 0.705}
+{"speaker": "SPEAKER_02", "word": "had", "start": "03:15", "end": "03:15", "confidence": 0.879}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:15", "end": "03:15", "confidence": 0.962}
+{"speaker": "SPEAKER_02", "word": "direct", "start": "03:15", "end": "03:16", "confidence": 0.666}
+{"speaker": "SPEAKER_02", "word": "terminal.", "start": "03:16", "end": "03:16", "confidence": 0.28}
+{"speaker": "SPEAKER_02", "word": "Flynn,", "start": "03:16", "end": "03:17", "confidence": 0.478}
+{"speaker": "SPEAKER_02", "word": "are", "start": "03:17", "end": "03:17", "confidence": 0.86}
+{"speaker": "SPEAKER_02", "word": "you", "start": "03:17", "end": "03:17", "confidence": 0.811}
+{"speaker": "SPEAKER_02", "word": "embezzling?", "start": "03:17", "end": "03:17", "confidence": 0.962}
+{"speaker": "SPEAKER_02", "word": "Imbezzling", "start": "03:20", "end": "03:21", "confidence": 0.734}
+{"speaker": "SPEAKER_02", "word": "is", "start": "03:21", "end": "03:21", "confidence": 0.0}
+{"speaker": "SPEAKER_02", "word": "such", "start": "03:22", "end": "03:22", "confidence": 0.83}
+{"speaker": "SPEAKER_02", "word": "an", "start": "03:22", "end": "03:22", "confidence": 0.994}
+{"speaker": "SPEAKER_02", "word": "ugly", "start": "03:22", "end": "03:22", "confidence": 0.941}
+{"speaker": "SPEAKER_02", "word": "word,", "start": "03:22", "end": "03:23", "confidence": 0.813}
+{"speaker": "SPEAKER_02", "word": "Mr.", "start": "03:23", "end": "03:23", "confidence": 0.562}
+{"speaker": "SPEAKER_02", "word": "Bradley.", "start": "03:23", "end": "03:23", "confidence": 0.692}
+{"speaker": "SPEAKER_02", "word": "No,", "start": "03:24", "end": "03:24", "confidence": 0.732}
+{"speaker": "SPEAKER_02", "word": "actually,", "start": "03:25", "end": "03:25", "confidence": 0.804}
+{"speaker": "SPEAKER_02", "word": "I'm", "start": "03:25", "end": "03:25", "confidence": 0.278}
+{"speaker": "SPEAKER_00", "word": "trying", "start": "03:25", "end": "03:25", "confidence": 0.912}
+{"speaker": "SPEAKER_00", "word": "to", "start": "03:25", "end": "03:25", "confidence": 0.748}
+{"speaker": "SPEAKER_00", "word": "get", "start": "03:25", "end": "03:25", "confidence": 0.992}
+{"speaker": "SPEAKER_00", "word": "some", "start": "03:26", "end": "03:26", "confidence": 0.866}
+{"speaker": "SPEAKER_00", "word": "solid", "start": "03:26", "end": "03:26", "confidence": 0.911}
+{"speaker": "SPEAKER_02", "word": "evidence", "start": "03:26", "end": "03:26", "confidence": 0.896}
+{"speaker": "SPEAKER_02", "word": "together.", "start": "03:26", "end": "03:27", "confidence": 0.924}
+{"speaker": "SPEAKER_02", "word": "I", "start": "03:27", "end": "03:27", "confidence": 0.0}
+{"speaker": "SPEAKER_02", "word": "don't", "start": "03:28", "end": "03:28", "confidence": 0.793}
+{"speaker": "SPEAKER_02", "word": "get", "start": "03:28", "end": "03:28", "confidence": 0.823}
+{"speaker": "Unknown Speaker", "word": "it.", "start": "03:28", "end": "03:28", "confidence": 0.546}
+{"speaker": "Unknown Speaker", "word": "Okay.", "start": "03:28", "end": "03:31", "confidence": 0.822}
+{"speaker": "Unknown Speaker", "word": "Sherman,", "start": "03:31", "end": "03:32", "confidence": 0.744}
+{"speaker": "Unknown Speaker", "word": "set", "start": "03:32", "end": "03:32", "confidence": 0.773}
+{"speaker": "Unknown Speaker", "word": "the", "start": "03:32", "end": "03:32", "confidence": 0.742}
+{"speaker": "Unknown Speaker", "word": "Wayback", "start": "03:32", "end": "03:33", "confidence": 0.86}
+{"speaker": "SPEAKER_02", "word": "Machine", "start": "03:33", "end": "03:33", "confidence": 0.84}
+{"speaker": "SPEAKER_02", "word": "for", "start": "03:33", "end": "03:34", "confidence": 0.676}
+{"speaker": "SPEAKER_02", "word": "three", "start": "03:34", "end": "03:35", "confidence": 0.876}
+{"speaker": "SPEAKER_02", "word": "years", "start": "03:35", "end": "03:35", "confidence": 0.754}
+{"speaker": "SPEAKER_02", "word": "ago.", "start": "03:35", "end": "03:35", "confidence": 0.791}
+{"speaker": "Unknown Speaker", "word": "Kevin", "start": "03:36", "end": "03:36", "confidence": 0.745}
+{"speaker": "Unknown Speaker", "word": "Flynn,", "start": "03:37", "end": "03:37", "confidence": 0.797}
+{"speaker": "Unknown Speaker", "word": "one", "start": "03:39", "end": "03:39", "confidence": 0.737}
+{"speaker": "Unknown Speaker", "word": "of", "start": "03:39", "end": "03:39", "confidence": 0.637}
+{"speaker": "SPEAKER_02", "word": "Incom's", "start": "03:39", "end": "03:40", "confidence": 0.754}
+{"speaker": "SPEAKER_02", "word": "brightest", "start": "03:40", "end": "03:40", "confidence": 0.789}
+{"speaker": "SPEAKER_02", "word": "young", "start": "03:40", "end": "03:41", "confidence": 0.774}
+{"speaker": "SPEAKER_02", "word": "software", "start": "03:41", "end": "03:42", "confidence": 0.764}
+{"speaker": "SPEAKER_02", "word": "engineers.", "start": "03:42", "end": "03:42", "confidence": 0.916}
+{"speaker": "SPEAKER_02", "word": "He's", "start": "03:43", "end": "03:43", "confidence": 0.81}
+{"speaker": "SPEAKER_02", "word": "so", "start": "03:43", "end": "03:43", "confidence": 0.797}
+{"speaker": "SPEAKER_02", "word": "bright,", "start": "03:43", "end": "03:44", "confidence": 0.788}
+{"speaker": "SPEAKER_02", "word": "as", "start": "03:44", "end": "03:44", "confidence": 0.754}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:44", "end": "03:44", "confidence": 0.997}
+{"speaker": "SPEAKER_02", "word": "matter", "start": "03:44", "end": "03:44", "confidence": 1.0}
+{"speaker": "SPEAKER_02", "word": "of", "start": "03:44", "end": "03:44", "confidence": 0.749}
+{"speaker": "SPEAKER_02", "word": "fact,", "start": "03:44", "end": "03:44", "confidence": 0.852}
+{"speaker": "SPEAKER_02", "word": "that", "start": "03:44", "end": "03:44", "confidence": 0.744}
+{"speaker": "SPEAKER_02", "word": "he", "start": "03:44", "end": "03:44", "confidence": 0.897}
+{"speaker": "SPEAKER_02", "word": "starts", "start": "03:44", "end": "03:45", "confidence": 0.467}
+{"speaker": "SPEAKER_02", "word": "going", "start": "03:45", "end": "03:45", "confidence": 0.836}
+{"speaker": "SPEAKER_02", "word": "in", "start": "03:45", "end": "03:45", "confidence": 0.694}
+{"speaker": "SPEAKER_02", "word": "at", "start": "03:45", "end": "03:45", "confidence": 0.838}
+{"speaker": "SPEAKER_02", "word": "night,", "start": "03:45", "end": "03:45", "confidence": 0.763}
+{"speaker": "SPEAKER_02", "word": "sets", "start": "03:45", "end": "03:46", "confidence": 0.53}
+{"speaker": "SPEAKER_02", "word": "up", "start": "03:46", "end": "03:46", "confidence": 0.882}
+{"speaker": "SPEAKER_02", "word": "his", "start": "03:46", "end": "03:46", "confidence": 0.856}
+{"speaker": "SPEAKER_02", "word": "own", "start": "03:46", "end": "03:46", "confidence": 0.935}
+{"speaker": "SPEAKER_02", "word": "private", "start": "03:46", "end": "03:47", "confidence": 0.877}
+{"speaker": "SPEAKER_02", "word": "memory", "start": "03:47", "end": "03:47", "confidence": 0.819}
+{"speaker": "SPEAKER_02", "word": "file,", "start": "03:47", "end": "03:47", "confidence": 0.901}
+{"speaker": "SPEAKER_02", "word": "and", "start": "03:47", "end": "03:48", "confidence": 0.753}
+{"speaker": "SPEAKER_02", "word": "begins", "start": "03:48", "end": "03:48", "confidence": 0.813}
+{"speaker": "SPEAKER_02", "word": "writing", "start": "03:48", "end": "03:48", "confidence": 0.801}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:48", "end": "03:48", "confidence": 0.002}
+{"speaker": "SPEAKER_02", "word": "program", "start": "03:49", "end": "03:49", "confidence": 0.828}
+{"speaker": "SPEAKER_02", "word": "for", "start": "03:49", "end": "03:49", "confidence": 0.589}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:49", "end": "03:49", "confidence": 0.017}
+{"speaker": "SPEAKER_02", "word": "video", "start": "03:49", "end": "03:50", "confidence": 0.881}
+{"speaker": "SPEAKER_02", "word": "game", "start": "03:50", "end": "03:50", "confidence": 0.936}
+{"speaker": "SPEAKER_02", "word": "he's", "start": "03:50", "end": "03:50", "confidence": 0.158}
+{"speaker": "SPEAKER_02", "word": "invented", "start": "03:50", "end": "03:51", "confidence": 0.52}
+{"speaker": "SPEAKER_02", "word": "called", "start": "03:51", "end": "03:51", "confidence": 0.866}
+{"speaker": "SPEAKER_02", "word": "Space", "start": "03:52", "end": "03:53", "confidence": 0.886}
+{"speaker": "SPEAKER_02", "word": "Paranoids.", "start": "03:53", "end": "03:54", "confidence": 0.803}
+{"speaker": "SPEAKER_02", "word": "You", "start": "03:54", "end": "03:54", "confidence": 0.923}
+{"speaker": "SPEAKER_02", "word": "invented", "start": "03:54", "end": "03:55", "confidence": 0.838}
+{"speaker": "SPEAKER_02", "word": "Space", "start": "03:55", "end": "03:55", "confidence": 0.959}
+{"speaker": "SPEAKER_00", "word": "Paranoids?", "start": "03:55", "end": "03:56", "confidence": 0.853}
+{"speaker": "SPEAKER_02", "word": "Paranoids,", "start": "03:57", "end": "03:57", "confidence": 0.819}
+{"speaker": "SPEAKER_02", "word": "Matrix", "start": "03:58", "end": "03:58", "confidence": 0.862}
+{"speaker": "SPEAKER_02", "word": "Blaster,", "start": "03:58", "end": "03:59", "confidence": 0.842}
+{"speaker": "SPEAKER_02", "word": "Vice", "start": "03:59", "end": "03:59", "confidence": 0.422}
+{"speaker": "SPEAKER_02", "word": "Squad,", "start": "03:59", "end": "03:59", "confidence": 0.942}
+{"speaker": "SPEAKER_02", "word": "a", "start": "03:59", "end": "03:59", "confidence": 0.112}
+{"speaker": "SPEAKER_02", "word": "whole", "start": "03:59", "end": "03:60", "confidence": 0.85}
+{"speaker": "SPEAKER_02", "word": "slew", "start": "03:60", "end": "03:60", "confidence": 0.625}
+{"speaker": "SPEAKER_02", "word": "of", "start": "03:60", "end": "03:60", "confidence": 0.0}
+{"speaker": "SPEAKER_02", "word": "them.", "start": "03:60", "end": "03:60", "confidence": 0.014}
+{"speaker": "SPEAKER_02", "word": "I", "start": "04:00", "end": "04:00", "confidence": 0.738}
+{"speaker": "SPEAKER_02", "word": "was", "start": "04:00", "end": "04:00", "confidence": 0.991}
+{"speaker": "SPEAKER_02", "word": "this", "start": "04:01", "end": "04:01", "confidence": 0.246}
+{"speaker": "SPEAKER_02", "word": "close", "start": "04:01", "end": "04:01", "confidence": 0.888}
+{"speaker": "SPEAKER_02", "word": "to", "start": "04:01", "end": "04:01", "confidence": 0.098}
+{"speaker": "SPEAKER_02", "word": "starting", "start": "04:01", "end": "04:01", "confidence": 0.864}
+{"speaker": "SPEAKER_02", "word": "my", "start": "04:01", "end": "04:01", "confidence": 0.996}
+{"speaker": "SPEAKER_02", "word": "own", "start": "04:01", "end": "04:01", "confidence": 0.0}
+{"speaker": "SPEAKER_02", "word": "little", "start": "04:01", "end": "04:02", "confidence": 0.901}
+{"speaker": "SPEAKER_02", "word": "enterprise,", "start": "04:02", "end": "04:02", "confidence": 0.95}
+{"speaker": "SPEAKER_02", "word": "man.", "start": "04:02", "end": "04:02", "confidence": 0.0}
+{"speaker": "SPEAKER_02", "word": "But,", "start": "04:04", "end": "04:04", "confidence": 0.884}
+{"speaker": "SPEAKER_02", "word": "enter", "start": "04:05", "end": "04:05", "confidence": 0.566}
+{"speaker": "SPEAKER_02", "word": "another", "start": "04:05", "end": "04:05", "confidence": 0.901}
+{"speaker": "SPEAKER_02", "word": "software", "start": "04:05", "end": "04:05", "confidence": 0.544}
+{"speaker": "SPEAKER_02", "word": "engineer.", "start": "04:05", "end": "04:06", "confidence": 0.902}
+{"speaker": "SPEAKER_02", "word": "Not", "start": "04:06", "end": "04:07", "confidence": 0.98}
+{"speaker": "SPEAKER_02", "word": "so", "start": "04:07", "end": "04:07", "confidence": 0.864}
+{"speaker": "SPEAKER_02", "word": "young,", "start": "04:07", "end": "04:07", "confidence": 0.636}
+{"speaker": "SPEAKER_02", "word": "not", "start": "04:07", "end": "04:07", "confidence": 0.989}
+{"speaker": "SPEAKER_02", "word": "so", "start": "04:07", "end": "04:07", "confidence": 0.904}
+{"speaker": "SPEAKER_02", "word": "bright,", "start": "04:08", "end": "04:08", "confidence": 0.825}
+{"speaker": "SPEAKER_02", "word": "but", "start": "04:08", "end": "04:08", "confidence": 0.952}
+{"speaker": "SPEAKER_02", "word": "very,", "start": "04:08", "end": "04:08", "confidence": 0.772}
+{"speaker": "SPEAKER_02", "word": "very", "start": "04:08", "end": "04:09", "confidence": 0.846}
+{"speaker": "SPEAKER_02", "word": "sneaky.", "start": "04:09", "end": "04:09", "confidence": 0.955}
+{"speaker": "SPEAKER_02", "word": "Ed", "start": "04:10", "end": "04:10", "confidence": 0.327}
+{"speaker": "SPEAKER_02", "word": "Dillinger.", "start": "04:10", "end": "04:11", "confidence": 0.783}
+{"speaker": "SPEAKER_02", "word": "So", "start": "04:13", "end": "04:13", "confidence": 0.968}
+{"speaker": "SPEAKER_02", "word": "one", "start": "04:13", "end": "04:13", "confidence": 0.179}
+{"speaker": "SPEAKER_02", "word": "night", "start": "04:13", "end": "04:13", "confidence": 0.394}
+{"speaker": "SPEAKER_02", "word": "our", "start": "04:13", "end": "04:13", "confidence": 0.243}
+{"speaker": "SPEAKER_02", "word": "boy", "start": "04:13", "end": "04:13", "confidence": 0.938}
+{"speaker": "SPEAKER_02", "word": "Flynn,", "start": "04:13", "end": "04:14", "confidence": 0.617}
+{"speaker": "SPEAKER_02", "word": "he", "start": "04:14", "end": "04:14", "confidence": 0.236}
+{"speaker": "SPEAKER_02", "word": "goes", "start": "04:14", "end": "04:14", "confidence": 0.803}
+{"speaker": "SPEAKER_02", "word": "to", "start": "04:14", "end": "04:14", "confidence": 0.975}
+{"speaker": "SPEAKER_02", "word": "his", "start": "04:14", "end": "04:14", "confidence": 0.893}
+{"speaker": "SPEAKER_02", "word": "terminal", "start": "04:14", "end": "04:15", "confidence": 0.894}
+{"speaker": "SPEAKER_02", "word": "and", "start": "04:15", "end": "04:15", "confidence": 0.212}
+{"speaker": "SPEAKER_02", "word": "tries", "start": "04:15", "end": "04:15", "confidence": 0.074}
+{"speaker": "SPEAKER_02", "word": "to", "start": "04:15", "end": "04:15", "confidence": 0.512}
+{"speaker": "SPEAKER_02", "word": "read", "start": "04:15", "end": "04:15", "confidence": 0.384}
+{"speaker": "Unknown Speaker", "word": "us", "start": "04:15", "end": "04:15", "confidence": 0.008}
+{"speaker": "Unknown Speaker", "word": "his", "start": "04:15", "end": "04:15", "confidence": 0.195}
+{"speaker": "SPEAKER_02", "word": "file.", "start": "04:15", "end": "04:16", "confidence": 0.705}
+{"speaker": "SPEAKER_02", "word": "I", "start": "04:16", "end": "04:16", "confidence": 0.956}
+{"speaker": "SPEAKER_02", "word": "get", "start": "04:16", "end": "04:16", "confidence": 0.816}
+{"speaker": "SPEAKER_02", "word": "nothing", "start": "04:16", "end": "04:16", "confidence": 0.916}
+{"speaker": "SPEAKER_02", "word": "on", "start": "04:17", "end": "04:17", "confidence": 0.978}
+{"speaker": "SPEAKER_02", "word": "there,", "start": "04:17", "end": "04:17", "confidence": 0.555}
+{"speaker": "Unknown Speaker", "word": "it's", "start": "04:17", "end": "04:17", "confidence": 0.012}
+{"speaker": "Unknown Speaker", "word": "a", "start": "04:17", "end": "04:17", "confidence": 0.0}
+{"speaker": "Unknown Speaker", "word": "big", "start": "04:17", "end": "04:17", "confidence": 0.828}
+{"speaker": "SPEAKER_02", "word": "blank.", "start": "04:17", "end": "04:18", "confidence": 0.818}
+{"speaker": "SPEAKER_02", "word": "Alright,", "start": "04:20", "end": "04:20", "confidence": 0.245}
+{"speaker": "SPEAKER_02", "word": "now", "start": "04:20", "end": "04:20", "confidence": 0.925}
+{"speaker": "SPEAKER_02", "word": "we", "start": "04:20", "end": "04:20", "confidence": 0.004}
+{"speaker": "SPEAKER_02", "word": "take", "start": "04:20", "end": "04:20", "confidence": 0.787}
+{"speaker": "SPEAKER_02", "word": "you", "start": "04:20", "end": "04:20", "confidence": 0.82}
+{"speaker": "SPEAKER_02", "word": "three", "start": "04:20", "end": "04:20", "confidence": 0.897}
+{"speaker": "SPEAKER_02", "word": "months", "start": "04:20", "end": "04:21", "confidence": 0.751}
+{"speaker": "SPEAKER_02", "word": "later.", "start": "04:21", "end": "04:21", "confidence": 0.873}
+{"speaker": "SPEAKER_02", "word": "Dillinger", "start": "04:21", "end": "04:22", "confidence": 0.652}
+{"speaker": "SPEAKER_02", "word": "presents", "start": "04:23", "end": "04:23", "confidence": 0.929}
+{"speaker": "SPEAKER_02", "word": "and", "start": "04:23", "end": "04:23", "confidence": 0.337}
+{"speaker": "SPEAKER_02", "word": "come", "start": "04:23", "end": "04:23", "confidence": 0.843}
+{"speaker": "SPEAKER_02", "word": "with", "start": "04:23", "end": "04:24", "confidence": 0.732}
+{"speaker": "SPEAKER_02", "word": "five", "start": "04:24", "end": "04:24", "confidence": 0.806}
+{"speaker": "SPEAKER_02", "word": "video", "start": "04:24", "end": "04:24", "confidence": 0.83}
+{"speaker": "SPEAKER_02", "word": "games.", "start": "04:24", "end": "04:25", "confidence": 0.859}
+{"speaker": "SPEAKER_02", "word": "But", "start": "04:26", "end": "04:26", "confidence": 0.568}
+{"speaker": "SPEAKER_02", "word": "he's", "start": "04:26", "end": "04:26", "confidence": 0.689}
+{"speaker": "SPEAKER_02", "word": "invented.", "start": "04:26", "end": "04:27", "confidence": 0.836}
+{"speaker": "SPEAKER_02", "word": "The", "start": "04:27", "end": "04:27", "confidence": 0.91}
+{"speaker": "SPEAKER_02", "word": "slime", "start": "04:27", "end": "04:28", "confidence": 0.905}
+{"speaker": "Unknown Speaker", "word": "didn't", "start": "04:28", "end": "04:28", "confidence": 0.855}
+{"speaker": "Unknown Speaker", "word": "even", "start": "04:28", "end": "04:28", "confidence": 0.882}
+{"speaker": "Unknown Speaker", "word": "change", "start": "04:28", "end": "04:28", "confidence": 0.836}
+{"speaker": "Unknown Speaker", "word": "the", "start": "04:28", "end": "04:28", "confidence": 0.687}
+{"speaker": "SPEAKER_02", "word": "names,", "start": "04:28", "end": "04:29", "confidence": 0.87}
+{"speaker": "Unknown Speaker", "word": "man!", "start": "04:29", "end": "04:29", "confidence": 0.668}
+{"speaker": "Unknown Speaker", "word": "He", "start": "04:29", "end": "04:29", "confidence": 0.887}
+{"speaker": "Unknown Speaker", "word": "gets", "start": "04:30", "end": "04:30", "confidence": 0.767}
+{"speaker": "Unknown Speaker", "word": "a", "start": "04:30", "end": "04:30", "confidence": 0.509}
+{"speaker": "SPEAKER_02", "word": "big", "start": "04:30", "end": "04:30", "confidence": 0.89}
+{"speaker": "SPEAKER_02", "word": "fat", "start": "04:30", "end": "04:30", "confidence": 0.86}
+{"speaker": "SPEAKER_02", "word": "promotion!", "start": "04:31", "end": "04:31", "confidence": 0.935}
+{"speaker": "SPEAKER_02", "word": "And", "start": "04:32", "end": "04:32", "confidence": 0.826}
+{"speaker": "SPEAKER_02", "word": "thus", "start": "04:32", "end": "04:32", "confidence": 0.864}
+{"speaker": "SPEAKER_02", "word": "begins", "start": "04:32", "end": "04:32", "confidence": 0.932}
+{"speaker": "SPEAKER_02", "word": "his", "start": "04:32", "end": "04:32", "confidence": 0.845}
+{"speaker": "SPEAKER_02", "word": "meteoric", "start": "04:32", "end": "04:33", "confidence": 0.793}
+{"speaker": "SPEAKER_02", "word": "rise", "start": "04:33", "end": "04:34", "confidence": 0.785}
+{"speaker": "SPEAKER_02", "word": "to,", "start": "04:34", "end": "04:34", "confidence": 0.974}
+{"speaker": "SPEAKER_02", "word": "what", "start": "04:34", "end": "04:34", "confidence": 0.999}
+{"speaker": "SPEAKER_02", "word": "is", "start": "04:34", "end": "04:34", "confidence": 0.79}
+{"speaker": "SPEAKER_02", "word": "he", "start": "04:34", "end": "04:34", "confidence": 0.645}
+{"speaker": "SPEAKER_02", "word": "now,", "start": "04:34", "end": "04:34", "confidence": 0.92}
+{"speaker": "SPEAKER_02", "word": "executive", "start": "04:34", "end": "04:35", "confidence": 0.969}
+{"speaker": "SPEAKER_02", "word": "VP?", "start": "04:35", "end": "04:36", "confidence": 0.801}
+{"speaker": "SPEAKER_01", "word": "Senior", "start": "04:36", "end": "04:37", "confidence": 0.893}
+{"speaker": "SPEAKER_01", "word": "Exec.", "start": "04:37", "end": "04:37", "confidence": 0.817}
+{"speaker": "SPEAKER_02", "word": "Senior", "start": "04:38", "end": "04:39", "confidence": 0.883}
+{"speaker": "SPEAKER_02", "word": "Exec?", "start": "04:39", "end": "04:39", "confidence": 0.879}

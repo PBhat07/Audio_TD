@@ -28,8 +28,7 @@ docker-compose.override.yml
 *.ipynb
 
 # -------- Audio / model outputs --------
-input/
-output/
+
 models/
 logs/
 
