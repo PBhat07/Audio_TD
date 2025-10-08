@@ -30,8 +30,8 @@ It is containerized with **Docker** for reproducibility and uses **GPU accelerat
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/PBhat07/audio-td.git
-cd audio-td
+git https://github.com/PBhat07/Audio_TD.git
+cd Audio_TD
 ```
 
 ### 2. Setup environment
@@ -200,6 +200,7 @@ Speechbrain
 
 
 ---
+
 
 
 
