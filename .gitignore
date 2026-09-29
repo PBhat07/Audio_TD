@@ -35,6 +35,10 @@ audio_cache/
 output/
 pretrained_models/
 
+# Generated results / submission artifacts
+results/
+submissions/
+
 # -------- Hugging Face token / secrets --------
 .env
 
