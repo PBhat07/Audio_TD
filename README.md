@@ -80,7 +80,7 @@ Build and run the pipeline:
 
 ```bash
 docker compose build
-docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --min_speakers 4 --max_speakers 5
+docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --diar_preset pitch_variation_robust --min_speakers 6 --max_speakers 7
 ```
 #### Arguments:
 
