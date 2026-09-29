@@ -32,6 +32,7 @@ docker-compose.override.yml
 models/
 logs/
 audio_cache/
+output/
 
 # -------- Hugging Face token / secrets --------
 .env
