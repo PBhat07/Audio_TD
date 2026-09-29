@@ -33,6 +33,7 @@ models/
 logs/
 audio_cache/
 output/
+pretrained_models/
 
 # -------- Hugging Face token / secrets --------
 .env
