@@ -9,8 +9,8 @@ from pyannote.audio import Pipeline
 from pydub import AudioSegment
 
 # Configure logging for this module
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+logger = logging.getLogger(__name__)
 class DiarizationPipeline:
     """
     A class to handle speaker diarization using the pyannote.audio library.
@@ -27,7 +27,7 @@ class DiarizationPipeline:
             device (str): The device to run the model on (e.g., "cuda" or "cpu").
         """
         self.device = device if device is not None else ("cuda" if torch.cuda.is_available() else "cpu")
-        logging.info(f"Initializing DiarizationPipeline on device: {self.device}")
+        logger.info(f"Initializing DiarizationPipeline on device: {self.device}")
 
         try:
             self.pipeline = Pipeline.from_pretrained(
@@ -35,9 +35,9 @@ class DiarizationPipeline:
                 use_auth_token=hf_token
             )
             self.pipeline.to(torch.device(self.device))
-            logging.info("Pyannote speaker diarization model loaded successfully.")
+            logger.info("Pyannote speaker diarization model loaded successfully.")
         except Exception as e:
-            logging.critical(
+            logger.critical(
                 f"Failed to load Pyannote diarization model. Check your Hugging Face token and model access: {e}",
                 exc_info=True
             )
@@ -48,7 +48,7 @@ class DiarizationPipeline:
         Configures the pipeline with a given dictionary of parameters.
         """
         if not self.pipeline:
-            logging.error("Pipeline not loaded. Cannot configure parameters.")
+            logger.error("Pipeline not loaded. Cannot configure parameters.")
             return
 
         for component_name, component_params in params.items():
@@ -58,9 +58,9 @@ class DiarizationPipeline:
                     for param, value in component_params.items():
                         if hasattr(component, param):
                             setattr(component, param, value)
-                            logging.info(f"Set '{component_name}.{param}' to {value}")
+                            logger.info(f"Set '{component_name}.{param}' to {value}")
             except Exception as e:
-                logging.warning(f"Failed to set parameter '{component_name}.{param}': {e}")
+                logger.warning(f"Failed to set parameter '{component_name}.{param}': {e}")
 
     def process_audio(self,
                     audio_source: Union[str, AudioSegment],
@@ -73,7 +73,7 @@ class DiarizationPipeline:
         result = None  # default
 
         if not self.pipeline:
-            logging.error("Diarization model not loaded. Cannot process audio.")
+            logger.error("Diarization model not loaded. Cannot process audio.")
             return result
 
         # Configure parameters
@@ -81,7 +81,7 @@ class DiarizationPipeline:
         if param_groups:
             self._configure_parameters(param_groups)
 
-        logging.info("Starting speaker diarization...")
+        logger.info("Starting speaker diarization...")
 
         tmp_path = None
         try:
@@ -101,7 +101,7 @@ class DiarizationPipeline:
 
             # Run diarization
             diarization_result = self.pipeline(**pipeline_kwargs)
-            logging.info("Diarization complete.")
+            logger.info("Diarization complete.")
 
             # Convert Annotation -> DataFrame
             data = [
@@ -118,10 +118,10 @@ class DiarizationPipeline:
             if not df.empty:
                 result = df
             else:
-                logging.warning("Diarization returned no segments.")
+                logger.warning("Diarization returned no segments.")
 
         except Exception as e:
-            logging.error(f"An error occurred during diarization: {e}", exc_info=True)
+            logger.error(f"An error occurred during diarization: {e}", exc_info=True)
 
         finally:
             if tmp_path and os.path.exists(tmp_path):
@@ -190,11 +190,11 @@ class DiarizationPipeline:
         """
         presets = self.get_optimization_presets()
         if preset_name not in presets:
-            logging.error(f"Unknown preset: {preset_name}. Available: {list(presets.keys())}")
+            logger.error(f"Unknown preset: {preset_name}. Available: {list(presets.keys())}")
             return None
 
         preset_params_nested = presets[preset_name]
-        logging.info(f"Using preset '{preset_name}' with parameters: {preset_params_nested}")
+        logger.info(f"Using preset '{preset_name}' with parameters: {preset_params_nested}")
 
         # flatten and rename parameters to match _group_params_by_component's logic
         all_params = {}

@@ -9,8 +9,8 @@ import pyloudnorm
 from functools import lru_cache
 
 # Set up logging for the module
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+logger = logging.getLogger(__name__)
 AUDIO_LIBS_AVAILABLE = False
 try:
     from df.enhance import enhance, init_df
@@ -30,25 +30,25 @@ try:
     @lru_cache(maxsize=1)
     def _get_deepfilternet_model(device: str):
         """Initializes and caches the DeepFilterNet model."""
-        logging.info("Initializing DeepFilterNet model...")
+        logger.info("Initializing DeepFilterNet model...")
         model, df_state, _ = init_df(model_base_dir=None, log_level='info')
         model = model.to(device)
         model.eval()
-        logging.info("DeepFilterNet model initialized.")
+        logger.info("DeepFilterNet model initialized.")
         return model, df_state
 
     @lru_cache(maxsize=1)
     def _get_demucs_model(device: str):
         """Initializes and caches the Demucs model."""
-        logging.info("Initializing Demucs model...")
+        logger.info("Initializing Demucs model...")
         model = get_model(name='htdemucs_6s')
         model = model.to(device)
         model.eval()
-        logging.info("Demucs model initialized.")
+        logger.info("Demucs model initialized.")
         return model
 
 except ImportError as e:
-    logging.critical(f"Required audio enhancement libraries not found: {e}. Please install them.")
+    logger.critical(f"Required audio enhancement libraries not found: {e}. Please install them.")
     AUDIO_LIBS_AVAILABLE = False
 
 
@@ -98,10 +98,10 @@ class ParallelAudioEnhancer:
             loudness = meter.integrated_loudness(float_data)
             gain_to_apply = target_lufs - loudness
             normalized_audio = audio_segment.apply_gain(gain_to_apply)
-            logging.info(f"Normalized from {loudness:.2f} LUFS → {target_lufs} LUFS.")
+            logger.info(f"Normalized from {loudness:.2f} LUFS → {target_lufs} LUFS.")
             return normalized_audio
         except Exception as e:
-            logging.error(f"Volume normalization failed: {e}", exc_info=True)
+            logger.error(f"Volume normalization failed: {e}", exc_info=True)
             return audio_segment
 
     def enhance_for_asr(self, audio_segment: AudioSegment) -> AudioSegment:
@@ -109,10 +109,10 @@ class ParallelAudioEnhancer:
         Enhances audio for ASR using Demucs to isolate vocals.
         """
         if self.demucs_model is None:
-            logging.error("Demucs model not loaded.")
+            logger.error("Demucs model not loaded.")
             return audio_segment
 
-        logging.info("Enhancing audio for ASR using Demucs...")
+        logger.info("Enhancing audio for ASR using Demucs...")
         try:
             # Step 1: Resample and convert to tensor for Demucs.
             processed_audio = audio_segment.set_frame_rate(DEMUCS_SR)
@@ -150,11 +150,11 @@ class ParallelAudioEnhancer:
             normalized_audio = self._normalize_volume(enhanced_audio)
             final_audio = normalized_audio.set_frame_rate(TARGET_SR)
 
-            logging.info("Demucs-based enhancement for ASR complete.")
+            logger.info("Demucs-based enhancement for ASR complete.")
             return final_audio
 
         except Exception as e:
-            logging.error(f"Demucs enhancement failed: {e}")
+            logger.error(f"Demucs enhancement failed: {e}")
             return audio_segment
 
     def enhance_for_diarization(self, audio_segment: AudioSegment) -> AudioSegment:
@@ -162,10 +162,10 @@ class ParallelAudioEnhancer:
         Enhances audio for diarization using DeepFilterNet for noise reduction.
         """
         if self.df_model is None:
-            logging.error("DeepFilterNet model not loaded.")
+            logger.error("DeepFilterNet model not loaded.")
             return audio_segment
 
-        logging.info("Enhancing audio for diarization using DeepFilterNet...")
+        logger.info("Enhancing audio for diarization using DeepFilterNet...")
 
         # DeepFilterNet requires 16kHz mono audio
         input_audio_df = audio_segment.set_frame_rate(DEEPFILTERNET_SR).set_channels(1)
@@ -195,5 +195,5 @@ class ParallelAudioEnhancer:
         # Apply normalization after enhancement
         normalized_audio = self._normalize_volume(enhanced_audio)
 
-        logging.info("DeepFilterNet-based enhancement for diarization complete.")
+        logger.info("DeepFilterNet-based enhancement for diarization complete.")
         return normalized_audio
