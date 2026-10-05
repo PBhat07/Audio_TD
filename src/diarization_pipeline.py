@@ -70,7 +70,20 @@ class DiarizationPipeline:
         """
         Applies the diarization pipeline to an audio source (file path or in-memory object).
         """
-        result = None  # default
+        result = None
+        
+        if min_speakers is not None and min_speakers < 1:
+            raise ValueError("min_speakers must be at least 1.")
+
+        if max_speakers is not None and max_speakers < 1:
+            raise ValueError("max_speakers must be at least 1.")
+
+        if (
+            min_speakers is not None
+            and max_speakers is not None
+            and min_speakers > max_speakers
+        ):
+            raise ValueError("min_speakers cannot be greater than max_speakers.")# default
 
         if not self.pipeline:
             logger.error("Diarization model not loaded. Cannot process audio.")

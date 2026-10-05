@@ -56,6 +56,15 @@ def main():
 
     try:
         args = parse_args()
+        
+        if args.min_speakers < 1:
+            raise ValueError("min_speakers must be at least 1.")
+
+        if args.max_speakers < 1:
+            raise ValueError("max_speakers must be at least 1.")
+
+        if args.min_speakers > args.max_speakers:
+            raise ValueError("min_speakers cannot be greater than max_speakers.")       
 
         hf_token = os.getenv("HUGGING_FACE_TOKEN")
         if not hf_token:
