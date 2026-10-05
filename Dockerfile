@@ -64,8 +64,6 @@ RUN mkdir -p /app/input /app/output /app/models
 # Set permissions
 RUN chmod +x /app/*.py 2>/dev/null || true
 
-# Expose port for Gradio interface (if using)
-EXPOSE 7860
 
 # Set environment variables optimized for RTX 4050 (6GB VRAM)
 ENV CUDA_VISIBLE_DEVICES=0

@@ -16,13 +16,8 @@ services:
       - TOKENIZERS_PARALLELISM=false
       # RTX 4050 Memory Optimization
       - WHISPER_MODEL=small.en  # Use v2 instead of v3 for lower VRAM
-      - MAX_CHUNK_LENGTH=30       # Smaller chunks for 6GB VRAM
-      - BATCH_SIZE=1            # Conservative batch size
     volumes:
       - .:/app
-    ports:
-      - "7860:7860"  # Gradio interface
-      - "8888:8888"  # Jupyter notebook
     shm_size: '2gb'  # Increased shared memory for better performance
     stdin_open: true
     tty: true
