@@ -52,6 +52,9 @@ pyyaml==6.0.1
 jsonlines==4.0.0
 setuptools==81.0.0
 
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
 # Development Tools
 jupyter==1.0.0
 ipython==8.18.1

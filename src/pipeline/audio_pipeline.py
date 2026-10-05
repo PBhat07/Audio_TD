@@ -50,6 +50,7 @@ class AudioPipeline:
         diar_preset: str = "high_sensitivity",
         min_speakers: int = 2,
         max_speakers: int = 5,
+        base_filename: str | None = None,
     ) -> PipelineResult:
         """Load audio and run the enhancement stages."""
         
@@ -63,9 +64,10 @@ class AudioPipeline:
         # Load the original audio
         full_audio = AudioSegment.from_file(audio_file_path)
 
-        base_filename = os.path.splitext(
-            os.path.basename(audio_file_path)
-        )[0]
+        if base_filename is None:
+            base_filename = os.path.splitext(
+                os.path.basename(audio_file_path)
+            )[0]
 
         original_duration = full_audio.duration_seconds
         
@@ -184,6 +186,7 @@ class AudioPipeline:
             merged_result=merged_result,
             output_dir=output_dir,
             base_filename=base_filename,
+            original_duration=original_duration,
         )
         logger.info("Final transcription saved to: %s", output_file)
         
