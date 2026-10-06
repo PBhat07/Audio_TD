@@ -1,213 +1,536 @@
-# 🎙️ Transcription with Diarization and Confidence Scoring
+# 🎙️ Audio Transcription & Speaker Diarization
 
-This project provides a **complete audio processing pipeline** that performs:
-- **Speech Transcription** (via [WhisperX](https://github.com/m-bain/whisperX))
-- **Speaker Diarization** (who spoke when, via [pyannote.audio](https://github.com/pyannote/pyannote-audio))
-- **Confidence Scoring** (word-level scores)
-- **Audio Enhancement** (denoising, resampling)
+A GPU-accelerated audio processing pipeline for **speech enhancement, transcription, speaker diarization, word-level confidence scoring, and structured output**.
 
-It is containerized with **Docker** for reproducibility and uses **GPU acceleration** (CUDA) for fast inference.
+The project combines **Demucs, DeepFilterNet, WhisperX, and pyannote.audio** into a single processing pipeline and exposes the system through a **FastAPI REST API** running inside a CUDA-enabled Docker container.
 
 ---
 
-## 🖥️ System Requirements
+## 🚀 What This Project Does
 
-### Hardware
-- **GPU:** NVIDIA GPU with CUDA support (tested on CUDA **12.4**)
-- **VRAM:** Minimum **8 GB** (16 GB+ recommended for large models like `large-v2`)
-- **RAM:** 16 GB system memory or more
-- **Disk:** At least 5 GB free for models, logs, and outputs
+Given an audio file, the system:
 
-### Software
-- **OS:** Ubuntu 22.04 (native or via WSL2)
-- **Docker Desktop** (with WSL2 integration enabled)
-- **NVIDIA Drivers** (latest, must match CUDA version)
-- **NVIDIA Container Toolkit** (installed automatically by setup script)
+1. Loads and analyzes the input audio.
+2. Creates task-specific enhanced audio versions.
+3. Transcribes speech using **WhisperX**.
+4. Aligns the transcription to obtain word-level timestamps and confidence scores.
+5. Performs **speaker diarization** using pyannote.audio.
+6. Assigns speakers to individual words and segments.
+7. Produces a structured JSON transcription.
+8. Exposes the pipeline through a REST API.
+
+The system is designed as a reusable backend service rather than a one-off transcription script.
 
 ---
 
-## 🚀 Quick Start
+## 🏗️ Architecture
 
-### 1. Clone repository
-```bash
-git clone https://github.com/yourusername/audio-td.git
-cd audio-td
+```text
+                    Audio File
+                        │
+                        ▼
+                ┌───────────────┐
+                │    FastAPI    │
+                │   REST API    │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ AudioPipeline │
+                └───────┬───────┘
+                        │
+              ┌─────────┴─────────┐
+              │                   │
+              ▼                   ▼
+       ┌─────────────┐     ┌───────────────┐
+       │   Demucs    │     │ DeepFilterNet │
+       │ ASR Audio   │     │ Diarization   │
+       └──────┬──────┘     └───────┬───────┘
+              │                    │
+              ▼                    ▼
+       ┌─────────────┐     ┌───────────────┐
+       │  WhisperX   │     │   pyannote    │
+       │ ASR + Align │     │ Diarization   │
+       └──────┬──────┘     └───────┬───────┘
+              │                    │
+              └─────────┬──────────┘
+                        ▼
+               Speaker Attribution
+                        │
+                        ▼
+                Structured JSON
 ```
 
-### 2. Setup environment
-Run the automated setup script:
+---
 
+## 🔍 Why Two Audio Enhancement Paths?
 
-```bash
-chmod +x setup.sh
-./setup.sh
+The pipeline does not use the same preprocessing strategy for every downstream task.
+
+Instead, it creates task-specific audio:
+
+- **Demucs** → preprocessing for automatic speech recognition.
+- **DeepFilterNet** → preprocessing for speaker diarization.
+
+This separation allows each downstream model to receive audio optimized for its specific task.
+
+The enhanced audio is also saved during processing so that the results can be inspected and compared during development.
+
+---
+
+## 🧠 Core Pipeline
+
+The main orchestration logic is implemented in:
+
+```text
+src/pipeline/audio_pipeline.py
 ```
 
-### This will:
-Verify NVIDIA GPU availability (nvidia-smi)
-Check Docker installation and user permissions
-Install NVIDIA Container Toolkit for GPU passthrough
-Create project folders (input/, output/, models/, logs/)
-Generate .env for secrets
-Build the Docker image with CUDA support
+The pipeline follows this sequence:
 
-### 3. Configure environment variables
-Hugging Face Token
-Open .env (created automatically) and add your token:
-
-```bash
-HUGGING_FACE_TOKEN=your_hf_token_here
-```
-#### 👉 You can create a free token at Hugging Face Settings.
-
-#### Whisper Model
-Choose a Whisper model size (tradeoff between speed & accuracy):
-
-```bash
-export WHISPER_MODEL=small.en
+```text
+Input Audio
+    ↓
+Audio Loading
+    ↓
+Task-Specific Enhancement
+    ├── Demucs → ASR path
+    └── DeepFilterNet → Diarization path
+    ↓
+WhisperX Transcription
+    ↓
+Word-Level Alignment
+    ↓
+Speaker Diarization
+    ↓
+Speaker-to-Word Assignment
+    ↓
+Structured JSON Output
 ```
 
-### 4. Prepare your audio
-Put your input file (.wav, .mp3, etc.) in the input/ directory.
-#### Example:
+The different stages communicate through Python objects and in-memory audio representations rather than requiring intermediate model stages to communicate through temporary files.
 
-```bash
-input/noisy_audio.mp3
+---
+
+## 🎯 Speaker Diarization
+
+The diarization stage uses **pyannote.audio** to identify different speakers within the audio.
+
+The API allows optional speaker constraints:
+
+```text
+min_speakers
+max_speakers
 ```
 
-### 5. Run transcription with diarization
-Build and run the pipeline:
+For example:
 
-```bash
-docker compose build
-docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --diar_preset pitch_variation_robust --min_speakers 6 --max_speakers 7
-```
-#### Arguments:
-
---min_speakers → minimum expected speakers
-
---max_speakers → maximum expected speakers
-
-
-
-### 📈 Technical Journey & Problem-Solving
-This project's final architecture is the result of an iterative process to address common challenges in transcribing noisy, multi-speaker audio.
-
-The key challenge was finding a single audio processing method that works well for both Automatic Speech Recognition (ASR) and Speaker Diarization. Initial attempts at using a single enhanced audio stream proved problematic. For example, some enhancement models, like SpeechBrain, would clean the audio but also cut out crucial speech segments, hurting transcription quality. While other models like Demucs provided cleaner audio for ASR, the denoising effect made different speakers sound more similar, causing the diarization model (pyannote.audio) to make errors.
-
-## The Final Parallel Pipeline
-The most effective solution was to create a parallel pipeline where each model receives the audio format that best suits its purpose.
-
-A copy of the original audio is sent to the speaker diarization pipeline. For this, we use deepfilternet for noise reduction, which proved effective at preserving the subtle pitch and voice characteristics needed for accurate speaker separation.
-
-A second copy of the original audio is passed through Demucs, a source separation model, to isolate the speech from other sounds. This cleaner, smoother audio is then sent to the WhisperX ASR model for transcription.
-
-The results from both pipelines are then merged. The transcription from WhisperX is combined with the speaker labels and timestamps from the diarization pipeline using whisperx.assign_word_speakers to produce a final, highly accurate output.
-
-This parallel approach allows both models to perform at their best, leading to a robust and accurate final result, especially for complex audio
-
-### ⚙️ Advanced Diarization Parameters
-The pipeline supports fine-tuning pyannote.audio parameters directly from the command line, which is useful for optimizing results on different types of audio.
-
-Run with Advanced Parameters:
-```bash
-docker compose run --rm audio-td python main.py "input/noisy_audio.mp3" --diar_preset pitch_variation_robust --min_speakers 6 --max_speakers 7
+```text
+min_speakers = 2
+max_speakers = 5
 ```
 
-| Parameter Name | Description |
-| :--- | :--- |
-| `--diar_preset` |	A quick way to use predefined parameter sets (e.g., high_sensitivity). |
-| `--segmentation_onset`	| The voice activity detection (VAD) onset threshold. Lowering this can help detect speech in very noisy or low-volume segments. |
-| `--segmentation_offset`	| The VAD offset threshold. A higher value can help ensure that speech segments are not cut off prematurely. |
-| `--clustering_threshold` |	The speaker clustering threshold. A lower value makes the model more likely to split a single speaker into multiple labels, and a higher value makes it more likely to merge different speakers. |
-| `--min_duration_on`	| The minimum duration a voice segment must be "on" to be considered a valid speech segment. |
-| `--vad_onset`	| VAD onset threshold. |
-| `--vad_offset` |	VAD offset threshold. |
+These parameters provide additional control when the approximate number of speakers is known.
 
-## Outputs
-After processing, check the output/ folder:
-enhanced_for_asr.wav → audio cleaned & resampled
-original_for_diarization.wav → original audio for diarization
-diarized_transcription.json → final structured result
+The system also supports diarization presets so that the behavior can be configured without exposing every low-level model parameter through the API.
 
-### Example JSON line:
-```bash
+---
+
+## 📝 Structured Output
+
+The final result is saved as structured JSON.
+
+Example:
+
+```json
 {
-  "speaker": "SPEAKER_01",
-  "word": "Hello",
-  "start": "00:00.500",
-  "end": "00:01.200",
-  "confidence": 0.94
+  "filename": "noisy_audio",
+  "duration": "00:04:45.344",
+  "segments": [
+    {
+      "speaker": "Unknown Speaker",
+      "start": "00:00:01.991",
+      "end": "00:00:03.511",
+      "text": "We're gonna need it for the game.",
+      "words": [
+        {
+          "word": "We're",
+          "start": "00:00:01.991",
+          "end": "00:00:02.331",
+          "confidence": 0.423
+        }
+      ]
+    }
+  ]
 }
 ```
-#### Each entry contains:
 
-Speaker label
-Word spoken
-Start & end timestamps (mm:ss.sss format)
-Confidence score
+Each word can contain:
 
-##  Development
-Project Structure
-```bash
-├── setup.sh              # Automated setup script
-├── docker-compose.yml    # Docker configuration
-├── Dockerfile            # Base image and environment
-├── requirements.txt      # Python dependencies
-├── main.py               # Main pipeline (recommended entry point)
-├── src/                  # Core processing modules
-│   ├── asr_pipeline.py       # Automatic Speech Recognition pipeline
-│   ├── audio_enhancer.py     # Noise reduction & audio enhancement
-│   └── diarization_pipeline.py # Speaker diarization pipeline
-├── input/                # Place your input audio files here
-├── output/               # Generated outputs
-├── models/               # Downloaded ML models
-├── logs/                 # Runtime logs
-└── .env                  # Environment variables (Hugging Face token)
+- Word text
+- Start timestamp
+- End timestamp
+- Confidence score
 
-main.py → full pipeline with enhanced error handling, JSONL output (line-by-line JSON), and flexible speaker constraints.
-```
+Each segment contains:
 
+- Speaker
+- Start timestamp
+- End timestamp
+- Transcribed text
+- Word-level information
 
-## Dependencies
-Defined in requirements.txt:
-
-Core ML: torch, torchaudio, whisperx, pyannote.audio
-
-Audio Processing: pydub, librosa, demucs, speechbrain
-
-Data & Utils: datasets, pandas, huggingface-hub, tqdm
-
-
-## Notes & Tips
-GPU is mandatory for performance — CPU-only mode is not supported for long audios.
-Adjust --min_speakers / --max_speakers for more accurate diarization.
-Large Whisper models (large-v2) need ≥16GB VRAM.
-.gitignore ensures input/, output/, and .env are not tracked.
-For debugging, check logs inside logs/.
-
-## License
-MIT License (update if needed)
-
-## Acknowledgements
-OpenAI Whisper
-
-WhisperX
-
-pyannote.audio
-
-Speechbrain
-
+This structured format makes the output suitable for downstream applications.
 
 ---
 
+# 🌐 REST API
 
+The processing pipeline is exposed through **FastAPI**.
 
+## Available Endpoints
 
+### Health Check
 
+```http
+GET /health
+```
 
+Returns:
 
+```json
+{
+  "status": "ok"
+}
+```
 
+---
 
+### Transcribe Audio
 
+```http
+POST /transcribe
+```
 
+Accepts an audio file and optional speaker constraints.
+
+Supported formats:
+
+```text
+.wav
+.mp3
+.m4a
+.flac
+.ogg
+.mp4
+```
+
+Optional parameters:
+
+```text
+min_speakers
+max_speakers
+diarization_preset
+```
+
+Example response:
+
+```json
+{
+  "status": "completed",
+  "filename": "noisy_audio.mp3",
+  "duration": 285.344,
+  "transcription_url": "/transcribe/noisy_audio"
+}
+```
+
+The API validates the request before starting the GPU-heavy processing pipeline.
+
+---
+
+### Retrieve Transcription
+
+```http
+GET /transcribe/{filename}
+```
+
+Returns the generated speaker-attributed JSON file.
+
+---
+
+### Interactive API Documentation
+
+FastAPI automatically provides interactive documentation at:
+
+```text
+http://localhost:8000/docs
+```
+
+OpenAPI schema is available at:
+
+```text
+http://localhost:8000/openapi.json
+```
+
+---
+
+# 🐳 Docker & GPU Setup
+
+The application is containerized using Docker and runs with NVIDIA GPU support.
+
+The Docker environment contains:
+
+- CUDA runtime/development environment
+- Python
+- PyTorch
+- WhisperX
+- pyannote.audio
+- Demucs
+- DeepFilterNet
+- FastAPI
+- Uvicorn
+- FFmpeg and audio processing dependencies
+
+## Start the Application
+
+Build and start the service with:
+
+```bash
+docker compose up --build
+```
+
+The API will be available at:
+
+```text
+http://localhost:8000
+```
+
+Swagger documentation:
+
+```text
+http://localhost:8000/docs
+```
+
+---
+
+## ⚡ Model Caching
+
+Large machine learning models are downloaded during their first use.
+
+The Docker Compose configuration uses persistent volumes for model caches:
+
+```text
+torch_cache
+huggingface_cache
+deepfilternet_cache
+```
+
+This means that recreating the application container does not require downloading all models again.
+
+Once the service is running, the models are initialized when the application starts and can be reused across API requests.
+
+This avoids repeatedly loading expensive models for every request.
+
+---
+
+# 💻 Hardware
+
+The project has been developed and tested on an **NVIDIA RTX 4050 laptop GPU with 6 GB VRAM**.
+
+Because of the limited VRAM, the project uses a smaller Whisper model configuration:
+
+```text
+WHISPER_MODEL=small.en
+```
+
+The exact performance depends on the audio duration, model configuration, and available GPU memory.
+
+---
+
+# 📁 Project Structure
+
+```text
+Audio_TD/
+│
+├── src/
+│   ├── api/
+│   │   └── main.py
+│   │
+│   ├── pipeline/
+│   │   ├── audio_pipeline.py
+│   │   └── result.py
+│   │
+│   ├── output/
+│   │   └── formatter.py
+│   │
+│   ├── asr_pipeline.py
+│   ├── diarization_pipeline.py
+│   └── audio_enhancer.py
+│
+├── main.py
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+```
+
+---
+
+# 🔧 Technology Stack
+
+### Machine Learning
+
+- PyTorch
+- WhisperX
+- pyannote.audio
+- Demucs
+- DeepFilterNet
+
+### Audio Processing
+
+- Pydub
+- Librosa
+- SoundFile
+- SciPy
+
+### Backend
+
+- FastAPI
+- Uvicorn
+- Python
+
+### Infrastructure
+
+- Docker
+- NVIDIA CUDA
+- Docker Compose
+
+---
+
+# 🧩 Key Engineering Decisions
+
+| Decision | Reason |
+|---|---|
+| FastAPI | Exposes the ML pipeline as a reusable service |
+| Task-specific enhancement | Different downstream tasks benefit from different preprocessing |
+| In-memory model pipeline | Reduces unnecessary intermediate file I/O between ML stages |
+| Models initialized once | Avoids repeatedly loading large models for every request |
+| Persistent model caches | Prevents repeated model downloads when containers are recreated |
+| Structured JSON output | Makes results easier to consume programmatically |
+| API-level validation | Prevents invalid requests from reaching expensive GPU processing |
+| Docker + CUDA | Provides a reproducible GPU execution environment |
+| Optional speaker constraints | Allows users to provide prior knowledge about the recording |
+
+---
+
+# 🛡️ API Validation
+
+The API performs basic validation before starting the processing pipeline.
+
+Examples include:
+
+- Unsupported audio formats are rejected.
+- Missing filenames are rejected.
+- `min_speakers` must be at least `1`.
+- `max_speakers` must be at least `1`.
+- `min_speakers` cannot be greater than `max_speakers`.
+
+This prevents avoidable errors before expensive GPU inference begins.
+
+---
+
+# 📊 Example Use Case
+
+The pipeline is intended for scenarios where a raw recording needs to be converted into structured, speaker-attributed information.
+
+For example:
+
+```text
+Raw Meeting / Conversation
+          ↓
+Noise / Source Enhancement
+          ↓
+Speech Recognition
+          ↓
+Word-Level Alignment
+          ↓
+Speaker Diarization
+          ↓
+Speaker Attribution
+          ↓
+Structured JSON
+```
+
+The resulting JSON can then be consumed by another application, stored in a database, searched, summarized, or passed to a downstream NLP/LLM system.
+
+---
+
+# ⚠️ Current Limitations
+
+This project is currently optimized for local GPU execution rather than large-scale production deployment.
+
+Current limitations include:
+
+- GPU acceleration is strongly recommended.
+- Large audio files require significant processing time and GPU memory.
+- Model downloads can be large during first-time setup.
+- The current API stores generated transcription files locally.
+- The project currently focuses on the core inference pipeline rather than distributed processing.
+
+These limitations are intentional for the current portfolio version of the project.
+
+---
+
+# 🚧 Future Improvements
+
+Potential future improvements include:
+
+- Lightweight web frontend for uploading audio and viewing results.
+- Public demonstration using precomputed example outputs.
+- More robust job management for long-running audio files.
+- Background processing for asynchronous requests.
+- Persistent database storage for transcription metadata.
+- Cloud deployment when GPU infrastructure is available.
+- Additional evaluation metrics for transcription and diarization quality.
+
+---
+
+# 🎬 Demo
+
+A lightweight demonstration will be provided using example audio and precomputed results.
+
+The full GPU inference pipeline can be run locally using Docker and an NVIDIA GPU.
+
+---
+
+# 📚 Acknowledgements
+
+This project builds upon several open-source machine learning and audio-processing projects:
+
+- [WhisperX](https://github.com/m-bain/whisperX)
+- [pyannote.audio](https://github.com/pyannote/pyannote-audio)
+- [Demucs](https://github.com/facebookresearch/demucs)
+- [DeepFilterNet](https://github.com/Rikorose/DeepFilterNet)
+- [PyTorch](https://pytorch.org/)
+
+---
+
+# 👩‍💻 Project Focus
+
+This project focuses on the engineering challenges involved in turning multiple deep-learning audio models into a reusable processing service.
+
+The main areas demonstrated are:
+
+- Audio preprocessing
+- Speech recognition
+- Word-level alignment
+- Speaker diarization
+- Model orchestration
+- GPU inference
+- REST API design
+- Docker-based deployment
+- Model caching
+- Structured ML outputs
+- Input validation and error handling
