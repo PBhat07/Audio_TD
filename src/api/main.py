@@ -7,6 +7,9 @@ import tempfile
 from fastapi import HTTPException
 
 from src.pipeline.audio_pipeline import AudioPipeline
+from src.logging_config import configure_logging
+
+configure_logging()
 
 ALLOWED_AUDIO_EXTENSIONS = {
     ".wav",

@@ -1,6 +1,5 @@
 import logging
 import torch
-import io
 import tempfile
 import os
 import pandas as pd
@@ -34,7 +33,7 @@ class DiarizationPipeline:
                 "pyannote/speaker-diarization-3.1",
                 use_auth_token=hf_token
             )
-            self.pipeline.to(torch.device(self.device))
+            self.pipeline.to(torch.device("cpu"))
             logger.info("Pyannote speaker diarization model loaded successfully.")
         except Exception as e:
             logger.critical(
@@ -84,10 +83,13 @@ class DiarizationPipeline:
             and min_speakers > max_speakers
         ):
             raise ValueError("min_speakers cannot be greater than max_speakers.")# default
-
+        
         if not self.pipeline:
             logger.error("Diarization model not loaded. Cannot process audio.")
             return result
+        
+        if self.device == "cuda":
+            self.pipeline.to(torch.device("cuda"))    
 
         # Configure parameters
         param_groups = self._group_params_by_component(kwargs)
@@ -139,6 +141,10 @@ class DiarizationPipeline:
         finally:
             if tmp_path and os.path.exists(tmp_path):
                 os.remove(tmp_path)
+                
+            if self.device == "cuda" and self.pipeline is not None:
+                self.pipeline.to(torch.device("cpu"))
+                torch.cuda.empty_cache()   
 
         return result
 

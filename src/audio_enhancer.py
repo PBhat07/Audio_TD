@@ -1,143 +1,396 @@
 import logging
-import torch
-import os
-import tempfile
-from pydub import AudioSegment
-from typing import Optional
+
 import numpy as np
 import pyloudnorm
-from functools import lru_cache
-
-# Set up logging for the module
+import torch
+from pydub import AudioSegment
 
 logger = logging.getLogger(__name__)
-AUDIO_LIBS_AVAILABLE = False
+
+
+# ---------------------------------------------------------------------------
+# Audio configuration
+# ---------------------------------------------------------------------------
+
+DEMUCS_SR = 44_100
+DEEPFILTERNET_SR = 48_000
+TARGET_SR = 16_000
+
+
+# ---------------------------------------------------------------------------
+# Optional dependency loading
+# ---------------------------------------------------------------------------
+
 try:
-    from df.enhance import enhance, init_df
-    import torchaudio
-    from demucs.pretrained import get_model
     from demucs.apply import apply_model
+    from demucs.pretrained import get_model
+    from df.enhance import enhance, init_df
 
-    # DeepFilterNet is highly sensitive to the sample rate
-    DEEPFILTERNET_SR = 16000
-    # Demucs models require specific sample rates
-    DEMUCS_SR = 44100
-    TARGET_SR = 16000
-
-    _demucs_model = None
     AUDIO_LIBS_AVAILABLE = True
 
-    @lru_cache(maxsize=1)
-    def _get_deepfilternet_model(device: str):
-        """Initializes and caches the DeepFilterNet model."""
-        logger.info("Initializing DeepFilterNet model...")
-        model, df_state, _ = init_df(model_base_dir=None, log_level='info')
-        model = model.to(device)
-        model.eval()
-        logger.info("DeepFilterNet model initialized.")
-        return model, df_state
-
-    @lru_cache(maxsize=1)
-    def _get_demucs_model(device: str):
-        """Initializes and caches the Demucs model."""
-        logger.info("Initializing Demucs model...")
-        model = get_model(name='htdemucs_6s')
-        model = model.to(device)
-        model.eval()
-        logger.info("Demucs model initialized.")
-        return model
-
-except ImportError as e:
-    logger.critical(f"Required audio enhancement libraries not found: {e}. Please install them.")
+except ImportError as exc:
     AUDIO_LIBS_AVAILABLE = False
+
+    logger.critical(
+        "Required audio enhancement libraries are unavailable: %s",
+        exc,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Audio enhancer
+# ---------------------------------------------------------------------------
 
 
 class ParallelAudioEnhancer:
     """
-    Performs parallel audio enhancement tailored for ASR and diarization.
+    Enhance audio for ASR and speaker diarization.
+
+    GPU memory strategy
+    -------------------
+    Large enhancement models are kept on CPU when idle and staged onto the
+    GPU only while they are actively processing audio.
+
+    Demucs:
+        CPU audio -> GPU tensor -> Demucs -> CPU audio
+
+    DeepFilterNet:
+        CPU audio -> CPU feature extraction -> device-side inference
+        -> CPU audio -> 16 kHz mono audio
+
+    DeepFilterNet performs part of its feature extraction through NumPy,
+    so its time-domain input must remain on the CPU.
     """
-    def __init__(self, atten_lim_db: float = -30.0, device: str = "cpu"):
-        """
-        Initializes the enhancer.
-        """
+
+    def __init__(
+        self,
+        atten_lim_db: float = -30.0,
+        device: str = "cpu",
+    ) -> None:
         if not AUDIO_LIBS_AVAILABLE:
-            raise RuntimeError("Audio enhancement dependencies are not installed.")
+            raise RuntimeError(
+                "Audio enhancement dependencies are not installed."
+            )
 
         self.device = device
         self.atten_lim_db = atten_lim_db
-        self.df_model, self.df_state = _get_deepfilternet_model(self.device)
-        self.demucs_model = _get_demucs_model(self.device)
 
-    def _convert_to_tensor(self, audio_segment: AudioSegment) -> torch.Tensor:
+        # ------------------------------------------------------------------
+        # DeepFilterNet
+        # ------------------------------------------------------------------
+
+        self.df_model, self.df_state, _ = init_df(
+            model_base_dir=None,
+            log_level="info",
+            log_file=None,
+        )
+
+        self.df_model = self.df_model.to(self.device)
+        self.df_model.eval()
+
+        # Keep the explicit configuration constant for readability while
+        # verifying that it matches the loaded DeepFilterNet state.
+        model_sr = int(self.df_state.sr())
+
+        if model_sr != DEEPFILTERNET_SR:
+            raise RuntimeError(
+                "DeepFilterNet sample-rate mismatch: "
+                f"configured={DEEPFILTERNET_SR} Hz, "
+                f"model={model_sr} Hz."
+            )
+
+        # ------------------------------------------------------------------
+        # Demucs
+        # ------------------------------------------------------------------
+
+        # Demucs remains on CPU until ASR enhancement begins.
+        self.demucs_model = get_model(
+            name="htdemucs_6s"
+        )
+        self.demucs_model = self.demucs_model.to("cpu")
+        self.demucs_model.eval()
+
+        # Keep DeepFilterNet on CPU while idle when CUDA is being used.
+        if self.device == "cuda":
+            self._release_deepfilternet_gpu_memory()
+
+        logger.info(
+            "Audio enhancer initialized | device=%s | "
+            "Demucs=CPU idle | DeepFilterNet=CPU idle | "
+            "DeepFilterNet sample rate=%s Hz",
+            self.device,
+            DEEPFILTERNET_SR,
+        )
+
+    # ------------------------------------------------------------------
+    # GPU lifecycle
+    # ------------------------------------------------------------------
+
+    def _move_model_to_gpu(
+        self,
+        model: torch.nn.Module | None,
+        name: str,
+    ) -> None:
+        """Move an enhancement model to CUDA when GPU processing is enabled."""
+
+        if self.device != "cuda" or model is None:
+            return
+
+        logger.info(
+            "GPU STAGE | loading %s onto CUDA",
+            name,
+        )
+
+        model.to("cuda")
+
+    def _release_model_from_gpu(
+        self,
+        model: torch.nn.Module | None,
+        name: str,
+    ) -> None:
+        """Move an enhancement model to CPU and release unused CUDA cache."""
+
+        if self.device != "cuda" or model is None:
+            return
+
+        model.to("cpu")
+        torch.cuda.empty_cache()
+
+        logger.info(
+            "GPU STAGE | %s moved to CPU; unused CUDA cache released",
+            name,
+        )
+
+    def _release_demucs_gpu_memory(self) -> None:
+        """Release Demucs from GPU after ASR enhancement."""
+
+        self._release_model_from_gpu(
+            self.demucs_model,
+            "Demucs",
+        )
+
+    def _release_deepfilternet_gpu_memory(self) -> None:
+        """Release DeepFilterNet from GPU after diarization enhancement."""
+
+        self._release_model_from_gpu(
+            self.df_model,
+            "DeepFilterNet",
+        )
+
+    # ------------------------------------------------------------------
+    # Audio conversion
+    # ------------------------------------------------------------------
+
+    def _convert_to_tensor(
+        self,
+        audio_segment: AudioSegment,
+    ) -> torch.Tensor:
         """
-        Converts an AudioSegment to a PyTorch tensor, ensuring it is 2-channel and
-        properly formatted for Demucs.
+        Convert a pydub AudioSegment to Demucs input format.
+
+        Returns:
+            Float32 tensor with shape:
+            [batch, channels, samples]
         """
-        # Ensure stereo (Demucs expects 2 channels)
+
         if audio_segment.channels == 1:
             audio_segment = audio_segment.set_channels(2)
 
-        np_data = np.array(audio_segment.get_array_of_samples())
-        max_val = np.iinfo(np_data.dtype).max if np.issubdtype(np_data.dtype, np.integer) else 1.0
-        float_data = np_data.astype(np.float32) / max_val
+        samples = np.asarray(
+            audio_segment.get_array_of_samples()
+        )
 
-        # Reshape to (channels, samples) and add batch dimension.
-        audio_tensor = torch.from_numpy(float_data.reshape(-1, audio_segment.channels).T).unsqueeze(0)
+        if np.issubdtype(samples.dtype, np.integer):
+            scale = np.iinfo(samples.dtype).max
+            samples = samples.astype(
+                np.float32
+            ) / scale
+        else:
+            samples = samples.astype(
+                np.float32,
+                copy=False,
+            )
+
+        # pydub stores multichannel audio as:
+        #
+        # [L, R, L, R, ...]
+        #
+        # Convert to:
+        #
+        # [channels, samples]
+        audio_tensor = torch.from_numpy(
+            samples.reshape(
+                -1,
+                audio_segment.channels,
+            ).T
+        ).unsqueeze(0)
+
         return audio_tensor.to(self.device)
 
-    def _normalize_volume(self, audio_segment: AudioSegment, target_lufs: float = -18.0) -> AudioSegment:
-        """
-        Loudness normalization using pyloudnorm.
-        """
-        np_data = np.array(audio_segment.get_array_of_samples())
-        max_val = np.iinfo(np_data.dtype).max if np.issubdtype(np_data.dtype, np.integer) else 1.0
-        float_data = np_data.astype(np.float32) / max_val
+    # ------------------------------------------------------------------
+    # Audio normalization
+    # ------------------------------------------------------------------
+
+    def _normalize_volume(
+        self,
+        audio_segment: AudioSegment,
+        target_lufs: float = -18.0,
+    ) -> AudioSegment:
+        """Normalize audio loudness to the requested integrated LUFS level."""
+
+        samples = np.asarray(
+            audio_segment.get_array_of_samples()
+        )
+
+        if np.issubdtype(samples.dtype, np.integer):
+            scale = np.iinfo(samples.dtype).max
+            float_data = samples.astype(
+                np.float32
+            ) / scale
+        else:
+            float_data = samples.astype(
+                np.float32,
+                copy=False,
+            )
 
         try:
-            meter = pyloudnorm.Meter(audio_segment.frame_rate)
-            loudness = meter.integrated_loudness(float_data)
-            gain_to_apply = target_lufs - loudness
-            normalized_audio = audio_segment.apply_gain(gain_to_apply)
-            logger.info(f"Normalized from {loudness:.2f} LUFS → {target_lufs} LUFS.")
+            meter = pyloudnorm.Meter(
+                audio_segment.frame_rate
+            )
+
+            loudness = meter.integrated_loudness(
+                float_data
+            )
+
+            gain_db = target_lufs - loudness
+
+            normalized_audio = audio_segment.apply_gain(
+                gain_db
+            )
+
+            logger.info(
+                "Audio normalization | %.2f LUFS -> %.2f LUFS",
+                loudness,
+                target_lufs,
+            )
+
             return normalized_audio
-        except Exception as e:
-            logger.error(f"Volume normalization failed: {e}", exc_info=True)
+
+        except Exception:
+            logger.exception(
+                "Volume normalization failed; "
+                "returning original audio."
+            )
+
             return audio_segment
 
-    def enhance_for_asr(self, audio_segment: AudioSegment) -> AudioSegment:
+    # ------------------------------------------------------------------
+    # Demucs enhancement
+    # ------------------------------------------------------------------
+
+    def enhance_for_asr(
+        self,
+        audio_segment: AudioSegment,
+    ) -> AudioSegment:
         """
-        Enhances audio for ASR using Demucs to isolate vocals.
+        Enhance audio for ASR using Demucs vocal separation.
+
+        Processing:
+            CPU audio -> GPU Demucs inference -> CPU audio
         """
+
         if self.demucs_model is None:
-            logger.error("Demucs model not loaded.")
+            logger.error(
+                "Demucs model is unavailable; "
+                "returning original audio."
+            )
             return audio_segment
 
-        logger.info("Enhancing audio for ASR using Demucs...")
+        logger.info(
+            "ASR enhancement started | model=Demucs"
+        )
+
+        audio_tensor = None
+        separated_stems = None
+        vocals = None
+
         try:
-            # Step 1: Resample and convert to tensor for Demucs.
-            processed_audio = audio_segment.set_frame_rate(DEMUCS_SR)
-            audio_tensor = self._convert_to_tensor(processed_audio)
+            # --------------------------------------------------------------
+            # 1. Stage Demucs on GPU
+            # --------------------------------------------------------------
 
-            # Step 2: Apply Demucs separation.
-            with torch.no_grad():
-                separated_stems = apply_model(self.demucs_model, audio_tensor, progress=True, split=True, overlap=0.25)
+            self._move_model_to_gpu(
+                self.demucs_model,
+                "Demucs",
+            )
 
-            # Step 3: Select vocals stem.
-            # Demucs standard order is ['drums', 'bass', 'other', 'vocals'].
-            vocals_tensor = separated_stems[0, 3, :, :]
+            # --------------------------------------------------------------
+            # 2. Prepare audio
+            # --------------------------------------------------------------
 
-            # Step 4: Convert back to pydub AudioSegment.
-            vocals_numpy = vocals_tensor.detach().cpu().numpy()
+            processed_audio = audio_segment.set_frame_rate(
+                DEMUCS_SR
+            )
 
-            # Downmix to mono if stereo
-            if vocals_numpy.ndim == 2 and vocals_numpy.shape[0] == 2:
-                vocals_numpy = vocals_numpy.mean(axis=0)
-            elif vocals_numpy.ndim == 2 and vocals_numpy.shape[0] == 1:
-                vocals_numpy = vocals_numpy[0]
+            audio_tensor = self._convert_to_tensor(
+                processed_audio
+            )
 
-            # Clip and scale to int16
-            clipped_np = np.clip(vocals_numpy, -1.0, 1.0)
-            enhanced_int16 = (clipped_np * 32767).astype(np.int16)
+            # --------------------------------------------------------------
+            # 3. Run Demucs
+            # --------------------------------------------------------------
+
+            with torch.inference_mode():
+                separated_stems = apply_model(
+                    self.demucs_model,
+                    audio_tensor,
+                    progress=False,
+                    split=True,
+                    overlap=0.25,
+                )
+
+            # --------------------------------------------------------------
+            # 4. Extract vocals
+            # --------------------------------------------------------------
+            #
+            # htdemucs_6s stem order:
+            # drums, bass, other, vocals, guitar, piano
+            #
+
+            vocals = separated_stems[
+                0,
+                3,
+            ]
+
+            vocals_numpy = (
+                vocals
+                .detach()
+                .cpu()
+                .numpy()
+            )
+
+            # --------------------------------------------------------------
+            # 5. Convert to mono
+            # --------------------------------------------------------------
+
+            if vocals_numpy.ndim == 2:
+                vocals_numpy = vocals_numpy.mean(
+                    axis=0
+                )
+
+            # --------------------------------------------------------------
+            # 6. Convert to PCM16
+            # --------------------------------------------------------------
+
+            vocals_numpy = np.clip(
+                vocals_numpy,
+                -1.0,
+                1.0,
+            )
+
+            enhanced_int16 = (
+                vocals_numpy * 32767.0
+            ).astype(np.int16)
 
             enhanced_audio = AudioSegment(
                 enhanced_int16.tobytes(),
@@ -146,54 +399,185 @@ class ParallelAudioEnhancer:
                 channels=1,
             )
 
-            # Step 5: Normalize volume and downsample for the ASR model.
-            normalized_audio = self._normalize_volume(enhanced_audio)
-            final_audio = normalized_audio.set_frame_rate(TARGET_SR)
+            # --------------------------------------------------------------
+            # 7. Normalize and resample for ASR
+            # --------------------------------------------------------------
 
-            logger.info("Demucs-based enhancement for ASR complete.")
-            return final_audio
-
-        except Exception as e:
-            logger.error(f"Demucs enhancement failed: {e}")
-            return audio_segment
-
-    def enhance_for_diarization(self, audio_segment: AudioSegment) -> AudioSegment:
-        """
-        Enhances audio for diarization using DeepFilterNet for noise reduction.
-        """
-        if self.df_model is None:
-            logger.error("DeepFilterNet model not loaded.")
-            return audio_segment
-
-        logger.info("Enhancing audio for diarization using DeepFilterNet...")
-
-        # DeepFilterNet requires 16kHz mono audio
-        input_audio_df = audio_segment.set_frame_rate(DEEPFILTERNET_SR).set_channels(1)
-
-        # Convert pydub AudioSegment to a torch Tensor and move to device
-        audio_tensor = (
-            torch.frombuffer(input_audio_df.raw_data, dtype=torch.int16)
-            .float()
-            .div(32768.0)
-            .unsqueeze(0)  # add batch dimension -> (1, length)
-            .to(self.device)
-        )
-
-        with torch.no_grad():
-            enhanced_tensor = enhance(
-                self.df_model, self.df_state, audio_tensor.cpu(), atten_lim_db=self.atten_lim_db
+            normalized_audio = self._normalize_volume(
+                enhanced_audio
             )
 
-        # Convert back to pydub AudioSegment
-        enhanced_audio = AudioSegment(
-            (enhanced_tensor.squeeze().cpu().numpy() * 32767.0).astype("int16").tobytes(),
-            frame_rate=DEEPFILTERNET_SR,
-            sample_width=2,
-            channels=1,
+            final_audio = normalized_audio.set_frame_rate(
+                TARGET_SR
+            )
+
+            logger.info(
+                "ASR enhancement completed | model=Demucs"
+            )
+
+            return final_audio
+
+        except Exception:
+            logger.exception(
+                "Demucs ASR enhancement failed; "
+                "returning original audio."
+            )
+
+            return audio_segment
+
+        finally:
+            # Release references to request-specific tensors before
+            # moving the model back to CPU.
+            audio_tensor = None
+            separated_stems = None
+            vocals = None
+
+            self._release_demucs_gpu_memory()
+
+    # ------------------------------------------------------------------
+    # DeepFilterNet enhancement
+    # ------------------------------------------------------------------
+
+    def enhance_for_diarization(
+        self,
+        audio_segment: AudioSegment,
+    ) -> AudioSegment:
+        """
+        Enhance audio for speaker diarization using DeepFilterNet.
+
+        DeepFilterNet expects audio at its configured 48 kHz sample rate.
+
+        Its feature-extraction path converts the time-domain input to NumPy,
+        so the input tensor must remain on CPU. DeepFilterNet then performs
+        its neural processing on the configured device.
+
+        Processing:
+            CPU audio
+                -> CPU feature extraction
+                -> device-side neural inference
+                -> CPU audio
+                -> 16 kHz mono output
+        """
+
+        if self.df_model is None:
+            logger.error(
+                "DeepFilterNet model is unavailable; "
+                "returning original audio."
+            )
+            return audio_segment
+
+        logger.info(
+            "Diarization enhancement started | "
+            "model=DeepFilterNet"
         )
 
-        # Apply normalization after enhancement
-        normalized_audio = self._normalize_volume(enhanced_audio)
+        audio_tensor = None
+        enhanced_tensor = None
 
-        logger.info("DeepFilterNet-based enhancement for diarization complete.")
-        return normalized_audio
+        try:
+            # --------------------------------------------------------------
+            # 1. Stage DeepFilterNet on the configured device
+            # --------------------------------------------------------------
+
+            self._move_model_to_gpu(
+                self.df_model,
+                "DeepFilterNet",
+            )
+
+            # --------------------------------------------------------------
+            # 2. Prepare 48 kHz mono audio
+            # --------------------------------------------------------------
+
+            input_audio = (
+                audio_segment
+                .set_frame_rate(DEEPFILTERNET_SR)
+                .set_channels(1)
+            )
+
+            # DeepFilterNet's feature extraction calls .numpy() on the
+            # time-domain input. Keep this tensor on CPU.
+            audio_tensor = (
+                torch.frombuffer(
+                    input_audio.raw_data,
+                    dtype=torch.int16,
+                )
+                .float()
+                .div_(32768.0)
+                .unsqueeze(0)
+            )
+
+            # --------------------------------------------------------------
+            # 3. Run DeepFilterNet
+            # --------------------------------------------------------------
+
+            with torch.inference_mode():
+                enhanced_tensor = enhance(
+                    self.df_model,
+                    self.df_state,
+                    audio_tensor,
+                    atten_lim_db=self.atten_lim_db,
+                )
+
+            # --------------------------------------------------------------
+            # 4. Convert output to NumPy
+            # --------------------------------------------------------------
+
+            enhanced_numpy = (
+                enhanced_tensor
+                .detach()
+                .cpu()
+                .squeeze()
+                .numpy()
+            )
+
+            enhanced_numpy = np.clip(
+                enhanced_numpy,
+                -1.0,
+                1.0,
+            )
+
+            enhanced_int16 = (
+                enhanced_numpy * 32767.0
+            ).astype(np.int16)
+
+            enhanced_audio = AudioSegment(
+                enhanced_int16.tobytes(),
+                frame_rate=DEEPFILTERNET_SR,
+                sample_width=2,
+                channels=1,
+            )
+
+            # --------------------------------------------------------------
+            # 5. Normalize and resample for diarization
+            # --------------------------------------------------------------
+
+            normalized_audio = self._normalize_volume(
+                enhanced_audio
+            )
+
+            final_audio = normalized_audio.set_frame_rate(
+                TARGET_SR
+            )
+
+            logger.info(
+                "Diarization enhancement completed | "
+                "model=DeepFilterNet"
+            )
+
+            return final_audio
+
+        except Exception:
+            logger.exception(
+                "DeepFilterNet diarization enhancement failed; "
+                "returning original audio."
+            )
+
+            return audio_segment
+
+        finally:
+            # Release request-specific tensors before moving the model
+            # back to CPU.
+            audio_tensor = None
+            enhanced_tensor = None
+
+            self._release_deepfilternet_gpu_memory()
