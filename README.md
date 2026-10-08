@@ -377,9 +377,20 @@ deepfilternet_cache
 
 This means that recreating the application container does not require downloading all models again.
 
-Once the service is running, the models are initialized when the application starts and can be reused across API requests.
+Once the service is running, the core models are initialized when the application starts and remain available for subsequent API requests. Multiple audio files can therefore be processed sequentially without reloading the full model stack for each request.
 
-This avoids repeatedly loading expensive models for every request.
+
+This avoids repeatedly loading expensive models and reduces unnecessary startup overhead between transcription jobs.
+
+### Execution Model
+
+The current application is designed for **single-job, local GPU execution**.
+
+The FastAPI service keeps the ML pipeline initialized while the application is running, allowing multiple audio files to be processed sequentially without reinitializing the full model stack.
+
+The current implementation is intentionally focused on local GPU inference rather than concurrent multi-user workloads. It does not currently include a job queue, distributed workers, persistent job management, or GPU scheduling for multiple simultaneous requests.
+
+For a larger deployment, the API could be extended with asynchronous job processing, a queue/worker architecture, persistent job state, and dedicated GPU workers.
 
 ---
 
@@ -455,6 +466,9 @@ Audio_TD/
 └── README.md
 
 ```
+
+Runtime audio files, generated outputs, models, caches, and logs are intentionally excluded from version control.
+
 # 🔧 Technology Stack
 
 ### Machine Learning
@@ -560,7 +574,7 @@ Current limitations include:
 - Large audio files require significant processing time and GPU memory.
 - Model downloads can be large during first-time setup.
 - The current API stores generated transcription files locally.
-- The project currently focuses on the core inference pipeline rather than distributed processing.
+- The service is designed for sequential single-job processing rather than concurrent multi-user workloads.
 
 These limitations are intentional for the current portfolio version of the project.
 
