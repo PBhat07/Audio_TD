@@ -1,8 +1,22 @@
 # 🎙️ Audio Transcription & Speaker Diarization
 
-A GPU-accelerated audio processing pipeline for **speech enhancement, transcription, speaker diarization, word-level confidence scoring, and structured output**.
+A GPU-accelerated audio intelligence pipeline for speech enhancement, transcription, speaker diarization, word-level confidence scoring, structured output, and interactive transcript review.
+---
 
-The project combines **Demucs, DeepFilterNet, WhisperX, and pyannote.audio** into a single processing pipeline and exposes the system through a **FastAPI REST API** running inside a CUDA-enabled Docker container.
+
+# 🎬 Demo
+
+### Interface Preview
+
+![Transcript Review UI](docs/assets/transcript-ui.png)
+
+### Demo Video
+
+[▶ Watch the full pipeline demonstration](YOUR_VIDEO_LINK_HERE)
+
+### Short GIF Preview
+
+![Audio Transcription Demo](docs/assets/demo.gif)
 
 ---
 
@@ -18,8 +32,9 @@ Given an audio file, the system:
 6. Assigns speakers to individual words and segments.
 7. Produces a structured JSON transcription.
 8. Exposes the pipeline through a REST API.
+9. Provides an interactive interface for reviewing and searching the generated transcript.
 
-The system is designed as a reusable backend service rather than a one-off transcription script.
+The system is designed as a reusable backend service with an interactive post-processing review interface rather than a one-off transcription script.
 
 ---
 
@@ -108,7 +123,7 @@ Speaker-to-Word Assignment
 Structured JSON Output
 ```
 
-The different stages communicate through Python objects and in-memory audio representations rather than requiring intermediate model stages to communicate through temporary files.
+
 
 ---
 
@@ -165,6 +180,7 @@ Example:
 }
 ```
 
+
 Each word can contain:
 
 - Word text
@@ -181,6 +197,8 @@ Each segment contains:
 - Word-level information
 
 This structured format makes the output suitable for downstream applications.
+
+The complete JSON output is also available for download through the interactive interface.
 
 ---
 
@@ -274,6 +292,19 @@ http://localhost:8000/openapi.json
 
 ---
 
+## Interactive Transcript Review
+
+The project also includes a lightweight web interface for reviewing completed transcriptions.
+
+The interface supports:
+
+- Audio playback
+- Timestamped transcript segments
+- Click-to-seek transcript navigation
+- Speaker renaming
+- Transcript search
+- JSON export
+
 # 🐳 Docker & GPU Setup
 
 The application is containerized using Docker and runs with NVIDIA GPU support.
@@ -333,6 +364,12 @@ This avoids repeatedly loading expensive models for every request.
 
 ---
 
+### GPU Memory Monitoring
+
+The pipeline logs GPU memory usage across the major processing stages to make model loading and GPU utilization observable.
+
+![GPU Memory Monitoring](docs/assets/gpu-memory-log.png)
+
 # 💻 Hardware
 
 The project has been developed and tested on an **NVIDIA RTX 4050 laptop GPU with 6 GB VRAM**.
@@ -345,7 +382,20 @@ WHISPER_MODEL=small.en
 
 The exact performance depends on the audio duration, model configuration, and available GPU memory.
 
+### Example Run
+
+On an approximately 4.75-minute audio file, the complete pipeline successfully completed enhancement, transcription, alignment, and diarization on the RTX 4050 6 GB GPU.
+
+Observed during the run:
+
+- Audio duration: ~285 seconds
+- Peak GPU allocated memory: ~2.36 GB
+- Peak GPU reserved memory: ~3.59 GB
+- ASR coverage: ~279 seconds
+- Diarization coverage: ~279 seconds
+
 ---
+
 
 # 📁 Project Structure
 
@@ -363,6 +413,14 @@ Audio_TD/
 │   ├── output/
 │   │   └── formatter.py
 │   │
+│   ├── ui/
+│   │   ├── app.py
+│   │   ├── api_client.py
+│   │   ├── components.py
+│   │   ├── interactions.py
+│   │   ├── styles.py
+│   │   └── transcript.py
+│   │
 │   ├── asr_pipeline.py
 │   ├── diarization_pipeline.py
 │   └── audio_enhancer.py
@@ -374,9 +432,6 @@ Audio_TD/
 ├── .env
 ├── .gitignore
 └── README.md
-```
-
----
 
 # 🔧 Technology Stack
 
@@ -407,7 +462,11 @@ Audio_TD/
 - NVIDIA CUDA
 - Docker Compose
 
----
+### Interface
+
+- Gradio
+- JavaScript
+- Custom CSS
 
 # 🧩 Key Engineering Decisions
 
@@ -421,7 +480,8 @@ Audio_TD/
 | Structured JSON output | Makes results easier to consume programmatically |
 | API-level validation | Prevents invalid requests from reaching expensive GPU processing |
 | Docker + CUDA | Provides a reproducible GPU execution environment |
-| Optional speaker constraints | Allows users to provide prior knowledge about the recording |
+| Optional speaker constraints | Allows users to provide prior knowledge about the recording | 
+Sequential GPU model staging | Limits peak VRAM usage by releasing models between processing stages |
 
 ---
 
@@ -486,9 +546,6 @@ These limitations are intentional for the current portfolio version of the proje
 # 🚧 Future Improvements
 
 Potential future improvements include:
-
-- Lightweight web frontend for uploading audio and viewing results.
-- Public demonstration using precomputed example outputs.
 - More robust job management for long-running audio files.
 - Background processing for asynchronous requests.
 - Persistent database storage for transcription metadata.
@@ -497,13 +554,6 @@ Potential future improvements include:
 
 ---
 
-# 🎬 Demo
-
-A lightweight demonstration will be provided using example audio and precomputed results.
-
-The full GPU inference pipeline can be run locally using Docker and an NVIDIA GPU.
-
----
 
 # 📚 Acknowledgements
 
@@ -534,3 +584,6 @@ The main areas demonstrated are:
 - Model caching
 - Structured ML outputs
 - Input validation and error handling
+
+- Resource-constrained GPU optimization
+- Interactive transcript review
