@@ -327,6 +327,23 @@ The Docker environment contains:
 - Uvicorn
 - FFmpeg and audio processing dependencies
 
+## Environment Configuration
+
+The application requires a Hugging Face access token for downloading the required models.
+
+Create a local `.env` file from the provided example:
+
+```bash
+cp .env.example .env
+```
+
+
+Then open .env and add your Hugging Face token:
+```text
+HUGGING_FACE_TOKEN=your_token_here
+WHISPER_MODEL=small.en
+```
+
 ### 1. Start the backend
 
 Build and start the Docker service with:
