@@ -6,13 +6,11 @@ A GPU-accelerated audio intelligence pipeline for speech enhancement, transcript
 
 # 🎬 Demo
 
-### Interface Preview
 
-![Transcript Review UI](docs/assets/transcript-ui.png)
 
 ### Demo Video
 
-[▶ Watch the full pipeline demonstration](YOUR_VIDEO_LINK_HERE)
+[▶ Watch the full pipeline demonstration](docs/assets/demo_video.mp4)
 
 ### Short GIF Preview
 
@@ -40,41 +38,60 @@ The system is designed as a reusable backend service with an interactive post-pr
 
 ## 🏗️ Architecture
 
+
 ```text
-                    Audio File
-                        │
-                        ▼
-                ┌───────────────┐
-                │    FastAPI    │
-                │   REST API    │
-                └───────┬───────┘
-                        │
-                        ▼
-                ┌───────────────┐
-                │ AudioPipeline │
-                └───────┬───────┘
-                        │
-              ┌─────────┴─────────┐
-              │                   │
-              ▼                   ▼
-       ┌─────────────┐     ┌───────────────┐
-       │   Demucs    │     │ DeepFilterNet │
-       │ ASR Audio   │     │ Diarization   │
-       └──────┬──────┘     └───────┬───────┘
-              │                    │
-              ▼                    ▼
-       ┌─────────────┐     ┌───────────────┐
-       │  WhisperX   │     │   pyannote    │
-       │ ASR + Align │     │ Diarization   │
-       └──────┬──────┘     └───────┬───────┘
-              │                    │
-              └─────────┬──────────┘
-                        ▼
-               Speaker Attribution
-                        │
-                        ▼
-                Structured JSON
-```
+                         ┌──────────────────┐
+                         │    Audio Input   │
+                         └────────┬─────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │                           │
+                    ▼                           ▼
+             ┌─────────────┐             ┌─────────────┐
+             │     CLI     │             │  Gradio UI  │
+             │  main.py    │             │ src/ui/app.py│
+             └──────┬──────┘             └──────┬──────┘
+                    │                           │
+                    │                           ▼
+                    │                    ┌─────────────┐
+                    │                    │ API Client  │
+                    │                    └──────┬──────┘
+                    │                           │
+                    │                           ▼
+                    │                    ┌─────────────┐
+                    │                    │   FastAPI   │
+                    │                    │ src/api/    │
+                    │                    │   main.py   │
+                    │                    └──────┬──────┘
+                    │                           │
+                    └─────────────┬─────────────┘
+                                  ▼
+                         ┌────────────────┐
+                         │ AudioPipeline  │
+                         └───────┬────────┘
+                                 │
+                      ┌──────────┴──────────┐
+                      │                     │
+                      ▼                     ▼
+               ┌─────────────┐      ┌───────────────┐
+               │   Demucs    │      │ DeepFilterNet │
+               │  ASR Path   │      │ Diarization   │
+               └──────┬──────┘      └───────┬───────┘
+                      │                     │
+                      ▼                     ▼
+               ┌─────────────┐      ┌───────────────┐
+               │  WhisperX   │      │   pyannote    │
+               │ ASR + Align │      │ Diarization   │
+               └──────┬──────┘      └───────┬───────┘
+                      │                     │
+                      └──────────┬──────────┘
+                                 ▼
+                        Speaker Attribution
+                                 │
+                                 ▼
+                         Structured JSON
+
+ ```                   
 
 ---
 
@@ -157,28 +174,12 @@ The final result is saved as structured JSON.
 
 Example:
 
-```json
-{
-  "filename": "noisy_audio",
-  "duration": "00:04:45.344",
-  "segments": [
-    {
-      "speaker": "Unknown Speaker",
-      "start": "00:00:01.991",
-      "end": "00:00:03.511",
-      "text": "We're gonna need it for the game.",
-      "words": [
-        {
-          "word": "We're",
-          "start": "00:00:01.991",
-          "end": "00:00:02.331",
-          "confidence": 0.423
-        }
-      ]
-    }
-  ]
-}
-```
+![Structured JSON Output](docs/assets/json-output.png)
+
+The pipeline produces structured JSON containing speaker-attributed
+segments, timestamps, word-level timing, and confidence information.
+
+
 
 
 Each word can contain:
@@ -221,6 +222,7 @@ Returns:
   "status": "ok"
 }
 ```
+![FastAPI Swagger Documentation](docs/assets/swagger-api.png)
 
 ---
 
@@ -305,6 +307,9 @@ The interface supports:
 - Transcript search
 - JSON export
 
+
+![Transcript Review UI](docs/assets/transcript-ui.png)
+
 # 🐳 Docker & GPU Setup
 
 The application is containerized using Docker and runs with NVIDIA GPU support.
@@ -322,14 +327,13 @@ The Docker environment contains:
 - Uvicorn
 - FFmpeg and audio processing dependencies
 
-## Start the Application
+### 1. Start the backend
 
-Build and start the service with:
+Build and start the Docker service with:
 
 ```bash
 docker compose up --build
 ```
-
 The API will be available at:
 
 ```text
@@ -341,7 +345,22 @@ Swagger documentation:
 ```text
 http://localhost:8000/docs
 ```
+### 2. Start the interactive UI
 
+With the Docker container running, open a second terminal and start the Gradio interface:
+```bash
+docker compose exec audio-td python -m src.ui.app
+```
+The interactive interface will be available at:
+```text
+http://localhost:7860
+```
+
+### 3. Access the running container
+For debugging or inspecting the container, you can open a shell with:
+```bash
+docker compose exec audio-td bash
+```
 ---
 
 ## ⚡ Model Caching
@@ -404,10 +423,10 @@ Audio_TD/
 │
 ├── src/
 │   ├── api/
-│   │   └── main.py
+│   │   └── main.py                     # FastAPI application entry point
 │   │
 │   ├── pipeline/
-│   │   ├── audio_pipeline.py
+│   │   ├── audio_pipeline.py           # Core ML pipeline orchestration
 │   │   └── result.py
 │   │
 │   ├── output/
@@ -423,16 +442,19 @@ Audio_TD/
 │   │
 │   ├── asr_pipeline.py
 │   ├── diarization_pipeline.py
-│   └── audio_enhancer.py
+│   ├── audio_enhancer.py
+│   └── logging_config.py
 │
-├── main.py
+├── main.py                              # CLI entry point
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
 ├── .env
 ├── .gitignore
+├── logs
 └── README.md
 
+```
 # 🔧 Technology Stack
 
 ### Machine Learning
@@ -472,6 +494,7 @@ Audio_TD/
 
 | Decision | Reason |
 |---|---|
+| Separate CLI and API entry points | Keeps local command-line execution independent from the HTTP service while sharing the same core ML pipeline |
 | FastAPI | Exposes the ML pipeline as a reusable service |
 | Task-specific enhancement | Different downstream tasks benefit from different preprocessing |
 | In-memory model pipeline | Reduces unnecessary intermediate file I/O between ML stages |
@@ -521,12 +544,12 @@ Speaker Diarization
 Speaker Attribution
           ↓
 Structured JSON
+
 ```
 
 The resulting JSON can then be consumed by another application, stored in a database, searched, summarized, or passed to a downstream NLP/LLM system.
 
 ---
-
 # ⚠️ Current Limitations
 
 This project is currently optimized for local GPU execution rather than large-scale production deployment.

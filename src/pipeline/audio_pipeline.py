@@ -10,6 +10,9 @@ from src.audio_enhancer import ParallelAudioEnhancer
 from src.diarization_pipeline import DiarizationPipeline
 from src.output.formatter import save_diarized_transcription
 from src.pipeline.result import PipelineResult
+from src.logging_config import (reset_gpu_memory_log, flush_gpu_memory_log)
+from src.gpu_memory_report import generate_gpu_memory_report
+
 
 
 logger = logging.getLogger(__name__)
@@ -144,6 +147,7 @@ class AudioPipeline:
         )
 
         # Start a fresh GPU-memory measurement window.
+        reset_gpu_memory_log()
         self._reset_gpu_peak_memory()
         self._log_gpu_memory("pipeline_start")
 
@@ -388,3 +392,10 @@ class AudioPipeline:
             # Always record final GPU state, including failures.
             self._log_gpu_memory("pipeline_end")
             self._log_gpu_peak_summary()
+            
+            flush_gpu_memory_log()
+
+            generate_gpu_memory_report(
+                log_path="logs/gpu_memory.log",
+                output_path="logs/gpu_memory_report.png",
+            )

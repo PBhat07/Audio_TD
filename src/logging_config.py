@@ -28,6 +28,7 @@ def configure_logging(
     # ---------------------------------------------------------
     file_handler = logging.FileHandler(
         log_file,
+        mode="w",
         encoding="utf-8",
     )
     file_handler.setFormatter(formatter)
@@ -38,8 +39,6 @@ def configure_logging(
     root_logger = logging.getLogger()
     root_logger.setLevel(log_level)
 
-    # Prevent duplicate handlers if configure_logging()
-    # is called more than once.
     root_logger.handlers.clear()
 
     root_logger.addHandler(console_handler)
@@ -58,10 +57,35 @@ def configure_logging(
     gpu_console_handler.setFormatter(formatter)
 
     gpu_file_handler = logging.FileHandler(
-        os.path.join(log_dir, "gpu_memory.log"),
+        gpu_log_file,
+        mode="w",
         encoding="utf-8",
     )
     gpu_file_handler.setFormatter(formatter)
 
     gpu_logger.addHandler(gpu_console_handler)
     gpu_logger.addHandler(gpu_file_handler)
+
+
+def reset_gpu_memory_log() -> None:
+    """Clear the GPU memory log for a new pipeline execution."""
+
+    gpu_logger = logging.getLogger("gpu_memory")
+
+    for handler in gpu_logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+
+            if handler.stream is not None:
+                handler.stream.seek(0)
+                handler.stream.truncate()
+
+
+def flush_gpu_memory_log() -> None:
+    """Flush the GPU memory log so it can be safely read after a pipeline run."""
+
+    gpu_logger = logging.getLogger("gpu_memory")
+
+    for handler in gpu_logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
